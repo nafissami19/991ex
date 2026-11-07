@@ -27,7 +27,7 @@ const store = {
 };
 
 function readPrefs() {
-  try { return { sound: true, ...JSON.parse(store.get(PREFS_KEY) || '{}') }; } catch { return { sound: true }; }
+  try { return { sound: true, enlargeLcd: false, ...JSON.parse(store.get(PREFS_KEY) || '{}') }; } catch { return { sound: true, enlargeLcd: false }; }
 }
 
 /** Loads the core and restores saved state. Returns null if the core can't load. */
@@ -93,6 +93,7 @@ class App {
 
     this.chassis = document.getElementById('chassis');
     this.stage = document.getElementById('stage');
+
     this.placeCanvases();
     this.fit();
     this.lcd = new CanvasLCD(
@@ -265,53 +266,14 @@ class App {
     this.saveNow();
   }
 
-  // ---- toolbar + panels ----
-
   bindToolbar() {
-    const $ = (id) => document.getElementById(id);
-    $('btnPopout').addEventListener('click', () => openPopout());
-
-    const sound = $('btnSound');
-    sound.setAttribute('aria-pressed', String(this.prefs.sound));
-    sound.addEventListener('click', () => {
-      this.prefs.sound = this.click.enabled = !this.click.enabled;
-      sound.setAttribute('aria-pressed', String(this.prefs.sound));
-      store.set(PREFS_KEY, JSON.stringify(this.prefs));
-    });
-
-    const panels = { btnKeyLog: $('keyLogPanel'), btnHelp: $('helpPanel') };
-    for (const [btnId, panel] of Object.entries(panels)) {
-      $(btnId).addEventListener('click', () => {
-        const show = panel.hidden;
-        for (const [otherId, other] of Object.entries(panels)) {
-          other.hidden = true;
-          $(otherId).setAttribute('aria-pressed', 'false');
-        }
-        panel.hidden = !show;
-        $(btnId).setAttribute('aria-pressed', String(show));
-      });
-    }
-
-    $('btnClearLog').addEventListener('click', () => {
-      this.keyLog = [];
-      $('keyLogList').textContent = '';
-    });
-    $('btnCopyLog').addEventListener('click', async (e) => {
-      const text = JSON.stringify(this.keyLog);
-      const btn = e.currentTarget;
-      try {
-        await navigator.clipboard.writeText(text);
-        btn.textContent = 'Copied!';
-      } catch {
-        window.prompt('Copy the key log:', text);
-      }
-      setTimeout(() => { btn.textContent = 'Copy as JSON array'; }, 1200);
-    });
+    // Toolbar elements removed per user request; key sounds and inputs remain active.
   }
 
   logKey(name) {
     this.keyLog.push(name);
     const list = document.getElementById('keyLogList');
+    if (!list) return;
     if (this.keyLog.length > KEY_LOG_MAX) {
       this.keyLog.shift();
       list.firstElementChild?.remove();
@@ -319,17 +281,18 @@ class App {
     const li = document.createElement('li');
     li.textContent = name;
     list.appendChild(li);
-    if (!list.closest('.panel').hidden) li.scrollIntoView({ block: 'nearest' });
+    if (!list.closest('.panel')?.hidden) li.scrollIntoView({ block: 'nearest' });
   }
 
   fillShortcutHelp() {
+    const dl = document.getElementById('shortcutList');
+    if (!dl) return;
     const pretty = {
       ArrowUp: '↑', ArrowDown: '↓', ArrowLeft: '←', ArrowRight: '→', Escape: 'Esc', Backspace: '⌫ Backspace',
       Enter: '↵ Enter',
     };
     const byKey = new Map(this.layout.map((k) => [k.name, []]));
     for (const [pc, name] of buildShortcutMap(this.layout)) byKey.get(name)?.push(pc);
-    const dl = document.getElementById('shortcutList');
     for (const k of this.layout) {
       const pcs = byKey.get(k.name);
       if (!pcs?.length) continue;

@@ -57,6 +57,8 @@ export class MainMenuView {
 
   indicators(set) {
     set.clear();
+    if (this.topRow === 0) set.add('Down');
+    else set.add('Up');
   }
 
   render(scr) {
@@ -79,10 +81,9 @@ export class MainMenuView {
       lines.push(names.join(' '));
     }
 
-    // Bottom solid dark label bar with inverted white text
+    // Bottom line: normal dark text on light LCD background
     const selected = MODES[this.sel];
-    scr.fb.drawTextTop(4, 50, `${selected.key}:${selected.name}`, 'large');
-    scr.fb.invertRect(0, 48, 192, 15);
+    scr.fb.drawTextTop(4, 50, `${selected.key} : ${selected.name}`, 'large');
     lines.push(`${selected.key}:${selected.name}`);
     scr.lines = lines;
   }

@@ -12,8 +12,8 @@ describe('Prompt 20 — MENU screen (mode icons)', () => {
     assert.ok(scr.lines[0].includes('Complex'));
     assert.ok(scr.lines[1].includes('Vector'));
     assert.strictEqual(scr.lines[2], '1:Calculate');
-    // Status bar indicators should be cleared on MENU screen
-    assert.deepStrictEqual(scr.indicators, []);
+    // Status bar displays Down arrow indicator on top row of MENU screen
+    assert.deepStrictEqual(scr.indicators, ['Down']);
   });
 
   it('navigates with RIGHT arrow wrapping across modes', () => {
@@ -156,18 +156,18 @@ describe('Prompt 20 — MENU screen (mode icons)', () => {
     assert.ok(calc.indicators().includes('M'));
   });
 
-  it('renders authentic LCD pixel layout: 48x24 cells and 15px bottom bar', () => {
+  it('renders authentic LCD pixel layout: 48x24 cells and bottom label line', () => {
     const calc = new Calculator();
     calc.press('MENU');
     const scr = calc.getScreen();
     assert.strictEqual(scr.pixels.length, 192 * 63);
 
-    // Check bottom bar background is dark (1) at y=48..62
-    // Bottom bar x=0..191, y=48..62
+    // Bottom label displays text on light background (matching official emulator)
     const pixel = (x, y) => scr.pixels[y * 192 + x];
-    assert.strictEqual(pixel(0, 48), 1);
-    assert.strictEqual(pixel(191, 48), 1);
-    assert.strictEqual(pixel(0, 62), 1);
+    assert.strictEqual(pixel(0, 50), 0);
+    assert.strictEqual(pixel(191, 50), 0);
+    // Text is drawn with dark pixels
+    assert.strictEqual(scr.lines[2], '1:Calculate');
 
     // Selected cell 0 (x=0..47, y=0..23) is inverted: top-left interior (x=1, y=1) should be light (0)
     assert.strictEqual(pixel(1, 1), 0);

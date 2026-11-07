@@ -7,7 +7,7 @@
  * Bump VERSION to drop old caches.
  */
 
-const VERSION = 'v3';
+const VERSION = 'v6';
 const CACHE = `fx991ex-${VERSION}`;
 const DEV_HOSTS = ['localhost', '127.0.0.1', '[::1]'];
 const NETWORK_FIRST = DEV_HOSTS.includes(self.location.hostname);

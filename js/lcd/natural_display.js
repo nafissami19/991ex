@@ -92,6 +92,17 @@ export function layoutSlot(items, o = {}) {
   const font = o.font || 'large';
   const path = o.path || null;
   if (items.length === 0 && path) {
+    if (path.length === 0) {
+      // Main root expression line: clean blank line, NO dotted box!
+      const cursorExt = textExtents('0', font);
+      return {
+        w: 0,
+        asc: cursorExt.asc,
+        desc: cursorExt.desc,
+        marks: [{ key: pathKey(path), idx: 0, dx: 0, dy: 0, asc: cursorExt.asc, desc: 0, font }],
+        draw() {}
+      };
+    }
     const e = emptyBox(font);
     const cursorDx = font === 'small' ? 2 : 2;
     e.marks = [{ key: pathKey(path), idx: 0, dx: cursorDx, dy: 0, asc: e.asc, desc: 0, font }];
@@ -109,7 +120,7 @@ export function layoutSlot(items, o = {}) {
     let box;
     if (it.t === 'tok') {
       const tk = TOKENS[it.id];
-      const str = tk ? tk.text : it.id;
+      const str = it.id === 'i' ? 'ⅈ' : (tk ? tk.text : it.id);
       if (o.math !== false && inExponent && tk && (tk.kind === 'digit' || tk.kind === 'neg')) {
         box = shifted(textBox(tk.kind === 'neg' ? '-' : str, smaller(font)), -RAISE[font]);
       } else {

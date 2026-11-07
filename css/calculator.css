@@ -1,76 +1,44 @@
-/* fx-991EX web re-creation: page layout, faceplate hit boxes, panels. */
+/* fx-991EX web re-creation: authentic calculator chassis and LCD rendering */
 
 :root {
   --page-bg: #15171a;
-  --bar-bg: #1f2227;
-  --bar-border: #31353d;
   --text: #e6e9ec;
   --text-dim: #9aa4ad;
-  --btn-bg: #2b2f36;
-  --btn-border: #444a54;
-  --btn-active: #2f6f4f;
-  --s: 0.6; /* faceplate scale, set by app.js */
+  --s: 0.6; /* faceplate scale, set dynamically by app.js */
 }
 
 * { box-sizing: border-box; }
 
-html, body { margin: 0; height: 100%; }
-
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
   background: var(--page-bg);
   color: var(--text);
   font: 14px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
+}
+
+body {
   display: flex;
   flex-direction: column;
   height: 100vh;
   height: 100dvh;
-  overflow: hidden;
-}
-
-/* Toolbar */
-.toolbar {
-  flex: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 6px 12px;
-  background: var(--bar-bg);
-  border-bottom: 1px solid var(--bar-border);
-}
-
-.brand { display: flex; align-items: center; gap: 8px; font-weight: 600; white-space: nowrap; }
-.brand small { color: var(--text-dim); font-weight: 400; }
-.brand-icon { width: 24px; height: 24px; border-radius: 5px; }
-
-.tools { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
-
-button {
-  font: inherit;
-  font-size: 13px;
-  color: var(--text);
-  background: var(--btn-bg);
-  border: 1px solid var(--btn-border);
-  border-radius: 6px;
-  padding: 4px 10px;
-  cursor: pointer;
-}
-button:hover { border-color: #6b7480; }
-button[aria-pressed="true"] { background: var(--btn-active); border-color: #4c9c73; }
-
-@media (max-width: 520px) {
-  .brand small { display: none; }
-  .tools button { padding: 4px 7px; }
 }
 
 /* Stage + faceplate */
 .stage {
   flex: 1;
+  width: 100%;
+  height: 100%;
   min-height: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px;
 }
 
 .chassis {
@@ -80,7 +48,7 @@ button[aria-pressed="true"] { background: var(--btn-active); border-color: #4c9c
   height: calc(1250px * var(--s));
   background: url('../assets/images/faceplate.png') no-repeat 0 0 / 100% 100%;
   border-radius: calc(24px * var(--s));
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7);
   user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
@@ -128,63 +96,4 @@ button[aria-pressed="true"] { background: var(--btn-active); border-color: #4c9c
   font-size: calc(18px * var(--s));
   color: #f1f3f5;
   white-space: nowrap;
-}
-
-/* Side panels */
-.panel {
-  position: fixed;
-  top: 52px;
-  right: 12px;
-  width: 300px;
-  max-width: calc(100vw - 24px);
-  max-height: calc(100vh - 64px);
-  display: flex;
-  flex-direction: column;
-  background: var(--bar-bg);
-  border: 1px solid var(--bar-border);
-  border-radius: 8px;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
-  z-index: 10;
-}
-.panel[hidden] { display: none; }
-
-.panel-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 6px;
-  padding: 8px 10px;
-  border-bottom: 1px solid var(--bar-border);
-}
-.panel-actions { display: flex; gap: 6px; }
-.panel-note { margin: 0; padding: 6px 10px 10px; color: var(--text-dim); font-size: 12px; }
-
-.key-log {
-  margin: 0;
-  padding: 8px 10px 10px 2.6em;
-  overflow: auto;
-  font: 12px/1.5 ui-monospace, Consolas, monospace;
-  color: var(--text-dim);
-}
-.key-log:empty::before { content: 'No keys pressed yet.'; margin-left: -2em; }
-
-.shortcut-list {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 3px 12px;
-  margin: 0;
-  padding: 8px 10px;
-  overflow: auto;
-  font-size: 12px;
-}
-.shortcut-list dt { margin: 0; }
-.shortcut-list dd { margin: 0; color: var(--text-dim); }
-kbd {
-  font: 11px ui-monospace, Consolas, monospace;
-  background: #33373f;
-  border: 1px solid #4a505b;
-  border-radius: 4px;
-  padding: 0 4px;
-  margin-right: 3px;
 }
