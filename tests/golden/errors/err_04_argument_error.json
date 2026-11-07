@@ -1,0 +1,36 @@
+{
+  "name": "Error 4: Argument ERROR on negative tolerance in numerical integration",
+  "setup": {
+    "inputOutput": "LineI/LineO"
+  },
+  "keys": [
+    "∫",
+    "sin",
+    "1",
+    "÷",
+    "X",
+    ")",
+    ",",
+    "0",
+    ".",
+    "0",
+    "0",
+    "0",
+    "1",
+    ",",
+    "1",
+    ",",
+    "(-)",
+    "1",
+    ")",
+    "="
+  ],
+  "expect": {
+    "error": "Argument ERROR",
+    "lines": [
+      "Argument ERROR",
+      "[AC] :Cancel",
+      "[◀][▶]:Goto"
+    ]
+  }
+}

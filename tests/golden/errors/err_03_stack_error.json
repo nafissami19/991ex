@@ -1,0 +1,43 @@
+{
+  "name": "Error 3: Stack ERROR on 25 nested parentheses",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "(",
+    "1",
+    "="
+  ],
+  "expect": {
+    "error": "Stack ERROR",
+    "lines": [
+      "Stack ERROR",
+      "[AC] :Cancel",
+      "[◀][▶]:Goto"
+    ]
+  }
+}

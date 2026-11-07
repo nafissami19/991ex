@@ -1,0 +1,20 @@
+{
+  "name": "1. Power OFF with SHIFT AC blanks screen and indicators",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "+",
+    "1",
+    "=",
+    "SHIFT",
+    "AC"
+  ],
+  "expect": {
+    "poweredOn": false,
+    "lines": [],
+    "notIndicators": ["Math", "D", "M", "S", "A"]
+  }
+}

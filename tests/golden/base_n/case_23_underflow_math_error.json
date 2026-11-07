@@ -1,0 +1,7 @@
+{
+  "name": "23. Underflow beyond -2147483648 triggers Math ERROR",
+  "keys": ["MENU", "3", "(-)", "2", "1", "4", "7", "4", "8", "3", "6", "4", "8", "-", "1", "="],
+  "expect": {
+    "error": "Math ERROR"
+  }
+}

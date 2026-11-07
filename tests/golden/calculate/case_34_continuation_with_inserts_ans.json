@@ -1,0 +1,23 @@
+{
+  "name": "34. Continuation with + inserts Ans",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "2",
+    "+",
+    "3",
+    "=",
+    "+",
+    "4",
+    "="
+  ],
+  "expect": {
+    "result": "9",
+    "line": {
+      "index": 0,
+      "text": "Ans+4"
+    }
+  }
+}

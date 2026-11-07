@@ -1,0 +1,36 @@
+{
+  "name": "23. 1-Variable with Frequency table User Guide Ex 2 mean x̄=3",
+  "setup": {
+    "statFreq": true
+  },
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "4",
+    "=",
+    "5",
+    "=",
+    "RIGHT",
+    "DOWN",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "2",
+    "=",
+    "OPTN",
+    "3"
+  ],
+  "expect": {
+    "contains": "x̄=3"
+  }
+}

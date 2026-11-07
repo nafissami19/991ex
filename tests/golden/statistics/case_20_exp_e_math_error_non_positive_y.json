@@ -1,0 +1,29 @@
+{
+  "name": "20. Exponential e regression Math ERROR on non-positive y",
+  "keys": [
+    "MENU",
+    "6",
+    "DOWN",
+    "1",
+    "1",
+    "=",
+    "2",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "0",
+    "=",
+    "3",
+    "=",
+    "AC",
+    "OPTN",
+    "3"
+  ],
+  "expect": {
+    "lines": [
+      "Math ERROR",
+      "[AC] :Cancel"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "13. 69 factorial",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "6",
+    "9",
+    "SHIFT",
+    "INV",
+    "="
+  ],
+  "expect": {
+    "result": "1.711224524×10⁹⁸",
+    "indicators": [
+      "Math"
+    ]
+  },
+  "expectedFail": false
+}

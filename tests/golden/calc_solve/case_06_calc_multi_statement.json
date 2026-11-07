@@ -1,0 +1,32 @@
+{
+  "name": "6. CALC on multi-statement A+B:A-B steps results",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "A",
+    "+",
+    "B",
+    ":",
+    "A",
+    "-",
+    "B",
+    "CALC",
+    "1",
+    "0",
+    "=",
+    "4",
+    "=",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "A+B",
+      "14"
+    ],
+    "result": "14",
+    "indicators": [
+      "Disp"
+    ]
+  }
+}

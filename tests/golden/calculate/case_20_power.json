@@ -1,0 +1,20 @@
+{
+  "name": "20. 2 ^ 10",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "2",
+    "^",
+    "1",
+    "0",
+    "="
+  ],
+  "expect": {
+    "result": "1024",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

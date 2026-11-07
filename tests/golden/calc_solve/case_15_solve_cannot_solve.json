@@ -1,0 +1,25 @@
+{
+  "name": "15. SOLVE on equation with no real root gives Cannot Solve",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "x",
+    "x²",
+    "+",
+    "1",
+    "==",
+    "0",
+    "SHIFT",
+    "CALC",
+    "=",
+    "="
+  ],
+  "expect": {
+    "error": "Cannot Solve",
+    "lines": [
+      "Cannot Solve",
+      "[AC] :Cancel"
+    ]
+  }
+}

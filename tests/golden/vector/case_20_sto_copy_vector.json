@@ -1,0 +1,33 @@
+{
+  "name": "20. STO copy VctAns into VctA opens Vector Editor with copied contents",
+  "keys": [
+    "MENU",
+    "5",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "OPTN",
+    "1",
+    "2",
+    "2",
+    "3",
+    "=",
+    "4",
+    "=",
+    "AC",
+    "OPTN",
+    "3",
+    "+",
+    "OPTN",
+    "4",
+    "=",
+    "STO",
+    "A"
+  ],
+  "expect": {
+    "contains": "VctA"
+  }
+}

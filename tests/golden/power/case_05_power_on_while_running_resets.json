@@ -1,0 +1,29 @@
+{
+  "name": "5. ON while calculator is already on resets input line and history",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "9",
+    "×",
+    "9",
+    "=",
+    "ON"
+  ],
+  "expect": {
+    "poweredOn": true,
+    "lines": [
+      "",
+      ""
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ],
+    "notIndicators": [
+      "Up",
+      "Down"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "18. Adding 2D and 3D vectors produces Dimension ERROR",
+  "keys": [
+    "MENU",
+    "5",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "OPTN",
+    "1",
+    "3",
+    "3",
+    "2",
+    "=",
+    "(-)",
+    "1",
+    "=",
+    "2",
+    "=",
+    "AC",
+    "OPTN",
+    "3",
+    "+",
+    "OPTN",
+    "5",
+    "="
+  ],
+  "expect": {
+    "error": "Dimension ERROR"
+  }
+}

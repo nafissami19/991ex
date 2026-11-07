@@ -1,0 +1,13 @@
+{
+  "name": "9. Official manual example: d/dx(sin(x))|_{x=π/2} = 0 (Radian)",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "RAD"
+  },
+  "keys": [
+    "d/dx", "sin", "x", ")", "RIGHT", "π", "÷", "2", "="
+  ],
+  "expect": {
+    "result": "0"
+  }
+}

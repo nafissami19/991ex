@@ -1,0 +1,22 @@
+{
+  "name": "Error 5b: Variable ERROR dismissal via AC key",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "1",
+    "+",
+    "2",
+    "==",
+    "3",
+    "SHIFT",
+    "CALC",
+    "AC"
+  ],
+  "expect": {
+    "lines": [
+      "",
+      ""
+    ]
+  }
+}

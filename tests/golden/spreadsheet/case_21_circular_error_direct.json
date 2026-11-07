@@ -1,0 +1,20 @@
+{
+  "name": "21. Direct circular self-reference =A1+1 triggers Circular ERROR modal",
+  "keys": [
+    "MENU",
+    "8",
+    "==",
+    "A",
+    "1",
+    "+",
+    "1",
+    "="
+  ],
+  "expect": {
+    "error": "Circular ERROR",
+    "lines": [
+      "Circular ERROR",
+      "[AC] :Cancel"
+    ]
+  }
+}

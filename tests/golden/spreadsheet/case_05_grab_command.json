@@ -1,0 +1,26 @@
+{
+  "name": "5. Input formula with Grab command =Grab(A1)+10 into B1 evaluates to 60",
+  "keys": [
+    "MENU",
+    "8",
+    "5",
+    "0",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "==",
+    "OPTN",
+    "2",
+    "LEFT",
+    "=",
+    "+",
+    "1",
+    "0",
+    "=",
+    "UP"
+  ],
+  "expect": {
+    "contains": "B1:=A1+10"
+  }
+}

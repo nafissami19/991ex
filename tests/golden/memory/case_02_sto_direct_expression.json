@@ -1,0 +1,20 @@
+{
+  "name": "2. Store without prior =: 3+5 STO A displays 3+5→A with 8",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "3",
+    "+",
+    "5",
+    "STO",
+    "(-)"
+  ],
+  "expect": {
+    "lines": [
+      "3+5→A",
+      "8"
+    ]
+  }
+}

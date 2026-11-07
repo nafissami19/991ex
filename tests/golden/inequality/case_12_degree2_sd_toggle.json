@@ -1,0 +1,21 @@
+{
+  "name": "12. Degree 2 exact surd toggles to decimal with S<=>D",
+  "keys": [
+    "MENU",
+    "B",
+    "2",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "(-)",
+    "2",
+    "=",
+    "=",
+    "SD"
+  ],
+  "expect": {
+    "contains": "<x<"
+  }
+}

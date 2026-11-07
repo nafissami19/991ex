@@ -1,0 +1,20 @@
+{
+  "name": "Error 1: Math ERROR on division by zero",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "1",
+    "÷",
+    "0",
+    "="
+  ],
+  "expect": {
+    "error": "Math ERROR",
+    "lines": [
+      "Math ERROR",
+      "[AC] :Cancel",
+      "[◀][▶]:Goto"
+    ]
+  }
+}

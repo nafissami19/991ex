@@ -1,0 +1,25 @@
+{
+  "name": "51. Multi-step calculation with both Ans and PreAns",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "+",
+    "1",
+    "=",
+    "Ans",
+    "×",
+    "3",
+    "=",
+    "Ans",
+    "+",
+    "ALPHA",
+    "ANS",
+    "="
+  ],
+  "expect": {
+    "result": "8"
+  }
+}

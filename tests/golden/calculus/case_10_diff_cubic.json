@@ -1,0 +1,12 @@
+{
+  "name": "10. Polynomial derivative: d/dx(x³ - 5x)|_{x=2} = 7",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "d/dx", "x", "^", "3", "RIGHT", "-", "5", "x", "RIGHT", "2", "="
+  ],
+  "expect": {
+    "result": "7"
+  }
+}

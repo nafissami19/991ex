@@ -1,0 +1,17 @@
+{
+  "name": "1. OPTN menu Page 1 items in Calculate mode",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "OPTN"
+  ],
+  "expect": {
+    "lines": [
+      "1:Hyperbolic Func",
+      "2:Angle Unit",
+      "3:Engineer Symbol",
+      "4:Number Calculation"
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+=== Page 24 ===
+P, Q, R: These functions take the
+argument t and determine a probability
+of standard normal distribution as
+illustrated nearby.
+t: This function is preceded by the argument x. It calculates the standard
+variate for data value x using the mean value (𝑥−) and population standard
+deviation (σx) of data input with Statistics Editor.
+x t = 𝑥− 𝑥−
+𝜎𝑥
+Ex 5: For the single variable data in Ex 2, to determine the normalized
+variate when x = 2, and P(t) at that point.
+2(Norm Dist)(t)
+(Norm Dist)(P()
+Base-n Calculations 
+When you want to perform calculations using decimal, hexadecimal, binary,
+and/or octal values, enter the Base-N Mode. After entering the Base-N
+Mode, press one of the following keys to switch number modes: (DEC)
+for decimal, (HEX) for hexadecimal, (BIN) for binary, or (OCT) for
+octal.
+To calculate 112 + 12
+(BIN)111
+Note
+• Use the following keys to input the letters A through F for hexadecimal
+values: (A), (B), (C), (D), (E), (F).
+• In the Base-N Mode, input of fractional (decimal) values and exponents
+is not supported. If a calculation result has a fractional part, it is cut off.
+• Details about input and output ranges (32 bits) are shown below.
+Binary
+Positive: 00000000000000000000000000000000 ≦ x ≦
+01111111111111111111111111111111
+Negative: 10000000000000000000000000000000 ≦ x ≦
+11111111111111111111111111111111
+Octal Positive:
+Negative:
+00000000000 ≦ x ≦ 17777777777
+20000000000 ≦ x ≦ 37777777777
+Decimal -2147483648 ≦ x ≦ 2147483647
+Hexadecimal Positive:
+Negative:
+00000000 ≦ x ≦ 7FFFFFFF
+80000000 ≦ x ≦ FFFFFFFF
+Specifying the Number Mode of a Particular Input
+Value
+You can input a special command immediately following a value to specify
+the number mode of that value. The special commands are: d (decimal), h
+(hexadecimal), b (binary), and o (octal).
+To calculate 10
+10 + 1016 + 102 + 108 and display the result as a decimal
+value
+(DEC)(d) 10(h) 10
+23
+
+=== Page 25 ===
+ (b) 10(o) 10 36
+Converting a Calculation Result to another Type of
+Value
+You can use any one of the following key operations to convert the currently
+displayed calculation result to another type of value: (DEC), (HEX),
+(BIN), (OCT).
+To calculate 1510 × 3710 in the decimal mode, and then convert the result to
+hexadecimal
+(DEC) 1537
+(HEX)
+555
+0000022B
+Logical and Negation Operations
+Logical and negation operations are performed by pressing  and then
+selecting the desired command (and, or, xor, xnor, Not, Neg) from the menu
+that appears. All of the examples below are performed in the binary mode
+((BIN)).
+To determine the logical AND of 1010
+2 and 11002 (10102 and 11002)
+1010(and) 1100 0000 0000 0000 0000
+0000 0000 0000 1000
+To determine the bitwise complement of 10102 (Not(10102))
+(Not) 1010 1111 1111 1111 1111
+1111 1111 1111 0101
+Note: In the case of a negative binary, octal or hexadecimal value, the
+calculator converts the value to binary, takes the two’s complement, and
+then converts back to the original number base. For decimal values, the
+calculator merely adds a minus sign.
+Equation Calculations 
+Perform the steps below to solve an equation in the Equation/Func Mode.
+1. Press , select the Equation/Func Mode icon, and then press .
+2. Select the type of calculation you want to perform.
+To select this calculation
+type: Do this:
+Simultaneous linear equations
+with two, three, or four
+unknowns
+Press (Simul Equation), and then
+use a number key ( to ) to
+specify the number of unknowns.
+Quadratic equations, cubic
+equations, or quartic equations
+Press (Polynomial), and then use
+a number key ( to ) to specify
+the polynomial degree.
+3. Use the Coefﬁcient Editor that appears to input coefﬁcient values.
+• To solve 2x2 + x − 3 = 0, for example, press (Polynomial) in
+step 2. Use the Coefﬁcient Editor that appears to input
+213.
+• Pressing  will clear all of the coefﬁcients to zero.
+4. After all the values are the way you want, press .
+24
+

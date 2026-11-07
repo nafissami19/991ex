@@ -1,0 +1,10 @@
+{
+  "name": "13. MENU C jumps directly to Ratio mode",
+  "keys": [
+    "MENU",
+    "C"
+  ],
+  "expect": {
+    "contains": "Ratio"
+  }
+}

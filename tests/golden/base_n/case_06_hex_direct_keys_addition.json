@@ -1,0 +1,7 @@
+{
+  "name": "6. Direct hex keys input A–F without ALPHA: A + B = 15 in HEX",
+  "keys": ["MENU", "3", "HEX", "hexA", "+", "hexB", "="],
+  "expect": {
+    "result": "00000015"
+  }
+}

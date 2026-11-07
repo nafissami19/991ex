@@ -1,0 +1,25 @@
+{
+  "name": "29. Stat Editor DEL key deletes highlighted row",
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "4",
+    "=",
+    "UP",
+    "UP",
+    "UP",
+    "DEL",
+    "OPTN",
+    "3"
+  ],
+  "expect": {
+    "contains": "Σx=8"
+  }
+}

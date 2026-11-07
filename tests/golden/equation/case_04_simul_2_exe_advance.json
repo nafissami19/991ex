@@ -1,0 +1,30 @@
+{
+  "name": "4. Simultaneous 2 unknowns EXE key advances to next solution",
+  "keys": [
+    "MENU",
+    "A",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "4",
+    "=",
+    "=",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "y=",
+      "2"
+    ],
+    "result": "2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "13. SETUP Fraction Result ab/c outputs mixed fraction",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "DOWN",
+    "1",
+    "1",
+    "5",
+    "÷",
+    "3",
+    "="
+  ],
+  "expect": {
+    "result": "1 2/3"
+  }
+}

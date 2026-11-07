@@ -1,0 +1,29 @@
+{
+  "name": "10. Contrast setting persists across power off and on",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "3",
+    "RIGHT",
+    "RIGHT",
+    "EXE",
+    "SHIFT",
+    "AC",
+    "ON"
+  ],
+  "expect": {
+    "poweredOn": true,
+    "contrast": 10,
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

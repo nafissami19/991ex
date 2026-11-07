@@ -1,0 +1,21 @@
+{
+  "name": "19. SETUP Fix prompt back navigation via LEFT key",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "3",
+    "1",
+    "LEFT"
+  ],
+  "expect": {
+    "lines": [
+      "1:Fix",
+      "2:Sci",
+      "3:Norm"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "55. S<=>D key toggles fraction to decimal and back",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "÷",
+    "2",
+    "=",
+    "SD"
+  ],
+  "expect": {
+    "result": "0.5"
+  }
+}

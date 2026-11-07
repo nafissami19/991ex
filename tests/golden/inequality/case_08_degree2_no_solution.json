@@ -1,0 +1,19 @@
+{
+  "name": "8. Degree 2 User Guide: x² < 0 -> No Solution",
+  "keys": [
+    "MENU",
+    "B",
+    "2",
+    "2",
+    "1",
+    "=",
+    "0",
+    "=",
+    "0",
+    "=",
+    "="
+  ],
+  "expect": {
+    "result": "No Solution"
+  }
+}

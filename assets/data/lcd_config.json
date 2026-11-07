@@ -1,0 +1,102 @@
+{
+  "faceplate": {
+    "width": 644,
+    "height": 1250,
+    "cushionColor": "#ABABAB",
+    "keyFrameColor": "#FF00FF"
+  },
+  "display": {
+    "x": 130,
+    "y": 256,
+    "width": 384,
+    "height": 126,
+    "matrixWidth": 192,
+    "matrixHeight": 63,
+    "scale": 2,
+    "backgroundColor": "#D6E3D6",
+    "pixelOnColor": "#1A221A",
+    "pixelOffColor": "#C8D7C8"
+  },
+  "statusBar": {
+    "x": 130,
+    "y": 237,
+    "width": 384,
+    "height": 17,
+    "height1x": 8,
+    "width1x": 192
+  },
+  "modes": [
+    {
+      "id": 1,
+      "name": "Calculate",
+      "label": "1: Calculate",
+      "code": "1"
+    },
+    {
+      "id": 2,
+      "name": "Complex",
+      "label": "2: Complex",
+      "code": "2"
+    },
+    {
+      "id": 3,
+      "name": "Base-N",
+      "label": "3: Base-N",
+      "code": "3"
+    },
+    {
+      "id": 4,
+      "name": "Matrix",
+      "label": "4: Matrix",
+      "code": "4"
+    },
+    {
+      "id": 5,
+      "name": "Vector",
+      "label": "5: Vector",
+      "code": "5"
+    },
+    {
+      "id": 6,
+      "name": "Statistics",
+      "label": "6: Statistics",
+      "code": "6"
+    },
+    {
+      "id": 7,
+      "name": "Distribution",
+      "label": "7: Distribution",
+      "code": "7"
+    },
+    {
+      "id": 8,
+      "name": "Spreadsheet",
+      "label": "8: Spreadsheet",
+      "code": "8"
+    },
+    {
+      "id": 9,
+      "name": "Table",
+      "label": "9: Table",
+      "code": "9"
+    },
+    {
+      "id": 10,
+      "name": "Equation/Func",
+      "label": "A: Equation/Func",
+      "code": "A"
+    },
+    {
+      "id": 11,
+      "name": "Inequality",
+      "label": "B: Inequality",
+      "code": "B"
+    },
+    {
+      "id": 12,
+      "name": "Ratio",
+      "label": "C: Ratio",
+      "code": "C"
+    }
+  ]
+}

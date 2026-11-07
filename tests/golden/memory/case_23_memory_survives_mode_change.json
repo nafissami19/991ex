@@ -1,0 +1,23 @@
+{
+  "name": "23. Variables survive mode change to Table and back",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "7",
+    "7",
+    "STO",
+    "(-)",
+    "MENU",
+    "9",
+    "MENU",
+    "1",
+    "ALPHA",
+    "(-)",
+    "="
+  ],
+  "expect": {
+    "result": "77"
+  }
+}

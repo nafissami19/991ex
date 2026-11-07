@@ -1,0 +1,36 @@
+{
+  "name": "12. Simultaneous 2 unknowns stores solution into variable A via STO (-)",
+  "keys": [
+    "MENU",
+    "A",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "4",
+    "=",
+    "=",
+    "STO",
+    "(-)",
+    "MENU",
+    "1",
+    "ALPHA",
+    "(-)",
+    "="
+  ],
+  "expect": {
+    "result": "−1",
+    "lines": [
+      "A",
+      "−1"
+    ]
+  }
+}

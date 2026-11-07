@@ -1,0 +1,22 @@
+{
+  "name": "31. Stat Editor OPTN 2 2 clears all data producing Math ERROR on calc",
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "OPTN",
+    "2",
+    "2",
+    "OPTN",
+    "3"
+  ],
+  "expect": {
+    "error": "Math ERROR"
+  }
+}

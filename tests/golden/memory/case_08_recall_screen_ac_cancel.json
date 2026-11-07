@@ -1,0 +1,19 @@
+{
+  "name": "8. AC closes RECALL screen without inserting",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "5",
+    "×",
+    "SHIFT",
+    "STO",
+    "AC",
+    "2",
+    "="
+  ],
+  "expect": {
+    "result": "10"
+  }
+}

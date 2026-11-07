@@ -1,0 +1,13 @@
+{
+  "name": "6. MENU RIGHT = enters Complex mode",
+  "keys": [
+    "MENU",
+    "RIGHT",
+    "="
+  ],
+  "expect": {
+    "indicators": [
+      "i"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "9. M+ adds to independent memory and turns on M indicator",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "0",
+    "×",
+    "5",
+    "M+"
+  ],
+  "expect": {
+    "result": "50",
+    "indicators": [
+      "M"
+    ]
+  }
+}

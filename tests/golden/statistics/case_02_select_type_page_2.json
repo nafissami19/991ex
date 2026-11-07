@@ -1,0 +1,16 @@
+{
+  "name": "2. Select Type menu page 2 shows exponential, power, and inverse types",
+  "keys": [
+    "MENU",
+    "6",
+    "DOWN"
+  ],
+  "expect": {
+    "lines": [
+      "1:y=a•e^(bx)",
+      "2:y=a•b^x",
+      "3:y=a•x^b",
+      "4:y=a+b/x"
+    ]
+  }
+}

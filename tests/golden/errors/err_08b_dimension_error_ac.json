@@ -1,0 +1,21 @@
+{
+  "name": "Error 8b: Dimension ERROR dismissal via AC key",
+  "keys": [
+    "MENU",
+    "4",
+    "AC",
+    "OPTN",
+    "3",
+    "+",
+    "OPTN",
+    "4",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "lines": [
+      "",
+      ""
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "22. 1-Variable basic calculation mean x̄=6",
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "2",
+    "=",
+    "4",
+    "=",
+    "6",
+    "=",
+    "8",
+    "=",
+    "1",
+    "0",
+    "=",
+    "OPTN",
+    "3"
+  ],
+  "expect": {
+    "contains": "x̄=6"
+  }
+}

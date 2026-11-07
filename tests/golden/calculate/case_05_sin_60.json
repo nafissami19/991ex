@@ -1,0 +1,21 @@
+{
+  "name": "5. sin 60 degrees exact surd",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "sin",
+    "6",
+    "0",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "√3/2",
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "5. DEL key in editor deletes current row",
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "5",
+    "=",
+    "9",
+    "=",
+    "UP",
+    "DEL"
+  ],
+  "expect": {
+    "lines": [
+      "x",
+      "1: 5",
+      "2:",
+      "5"
+    ]
+  }
+}

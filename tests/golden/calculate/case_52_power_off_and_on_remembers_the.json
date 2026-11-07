@@ -1,0 +1,23 @@
+{
+  "name": "52. Power OFF and ON remembers the last input expression",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "+",
+    "2",
+    "+",
+    "3",
+    "SHIFT",
+    "AC",
+    "ON"
+  ],
+  "expect": {
+    "line": {
+      "index": 0,
+      "text": "1+2+3"
+    }
+  }
+}

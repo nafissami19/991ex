@@ -1,0 +1,23 @@
+{
+  "name": "Error 5: Variable ERROR on SOLVE equation without variable",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "1",
+    "+",
+    "2",
+    "==",
+    "3",
+    "SHIFT",
+    "CALC"
+  ],
+  "expect": {
+    "error": "Variable ERROR",
+    "lines": [
+      "Variable ERROR",
+      "[AC] :Cancel",
+      "[◀][▶]:Goto"
+    ]
+  }
+}

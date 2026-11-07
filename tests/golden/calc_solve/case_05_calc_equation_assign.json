@@ -1,0 +1,25 @@
+{
+  "name": "5. CALC with equation Y=2X+1 assigns result to Y",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "Y",
+    "==",
+    "2",
+    "x",
+    "+",
+    "1",
+    "CALC",
+    "3",
+    "=",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "y=2x+1",
+      "7"
+    ],
+    "result": "7"
+  }
+}

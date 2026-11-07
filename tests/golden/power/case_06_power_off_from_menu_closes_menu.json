@@ -1,0 +1,25 @@
+{
+  "name": "6. Power OFF while inside SETUP menu dismisses menu on waking",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "SHIFT",
+    "AC",
+    "ON"
+  ],
+  "expect": {
+    "poweredOn": true,
+    "lines": [
+      "",
+      ""
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "11. Ratio Mode return to Coefficient Editor from result screen",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "MENU",
+    "C",
+    "1",
+    "1",
+    "EXE",
+    "2",
+    "EXE",
+    "1",
+    "0",
+    "EXE",
+    "EXE",
+    "EXE"
+  ],
+  "expect": {
+    "lines": [
+      "1:2=X:10",
+      "D=10"
+    ]
+  }
+}

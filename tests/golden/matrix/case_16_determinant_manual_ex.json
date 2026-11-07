@@ -1,0 +1,32 @@
+{
+  "name": "16. User Guide Example: Det(MatA) scalar determinant = 1",
+  "keys": [
+    "MENU",
+    "4",
+    "1",
+    "2",
+    "2",
+    "2",
+    "=",
+    "1",
+    "=",
+    "1",
+    "=",
+    "1",
+    "=",
+    "AC",
+    "OPTN",
+    "DOWN",
+    "2",
+    "OPTN",
+    "3",
+    ")",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "Det(MatA)",
+      "1"
+    ]
+  }
+}

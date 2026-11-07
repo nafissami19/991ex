@@ -1,0 +1,26 @@
+{
+  "name": "9. Contrast gauge adjusts and saves with EXE",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "3",
+    "RIGHT",
+    "RIGHT",
+    "EXE"
+  ],
+  "expect": {
+    "poweredOn": true,
+    "contrast": 10,
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

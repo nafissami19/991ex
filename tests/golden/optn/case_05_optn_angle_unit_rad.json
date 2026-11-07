@@ -1,0 +1,22 @@
+{
+  "name": "5. OPTN Angle Unit 180° = π in Radian mode",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Radian"
+  },
+  "keys": [
+    "1",
+    "8",
+    "0",
+    "OPTN",
+    "2",
+    "1",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "180°",
+      "π"
+    ]
+  }
+}

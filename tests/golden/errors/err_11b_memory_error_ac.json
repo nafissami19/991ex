@@ -1,0 +1,26 @@
+{
+  "name": "Error 11b: Memory ERROR dismissal via AC key",
+  "keys": [
+    "MENU",
+    "8",
+    "OPTN",
+    "1",
+    "2",
+    "x²",
+    "=",
+    "A",
+    "1",
+    ":",
+    "E",
+    "4",
+    "5",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "lines": [
+      "   |    A   |    B   |",
+      "A1:"
+    ]
+  }
+}

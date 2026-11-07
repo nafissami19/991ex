@@ -1,0 +1,26 @@
+{
+  "name": "3. Pressing CALC again re-uses stored values",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "3",
+    "A",
+    "+",
+    "B",
+    "CALC",
+    "5",
+    "=",
+    "1",
+    "0",
+    "=",
+    "=",
+    "CALC"
+  ],
+  "expect": {
+    "lines": [
+      "3A+B",
+      "A=5"
+    ]
+  }
+}

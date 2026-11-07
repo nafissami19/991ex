@@ -1,0 +1,25 @@
+{
+  "name": "4. Complex multiplication (2+3i)(1+i) = -1+5i",
+  "keys": [
+    "MENU",
+    "2",
+    "(",
+    "2",
+    "+",
+    "3",
+    "i",
+    ")",
+    "(",
+    "1",
+    "+",
+    "i",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "−1+5i",
+    "indicators": [
+      "i"
+    ]
+  }
+}

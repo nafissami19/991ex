@@ -1,0 +1,29 @@
+{
+  "name": "71. Engineering notation stepping with ENG and SHIFT ENG",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "0",
+    "0",
+    "0",
+    "=",
+    "ENG",
+    "ENG",
+    "SHIFT",
+    "ENG"
+  ],
+  "expect": {
+    "result": "1×10³",
+    "lines": [
+      "1000",
+      "1×10³"
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

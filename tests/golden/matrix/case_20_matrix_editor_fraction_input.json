@@ -1,0 +1,22 @@
+{
+  "name": "20. Inputting fraction 1/2 in matrix editor formats as 1┘2",
+  "keys": [
+    "MENU",
+    "4",
+    "1",
+    "2",
+    "2",
+    "1",
+    "FRAC",
+    "2",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "MatA",
+      "[ 1┘2  0 ]",
+      "[ 0  0 ]",
+      "0"
+    ]
+  }
+}

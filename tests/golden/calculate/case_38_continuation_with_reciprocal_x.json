@@ -1,0 +1,20 @@
+{
+  "name": "38. Continuation with reciprocal x⁻¹ inserts Ans",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "4",
+    "=",
+    "INV",
+    "="
+  ],
+  "expect": {
+    "result": "1/4",
+    "line": {
+      "index": 0,
+      "text": "Ans⁻¹"
+    }
+  }
+}

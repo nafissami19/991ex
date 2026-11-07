@@ -1,0 +1,31 @@
+{
+  "name": "34. Stat calculation expression with mixed statistical variables x̄+Σx = 80",
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "1",
+    "0",
+    "=",
+    "2",
+    "0",
+    "=",
+    "3",
+    "0",
+    "=",
+    "AC",
+    "OPTN",
+    "DOWN",
+    "2",
+    "1",
+    "+",
+    "OPTN",
+    "DOWN",
+    "1",
+    "1",
+    "="
+  ],
+  "expect": {
+    "result": "80"
+  }
+}

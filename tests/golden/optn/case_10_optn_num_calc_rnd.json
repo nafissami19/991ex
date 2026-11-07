@@ -1,0 +1,29 @@
+{
+  "name": "10. OPTN Number Calculation Rnd(1÷3)×3 in Fix 2",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "numberFormat": {
+      "type": "FIX",
+      "value": 2
+    }
+  },
+  "keys": [
+    "OPTN",
+    "4",
+    "4",
+    "1",
+    "÷",
+    "3",
+    ")",
+    "×",
+    "3",
+    "=",
+    "S<=>D"
+  ],
+  "expect": {
+    "lines": [
+      "Rnd(1÷3)×3",
+      "0.99"
+    ]
+  }
+}

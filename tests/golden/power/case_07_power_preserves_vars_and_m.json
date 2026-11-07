@@ -1,0 +1,27 @@
+{
+  "name": "7. Memory variables and M survive power off and on",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "5",
+    "0",
+    "M+",
+    "SHIFT",
+    "AC",
+    "ON",
+    "ALPHA",
+    "M+",
+    "="
+  ],
+  "expect": {
+    "poweredOn": true,
+    "result": "50",
+    "indicators": [
+      "Math",
+      "D",
+      "M"
+    ]
+  }
+}

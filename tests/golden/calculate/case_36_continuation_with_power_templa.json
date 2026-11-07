@@ -1,0 +1,21 @@
+{
+  "name": "36. Continuation with power template inserts Ans",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "5",
+    "=",
+    "POWER",
+    "2",
+    "="
+  ],
+  "expect": {
+    "result": "25",
+    "line": {
+      "index": 0,
+      "text": "Ans²"
+    }
+  }
+}

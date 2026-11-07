@@ -1,0 +1,16 @@
+{
+  "name": "1. Table mode entry shows f(x)= prompt",
+  "keys": [
+    "MENU",
+    "9"
+  ],
+  "expect": {
+    "lines": [
+      "f(x)="
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

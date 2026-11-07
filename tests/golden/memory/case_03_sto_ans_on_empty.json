@@ -1,0 +1,24 @@
+{
+  "name": "3. Store Ans on empty line after AC",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "4",
+    "×",
+    "1",
+    "3",
+    "=",
+    "AC",
+    "STO",
+    "(-)"
+  ],
+  "expect": {
+    "lines": [
+      "Ans→A",
+      "182"
+    ]
+  }
+}

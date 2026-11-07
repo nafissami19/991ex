@@ -1,0 +1,22 @@
+{
+  "name": "25. 10 nPr 3",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "0",
+    "SHIFT",
+    "MUL",
+    "3",
+    "="
+  ],
+  "expect": {
+    "result": "720",
+    "indicators": [
+      "Math"
+    ]
+  },
+  "expectedFail": false
+}

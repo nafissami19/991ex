@@ -1,0 +1,8 @@
+{
+  "name": "4. OCT key (ln) switches base to OCT displaying 00000000000",
+  "keys": ["MENU", "3", "OCT"],
+  "expect": {
+    "contains": "Oct",
+    "result": "00000000000"
+  }
+}

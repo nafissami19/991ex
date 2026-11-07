@@ -1,0 +1,20 @@
+{
+  "name": "14. M+ immediately after result adds result to M",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "4",
+    "×",
+    "5",
+    "=",
+    "M+"
+  ],
+  "expect": {
+    "result": "20",
+    "indicators": [
+      "M"
+    ]
+  }
+}

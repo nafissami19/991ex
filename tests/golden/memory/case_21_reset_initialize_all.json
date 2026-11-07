@@ -1,0 +1,29 @@
+{
+  "name": "21. RESET 3 (Initialize All) resets setup and clears all variables",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Rad"
+  },
+  "keys": [
+    "1",
+    "0",
+    "M+",
+    "SHIFT",
+    "9",
+    "3",
+    "=",
+    "AC",
+    "ALPHA",
+    "M+",
+    "="
+  ],
+  "expect": {
+    "result": "0",
+    "indicators": [
+      "D"
+    ],
+    "notIndicators": [
+      "M"
+    ]
+  }
+}

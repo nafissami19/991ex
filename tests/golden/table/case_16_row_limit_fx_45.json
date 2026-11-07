@@ -1,0 +1,28 @@
+{
+  "name": "16. Row limit 45 for f(x) single function generates successfully",
+  "setup": {
+    "table": "F"
+  },
+  "keys": [
+    "MENU",
+    "9",
+    "x",
+    "=",
+    "1",
+    "=",
+    "4",
+    "5",
+    "=",
+    "1",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "x f(x)",
+      "1 1 1",
+      "2 2 2",
+      "3 3 3",
+      "1"
+    ]
+  }
+}

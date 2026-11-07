@@ -1,0 +1,21 @@
+{
+  "name": "23. OPTN 1 prompts for Degree and resets coefficients to 0",
+  "keys": [
+    "MENU",
+    "B",
+    "2",
+    "1",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "=",
+    "OPTN",
+    "1"
+  ],
+  "expect": {
+    "contains": "Degree? 2~4"
+  }
+}

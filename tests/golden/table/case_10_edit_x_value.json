@@ -1,0 +1,25 @@
+{
+  "name": "10. Editing an x value in the table recalculates row",
+  "keys": [
+    "MENU",
+    "9",
+    "x",
+    "x²",
+    "=",
+    "=",
+    "=",
+    "=",
+    "1",
+    "0",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "x f(x)",
+      "1 10 100",
+      "2 2 4",
+      "3 3 9",
+      "10"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "10. M- subtracts from independent memory",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "5",
+    "0",
+    "M+",
+    "1",
+    "0",
+    "+",
+    "5",
+    "SHIFT",
+    "M+"
+  ],
+  "expect": {
+    "result": "15",
+    "indicators": [
+      "M"
+    ]
+  }
+}

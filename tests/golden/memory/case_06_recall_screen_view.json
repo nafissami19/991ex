@@ -1,0 +1,17 @@
+{
+  "name": "6. SHIFT STO displays variable dashboard",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "7",
+    "STO",
+    "(-)",
+    "SHIFT",
+    "STO"
+  ],
+  "expect": {
+    "contains": "A=7"
+  }
+}

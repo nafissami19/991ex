@@ -1,0 +1,19 @@
+{
+  "name": "9. Degree 2 type 4 single point solution: x² ≤ 0 -> x = 0",
+  "keys": [
+    "MENU",
+    "B",
+    "2",
+    "4",
+    "1",
+    "=",
+    "0",
+    "=",
+    "0",
+    "=",
+    "="
+  ],
+  "expect": {
+    "result": "x=0"
+  }
+}

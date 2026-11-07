@@ -1,0 +1,20 @@
+{
+  "name": "14. Manual Example 6: ImP(2+3i) = 3",
+  "keys": [
+    "MENU",
+    "2",
+    "ImP",
+    "2",
+    "+",
+    "3",
+    "i",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "3",
+    "indicators": [
+      "i"
+    ]
+  }
+}

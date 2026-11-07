@@ -1,0 +1,188 @@
+=== Page 2 ===
+CONTENTS 
+About this Manual......................................................................................2
+Initializing the Calculator........................................................................... 2
+Precautions................................................................................................2
+Getting Started.......................................................................................... 3
+Calculation Mode.......................................................................................4
+Input and Output Formats......................................................................... 5
+Conﬁguring the Calculator Setup.............................................................. 6
+Inputting Expressions and Values............................................................. 8
+Toggling Calculation Results................................................................... 10
+Basic Calculations...................................................................................10
+Calculation History and Replay............................................................... 12
+Using Memory Functions.........................................................................13
+Function Calculations.............................................................................. 14
+QR Code Function...................................................................................17
+Complex Number Calculations................................................................18
+Using CALC.............................................................................................18
+Using SOLVE........................................................................................... 19
+Statistical Calculations.............................................................................20
+Base-n Calculations.................................................................................23
+Equation Calculations..............................................................................24
+Matrix Calculations.................................................................................. 25
+Creating a Number Table........................................................................ 27
+Vector Calculations..................................................................................28
+Inequality Calculations............................................................................ 29
+Ratio Calculations....................................................................................30
+Distribution Calculations..........................................................................31
+Using Spreadsheet..................................................................................33
+Scientiﬁc Constants.................................................................................37
+Metric Conversion....................................................................................37
+Errors....................................................................................................... 37
+Before Assuming Malfunction of the Calculator.......................................39
+Replacing the Battery..............................................................................39
+Technical Information...............................................................................40
+■■ Frequently Asked Questions ■■.........................................................42
+Reference Sheet...................................................................................... 44
+• In no event shall CASIO Computer Co., Ltd. be liable to anyone for
+special, collateral, incidental, or consequential damages in connection
+with or arising out of the purchase or use of this product and items that
+come with it.
+• Moreover, CASIO Computer Co., Ltd. shall not be liable for any claim of
+any kind whatsoever by any other party arising out of the use of this
+product and the items that come with it.
+1
+
+=== Page 6 ===
+For this: Select this icon:
+General calculations
+ (Calculate)
+Complex number calculations
+ (Complex)
+Calculations involving speciﬁc number
+systems (binary, octal, decimal,
+hexadecimal)
+(Base-N)
+Matrix calculations
+ (Matrix)
+Vector calculations
+ (Vector)
+Statistical and regression calculations
+ (Statistics)
+Distribution calculations
+ (Distribution)
+Spreadsheet calculations
+ (Spreadsheet)
+Generate a number table based on one
+or two functions
+ (Table)
+Equation and function calculations
+ (Equation/Func)
+Inequality calculations
+ (Inequality)
+Ratio calculations
+ (Ratio)
+3. Press  to display the initial screen of the mode whose icon you
+selected.
+Note: The initial default calculation mode is the Calculate Mode.
+Input and Output Formats 
+Before starting a calculation on the calculator, you should ﬁrst use the
+operations in the table below to specify the formats that should be applied
+for calculation formula input and calculation result output.
+To specify this type of input and output:
+Press (SETUP)
+
+(Input/Output) and then
+press:
+Input: Natural Textbook; Output: Format that
+includes a fraction, √, or π*1 (MathI/MathO)
+Input: Natural Textbook; Output: Converted
+to decimal value (MathI/DecimalO)
+Input: Linear*2; Output: Decimal or fraction (LineI/LineO)
+5
+
+=== Page 30 ===
+3. Use the Vector Editor that appears to input the elements of the vector.
+To edit the elements of a vector variable
+Press (Edit Vector), and then, on the menu that appears, select the
+vector variable you want to edit.
+To copy vector variable (or VctAns) contents
+1. Use the Vector Editor to display the vector you want to copy.
+• If you want to copy VctAns contents, perform the following to display
+the VctAns screen: (VctAns).
+2. Press , and then perform one of the following key operations to
+specify the copy destination: (VctA), (VctB), (VctC), or
+(VctD).
+• This will display the Vector Editor with the contents of the copy
+destination.
+Vector Calculation Examples
+The examples below use VctA = (1, 2) and VctB = (3, 4), and VctC = (2, -1,
+2).
+VctA • VctB (Vector dot product)
+ VctA (Dot Product) VctB 
+VctA × VctB (Vector cross product)
+ VctA  VctB 
+To obtain the absolute values of VctC
+(Abs) VctC 
+To determine the angle formed by VctA and VctB to three decimal places
+(Fix 3). (Angle Unit: Degree)
+(SETUP)(Number Format)(Fix)
+(Angle) VctA (,)
+VctB 
+To normalize VctB
+(Unit Vector) VctB 
+Inequality Calculations 
+You can use the procedure below to solve a 2nd, 3rd, or 4th degree
+inequality.
+1. Press , select the Inequality Mode icon, and then press .
+2. On the dialog box that appears, use a number key ( to ) to
+specify the degree of the inequality.
+3. On the menu that appears, use keys  through  to select the
+inequality symbol type and orientation.
+4. Use the Coefﬁcient Editor that appears to input coefﬁcient values.
+• To solve x2 + 2x − 3 < 0, for example, input the following for the
+coefﬁcients (a = 1, b = 2, c = -3): 123.
+• Pressing  will clear all of the coefﬁcients to zero.
+5. After all the values are the way you want, press .
+• This will display the solutions.
+29
+
+=== Page 31 ===
+• To return to the Coefﬁcient Editor while the solutions are displayed,
+press .
+To change the Inequality Type: Pressing (Polynomial) displays a
+dialog box that you can use to select an inequality degree. Changing the
+degree of an inequality causes the values of all Coefﬁcient Editor
+coefﬁcients to become zero.
+Inequality Mode Calculation Examples
+3x3 + 3x2 − x > 0
+ (Polynomial)(3rd degree inequality)(ax3+bx2+cx+d>0)
+331
+
+
+Note
+• Solutions are displayed as shown in the
+screen shot nearby when something
+other than MathI/MathO is selected for
+the Input/Output setting on the setup
+menu.
+• “All Real Numbers” appears on the solution screen when the solution of
+an inequality is all numbers (such as x2 ≧ 0).
+• “No Solution” appears on the solution screen when no solution exists for
+an inequality (such as x2 < 0).
+Ratio Calculations 
+The Ratio Mode lets you determine the value of X in the ratio expression A :
+B = X : D (or A : B = C : X) when the values of A, B, C and D are known. The
+following shows the general procedure for using Ratio.
+1. Press , select the Ratio Mode icon, and then press .
+2. On the menu that appears, select (A:B=X:D) or (A:B=C:X).
+3. On the Coefﬁcient Editor screen that appears, input up to 10 digits for
+each of the required values (A, B, C, D).
+• To solve 3 : 8 = X : 12 for X, for example, press  in step 1, and
+then input the following for the coefﬁcients (A = 3, B = 8, D = 12):
+3812.
+• Pressing  will reset all of the coefﬁcients to one.
+4. After all the values are the way you want, press .
+• This displays the solution (value of X). Pressing  again will return
+to the Coefﬁcient Editor.
+Important: A Math ERROR will occur if you perform a calculation while 0 is
+input for a coefﬁcient.
+To calculate X in the ratio 1 : 2 = X : 10
+(Select Type)(A:B=X:D)
+1210
+ (X=) 5
+Changing the Ratio Expression Type
+Press (Select Type) and then select the ratio expression type you
+want from the menu that appears.
+30

@@ -1,0 +1,24 @@
+{
+  "name": "59. Fraction template input and evaluation",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "FRAC",
+    "1",
+    "DOWN",
+    "2",
+    "="
+  ],
+  "expect": {
+    "result": "1/2",
+    "lines": [
+      "1/2",
+      "1/2"
+    ],
+    "indicators": [
+      "Math"
+    ]
+  }
+}

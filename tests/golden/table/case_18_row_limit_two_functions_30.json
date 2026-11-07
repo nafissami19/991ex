@@ -1,0 +1,30 @@
+{
+  "name": "18. Row limit 30 for two functions f(x) and g(x) generates successfully",
+  "setup": {
+    "table": "FG"
+  },
+  "keys": [
+    "MENU",
+    "9",
+    "x",
+    "=",
+    "x",
+    "=",
+    "1",
+    "=",
+    "3",
+    "0",
+    "=",
+    "1",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "x f(x) g(x)",
+      "1 1 1 1",
+      "2 2 2 2",
+      "3 3 3 3",
+      "1"
+    ]
+  }
+}

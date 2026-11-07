@@ -1,0 +1,29 @@
+{
+  "name": "29. Inverse regression Math ERROR on zero x",
+  "keys": [
+    "MENU",
+    "6",
+    "DOWN",
+    "4",
+    "0",
+    "=",
+    "1",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "2",
+    "=",
+    "3",
+    "=",
+    "AC",
+    "OPTN",
+    "3"
+  ],
+  "expect": {
+    "lines": [
+      "Math ERROR",
+      "[AC] :Cancel"
+    ]
+  }
+}

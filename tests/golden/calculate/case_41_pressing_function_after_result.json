@@ -1,0 +1,25 @@
+{
+  "name": "41. Pressing function after result clears and starts fresh calculation",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "2",
+    "+",
+    "3",
+    "=",
+    "sin",
+    "3",
+    "0",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "1/2",
+    "line": {
+      "index": 0,
+      "text": "sin(30)"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "2. Define VctA 2-dimensional (1, 2) and exit with AC",
+  "keys": [
+    "MENU",
+    "5",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "indicators": [
+      "D",
+      "Math"
+    ]
+  }
+}

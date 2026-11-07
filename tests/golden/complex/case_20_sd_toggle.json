@@ -1,0 +1,23 @@
+{
+  "name": "20. S<=>D toggles exact surds to decimal form",
+  "keys": [
+    "MENU",
+    "2",
+    "SQRT",
+    "2",
+    "RIGHT",
+    "+",
+    "SQRT",
+    "2",
+    "RIGHT",
+    "i",
+    "=",
+    "SD"
+  ],
+  "expect": {
+    "result": "1.414213562+1.414213562i",
+    "indicators": [
+      "i"
+    ]
+  }
+}

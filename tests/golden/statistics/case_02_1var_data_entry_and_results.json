@@ -1,0 +1,31 @@
+{
+  "name": "2. 1-Variable basic data entry and result screen",
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "1",
+    "0",
+    "=",
+    "2",
+    "0",
+    "=",
+    "3",
+    "0",
+    "=",
+    "AC",
+    "OPTN",
+    "2"
+  ],
+  "expect": {
+    "lines": [
+      "x̄=20",
+      "Σx=60",
+      "Σx²=1400",
+      "σ²x=66.66666667"
+    ],
+    "indicators": [
+      "Down"
+    ]
+  }
+}

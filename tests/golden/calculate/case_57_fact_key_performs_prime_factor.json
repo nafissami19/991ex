@@ -1,0 +1,19 @@
+{
+  "name": "57. FACT key performs prime factorization on result",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "0",
+    "1",
+    "4",
+    "=",
+    "SHIFT",
+    "DEG"
+  ],
+  "expect": {
+    "result": "2×3×13²"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "2. Any key except ON does nothing while powered off",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "AC",
+    "1",
+    "2",
+    "3",
+    "+",
+    "EXE",
+    "SHIFT",
+    "ALPHA",
+    "DEL",
+    "MENU"
+  ],
+  "expect": {
+    "poweredOn": false,
+    "lines": [],
+    "notIndicators": ["Math", "D", "M", "S", "A"]
+  }
+}

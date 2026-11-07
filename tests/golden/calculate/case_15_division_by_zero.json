@@ -1,0 +1,16 @@
+{
+  "name": "15. Division by zero Math ERROR",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "÷",
+    "0",
+    "="
+  ],
+  "expect": {
+    "error": "Math ERROR"
+  }
+}

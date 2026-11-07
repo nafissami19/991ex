@@ -1,0 +1,19 @@
+{
+  "name": "Error 1b: Math ERROR dismissal via AC key",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "1",
+    "÷",
+    "0",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "lines": [
+      "",
+      ""
+    ]
+  }
+}

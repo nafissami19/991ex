@@ -1,0 +1,14 @@
+{
+  "name": "5. MENU LEFT wraps around to Ratio mode with C:Ratio",
+  "keys": [
+    "MENU",
+    "LEFT"
+  ],
+  "expect": {
+    "lines": [
+      "Vector Statistics Distribution Spreadsheet",
+      "Table Equation/Func Inequality [Ratio]",
+      "C:Ratio"
+    ]
+  }
+}

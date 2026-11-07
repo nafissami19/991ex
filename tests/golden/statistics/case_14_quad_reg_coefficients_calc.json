@@ -1,0 +1,34 @@
+{
+  "name": "14. Recall quadratic regression coefficient c on calculation screen",
+  "keys": [
+    "MENU",
+    "6",
+    "3",
+    "0",
+    "=",
+    "1",
+    "=",
+    "2",
+    "=",
+    "DOWN",
+    "RIGHT",
+    "1",
+    "=",
+    "2",
+    "=",
+    "5",
+    "=",
+    "AC",
+    "OPTN",
+    "DOWN",
+    "4",
+    "3",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "c",
+      "1"
+    ]
+  }
+}

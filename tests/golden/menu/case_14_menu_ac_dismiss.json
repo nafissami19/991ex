@@ -1,0 +1,13 @@
+{
+  "name": "14. MENU AC dismisses menu returning to calculation screen",
+  "keys": [
+    "MENU",
+    "AC"
+  ],
+  "expect": {
+    "lines": [
+      "",
+      ""
+    ]
+  }
+}

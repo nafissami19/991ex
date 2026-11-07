@@ -1,0 +1,21 @@
+{
+  "name": "6. OPTN Engineer Symbol 500k = 500000",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "5",
+    "0",
+    "0",
+    "OPTN",
+    "3",
+    "6",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "500k",
+      "500000"
+    ]
+  }
+}

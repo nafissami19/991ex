@@ -1,0 +1,23 @@
+{
+  "name": "62. Cube root evaluation",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "SQRT",
+    "8",
+    "="
+  ],
+  "expect": {
+    "result": "2",
+    "lines": [
+      "∛8",
+      "2"
+    ],
+    "indicators": [
+      "Math"
+    ]
+  }
+}

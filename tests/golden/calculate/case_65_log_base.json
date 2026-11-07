@@ -1,0 +1,24 @@
+{
+  "name": "65. Logarithm with base template",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "LOG_AB",
+    "2",
+    "RIGHT",
+    "8",
+    "="
+  ],
+  "expect": {
+    "result": "3",
+    "lines": [
+      "log_2(8)",
+      "3"
+    ],
+    "indicators": [
+      "Math"
+    ]
+  }
+}

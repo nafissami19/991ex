@@ -1,0 +1,8 @@
+{
+  "name": "9. Result conversion from DEC 555 to OCT 00000001053",
+  "keys": ["MENU", "3", "1", "5", "*", "3", "7", "=", "OCT"],
+  "expect": {
+    "contains": "Oct",
+    "result": "00000001053"
+  }
+}

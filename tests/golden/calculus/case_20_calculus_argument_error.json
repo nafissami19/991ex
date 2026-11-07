@@ -1,0 +1,12 @@
+{
+  "name": "20. Sub-1e-14 tolerance produces Argument ERROR",
+  "setup": {
+    "inputOutput": "LineI/LineO"
+  },
+  "keys": [
+    "∫", "x", ",", "0", ",", "1", ",", "1", "×10ˣ", "(-)", "1", "5", ")", "="
+  ],
+  "expect": {
+    "error": "Argument ERROR"
+  }
+}

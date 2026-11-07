@@ -1,0 +1,36 @@
+{
+  "name": "6. Quadratic regression higher-order sum Σx⁴ = 98",
+  "keys": [
+    "MENU",
+    "6",
+    "3",
+    "0",
+    "=",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "RIGHT",
+    "DOWN",
+    "3",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "6",
+    "=",
+    "AC",
+    "OPTN",
+    "DOWN",
+    "1",
+    "DOWN",
+    "4",
+    "="
+  ],
+  "expect": {
+    "result": "98"
+  }
+}

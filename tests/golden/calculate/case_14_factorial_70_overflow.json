@@ -1,0 +1,18 @@
+{
+  "name": "14. 70 factorial overflow Math ERROR",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "7",
+    "0",
+    "SHIFT",
+    "INV",
+    "="
+  ],
+  "expect": {
+    "error": "Math ERROR"
+  },
+  "expectedFail": false
+}

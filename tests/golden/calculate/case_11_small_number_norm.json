@@ -1,0 +1,23 @@
+{
+  "name": "11. 0.001 in Norm 1 (MathI/DecimalO) → exponential",
+  "setup": {
+    "inputOutput": "MathI/DecimalO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "0",
+    ".",
+    "0",
+    "0",
+    "1",
+    "="
+  ],
+  "expect": {
+    "result": "1×10⁻³",
+    "indicators": [
+      "Math"
+    ]
+  },
+  "expectedFail": false,
+  "note": "MathO would show the fraction 1/1000 (see case_33). VERIFY ON EMULATOR."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "25. Inverting singular matrix (det=0) throws Math ERROR",
+  "keys": [
+    "MENU",
+    "4",
+    "1",
+    "2",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "2",
+    "=",
+    "4",
+    "=",
+    "AC",
+    "OPTN",
+    "3",
+    "x⁻¹",
+    "="
+  ],
+  "expect": {
+    "error": "Math ERROR"
+  }
+}

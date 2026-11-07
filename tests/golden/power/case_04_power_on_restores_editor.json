@@ -1,0 +1,26 @@
+{
+  "name": "4. Power OFF and ON preserves unfinished input expression",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "sin",
+    "3",
+    "0",
+    "SHIFT",
+    "AC",
+    "ON"
+  ],
+  "expect": {
+    "poweredOn": true,
+    "line": {
+      "index": 0,
+      "text": "sin(30"
+    },
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "75. Random number Ran# evaluation",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "DOT",
+    "="
+  ],
+  "expect": {
+    "result": "1/2",
+    "lines": [
+      "Ran#",
+      "1/2"
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

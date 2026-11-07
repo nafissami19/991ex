@@ -1,0 +1,36 @@
+{
+  "name": "27. Inverse regression y=a+b/x results screen (a, b, r)",
+  "keys": [
+    "MENU",
+    "6",
+    "DOWN",
+    "4",
+    "1",
+    "=",
+    "2",
+    "=",
+    "4",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "UP",
+    "5",
+    "=",
+    "3",
+    "=",
+    "2",
+    "=",
+    "AC",
+    "OPTN",
+    "3"
+  ],
+  "expect": {
+    "lines": [
+      "y=a+b/x",
+      "a=1",
+      "b=4",
+      "r=1"
+    ]
+  }
+}

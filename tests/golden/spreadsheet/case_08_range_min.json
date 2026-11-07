@@ -1,0 +1,35 @@
+{
+  "name": "8. Min(A1:A3) calculates minimum of cell values (50, 20, 80 -> 20)",
+  "keys": [
+    "MENU",
+    "8",
+    "5",
+    "0",
+    "=",
+    "2",
+    "0",
+    "=",
+    "8",
+    "0",
+    "=",
+    "==",
+    "OPTN",
+    "DOWN",
+    "1",
+    "A",
+    "1",
+    ":",
+    "A",
+    "3",
+    ")",
+    "=",
+    "UP"
+  ],
+  "expect": {
+    "contains": "20",
+    "line": {
+      "index": 4,
+      "text": "A4:=Min(A1:A3)"
+    }
+  }
+}

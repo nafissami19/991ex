@@ -1,0 +1,31 @@
+{
+  "name": "25. 1-Variable even-length dataset median Med=7 in calc screen",
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "2",
+    "=",
+    "4",
+    "=",
+    "6",
+    "=",
+    "8",
+    "=",
+    "1",
+    "0",
+    "=",
+    "1",
+    "2",
+    "=",
+    "AC",
+    "OPTN",
+    "DOWN",
+    "3",
+    "3",
+    "="
+  ],
+  "expect": {
+    "result": "7"
+  }
+}

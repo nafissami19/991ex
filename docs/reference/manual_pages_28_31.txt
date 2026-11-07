@@ -1,0 +1,188 @@
+=== Page 28 ===
+(Transposition) MatB 
+To invert, square, and cube MatA (MatA-1, MatA2, MatA3)
+Note: You cannot use  for this input. Use  to input “-1”,  to specify
+squaring, and (x3) to specify cubing.
+ MatA 
+ MatA 
+ MatA (x3)
+To obtain the absolute value of each element of MatB (Abs(MatB))
+(Abs) MatB 
+Creating a Number Table 
+The Table Mode generates a number table based on one or two functions.
+Example: To generate a number table for the functions 𝑓 𝑥 =𝑥 2 + 1
+2 and
+g 𝑥 =𝑥 2 − 1
+2 for the range -1 ≦  𝑥 ≦  1, incremented in steps of 0.5
+1. Press , select the Table Mode icon, and then press .
+2. Conﬁgure settings to generate a number table from two functions.
+(SETUP)(Table)(f(x),g(x))
+3. Input 𝑥
+2 + 1
+2 .
+(x)12
+4. Input 𝑥2 − 1
+2 .
+(x)12
+5. Press . On the Table Range dialog box that appears, input values for
+Start (Default: 1), End (Default: 5), and Step (Default: 1).
+110.5
+6. Press  to generate the number table.
+• Press  to return to the screen in
+step 3.
+Tip
+• In the number table shown in step 6, you can change the value in the
+currently highlighted x cell. Changing the x value causes the f(x) and g(x)
+values in the same line to be updated accordingly.
+• If there is value in the x cell above the currently highlighted x cell,
+pressing  or  automatically inputs into the highlighted cell the
+value equal to the value of the cell above it plus the step value. So also,
+27
+
+=== Page 29 ===
+pressing  automatically inputs the value equal to the value of the cell
+above less the step value. The f(x) and g(x) values in the same line are
+also updated accordingly.
+Note
+• After pressing  in step 4 above, proceeding from step 5 onwards
+without inputting anything for g(x) will generate a number table for f(x)
+only.
+• The maximum number of rows in the generated number table depends
+on the setup menu table setting. Up to 45 rows are supported for the
+“f(x)” setting, while 30 rows are supported for the “f(x),g(x)” setting.
+• The number table generation operation causes the contents of variable x
+to be changed.
+Important: Functions input in this mode are deleted whenever the Input/
+Output settings are changed in the Table Mode.
+Vector Calculations 
+Use the Vector Mode to perform 2-dimensional and 3-dimensional vector
+calculations. To perform a vector calculation, use the special vector
+variables (VctA, VctB, VctC, VctD) as shown in the example below.
+Example: (1, 2) + (3, 4)
+1. Press , select the Vector Mode icon, and then press .
+2. Press (VctA)(2 dimensions).
+• This will display the Vector Editor for
+input of the 2-dimensional vector for
+VctA.
+3. Input the elements of VctA: 12.
+4. Perform the following key operation: (Deﬁne
+Vector)(VctB)(2 dimensions).
+5. Input the elements of VctB: 34.
+6. Press  to advance to the calculation screen, and perform the
+calculation (VctA + VctB): (VctA)(VctB).
+• This will display the VctAns (Vector
+Answer Memory) screen with the
+calculation results.
+Vector Answer Memory
+Whenever the result of a calculation executed in the Vector Mode is a
+vector, the VctAns screen will appear with the result. The result also will be
+assigned to a variable named “VctAns”.
+The VctAns variable can be used in calculations as described below.
+• To insert the VctAns variable into a calculation, perform the following key
+operation: (VctAns).
+• Pressing any one of the following keys while the VctAns screen is
+displayed will switch automatically to the calculation screen: , ,
+, .
+Assigning and Editing Vector Variable Data
+To assign new data to a vector variable
+1. Press (Deﬁne Vector), and then, on the menu that appears,
+select the vector variable to which you want to assign data.
+2. On the dialog box that appears, press  or  to specify the vector
+dimension.
+28
+
+=== Page 30 ===
+3. Use the Vector Editor that appears to input the elements of the vector.
+To edit the elements of a vector variable
+Press (Edit Vector), and then, on the menu that appears, select the
+vector variable you want to edit.
+To copy vector variable (or VctAns) contents
+1. Use the Vector Editor to display the vector you want to copy.
+• If you want to copy VctAns contents, perform the following to display
+the VctAns screen: (VctAns).
+2. Press , and then perform one of the following key operations to
+specify the copy destination: (VctA), (VctB), (VctC), or
+(VctD).
+• This will display the Vector Editor with the contents of the copy
+destination.
+Vector Calculation Examples
+The examples below use VctA = (1, 2) and VctB = (3, 4), and VctC = (2, -1,
+2).
+VctA • VctB (Vector dot product)
+ VctA (Dot Product) VctB 
+VctA × VctB (Vector cross product)
+ VctA  VctB 
+To obtain the absolute values of VctC
+(Abs) VctC 
+To determine the angle formed by VctA and VctB to three decimal places
+(Fix 3). (Angle Unit: Degree)
+(SETUP)(Number Format)(Fix)
+(Angle) VctA (,)
+VctB 
+To normalize VctB
+(Unit Vector) VctB 
+Inequality Calculations 
+You can use the procedure below to solve a 2nd, 3rd, or 4th degree
+inequality.
+1. Press , select the Inequality Mode icon, and then press .
+2. On the dialog box that appears, use a number key ( to ) to
+specify the degree of the inequality.
+3. On the menu that appears, use keys  through  to select the
+inequality symbol type and orientation.
+4. Use the Coefﬁcient Editor that appears to input coefﬁcient values.
+• To solve x2 + 2x − 3 < 0, for example, input the following for the
+coefﬁcients (a = 1, b = 2, c = -3): 123.
+• Pressing  will clear all of the coefﬁcients to zero.
+5. After all the values are the way you want, press .
+• This will display the solutions.
+29
+
+=== Page 31 ===
+• To return to the Coefﬁcient Editor while the solutions are displayed,
+press .
+To change the Inequality Type: Pressing (Polynomial) displays a
+dialog box that you can use to select an inequality degree. Changing the
+degree of an inequality causes the values of all Coefﬁcient Editor
+coefﬁcients to become zero.
+Inequality Mode Calculation Examples
+3x3 + 3x2 − x > 0
+ (Polynomial)(3rd degree inequality)(ax3+bx2+cx+d>0)
+331
+
+
+Note
+• Solutions are displayed as shown in the
+screen shot nearby when something
+other than MathI/MathO is selected for
+the Input/Output setting on the setup
+menu.
+• “All Real Numbers” appears on the solution screen when the solution of
+an inequality is all numbers (such as x2 ≧ 0).
+• “No Solution” appears on the solution screen when no solution exists for
+an inequality (such as x2 < 0).
+Ratio Calculations 
+The Ratio Mode lets you determine the value of X in the ratio expression A :
+B = X : D (or A : B = C : X) when the values of A, B, C and D are known. The
+following shows the general procedure for using Ratio.
+1. Press , select the Ratio Mode icon, and then press .
+2. On the menu that appears, select (A:B=X:D) or (A:B=C:X).
+3. On the Coefﬁcient Editor screen that appears, input up to 10 digits for
+each of the required values (A, B, C, D).
+• To solve 3 : 8 = X : 12 for X, for example, press  in step 1, and
+then input the following for the coefﬁcients (A = 3, B = 8, D = 12):
+3812.
+• Pressing  will reset all of the coefﬁcients to one.
+4. After all the values are the way you want, press .
+• This displays the solution (value of X). Pressing  again will return
+to the Coefﬁcient Editor.
+Important: A Math ERROR will occur if you perform a calculation while 0 is
+input for a coefﬁcient.
+To calculate X in the ratio 1 : 2 = X : 10
+(Select Type)(A:B=X:D)
+1210
+ (X=) 5
+Changing the Ratio Expression Type
+Press (Select Type) and then select the ratio expression type you
+want from the menu that appears.
+30
+

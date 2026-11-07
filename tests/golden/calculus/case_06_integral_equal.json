@@ -1,0 +1,13 @@
+{
+  "name": "6. Integral with equal limits: ∫_5^5 sin(x) dx = 0",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "RAD"
+  },
+  "keys": [
+    "INTEGRAL", "sin", "x", ")", "RIGHT", "5", "RIGHT", "5", "="
+  ],
+  "expect": {
+    "result": "0"
+  }
+}

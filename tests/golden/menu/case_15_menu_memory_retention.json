@@ -1,0 +1,20 @@
+{
+  "name": "15. Variables and M indicator persist after switching mode via MENU 2",
+  "keys": [
+    "5",
+    "STO",
+    "(-)",
+    "1",
+    "0",
+    "STO",
+    "M_PLUS",
+    "MENU",
+    "2"
+  ],
+  "expect": {
+    "indicators": [
+      "M",
+      "i"
+    ]
+  }
+}

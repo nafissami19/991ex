@@ -1,0 +1,23 @@
+{
+  "name": "6. SETUP Input/Output MathI/DecimalO output",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "1",
+    "2",
+    "1",
+    "÷",
+    "2",
+    "="
+  ],
+  "expect": {
+    "result": "0.5",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

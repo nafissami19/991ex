@@ -1,0 +1,26 @@
+{
+  "name": "33. Switching between paired regression types retains existing data",
+  "keys": [
+    "MENU",
+    "6",
+    "2",
+    "1",
+    "=",
+    "3",
+    "=",
+    "RIGHT",
+    "DOWN",
+    "2",
+    "=",
+    "4",
+    "=",
+    "OPTN",
+    "1",
+    "3",
+    "OPTN",
+    "3"
+  ],
+  "expect": {
+    "contains": "Σx=4"
+  }
+}

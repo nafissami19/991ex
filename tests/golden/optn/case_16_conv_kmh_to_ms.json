@@ -1,0 +1,22 @@
+{
+  "name": "16. Metric conversion: 72 km/h▸m/s = 20",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "7",
+    "2",
+    "SHIFT",
+    "8",
+    "DOWN",
+    "1",
+    "1",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "72km/h▸m/s",
+      "20"
+    ]
+  }
+}

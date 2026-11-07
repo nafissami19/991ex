@@ -1,0 +1,25 @@
+{
+  "name": "4. Ratio Mode Type 2 (A:B=C:X): 2:3=4:X -> X=6",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "MENU",
+    "C",
+    "2",
+    "2",
+    "EXE",
+    "3",
+    "EXE",
+    "4",
+    "EXE",
+    "EXE"
+  ],
+  "expect": {
+    "lines": [
+      "X=",
+      "6"
+    ],
+    "result": "6"
+  }
+}

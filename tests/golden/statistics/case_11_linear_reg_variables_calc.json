@@ -1,0 +1,37 @@
+{
+  "name": "11. Recall linear regression coefficient b in expression: b × 10 = 20",
+  "keys": [
+    "MENU",
+    "6",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "DOWN",
+    "RIGHT",
+    "2",
+    "=",
+    "4",
+    "=",
+    "6",
+    "=",
+    "AC",
+    "OPTN",
+    "DOWN",
+    "4",
+    "2",
+    "×",
+    "1",
+    "0",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "b×10",
+      "20"
+    ]
+  }
+}

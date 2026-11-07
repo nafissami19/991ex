@@ -1,0 +1,35 @@
+{
+  "name": "24. 1-Variable odd-length dataset median Med=4",
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "4",
+    "=",
+    "5",
+    "=",
+    "6",
+    "=",
+    "7",
+    "=",
+    "OPTN",
+    "3",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "DOWN"
+  ],
+  "expect": {
+    "contains": "Med=4"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "20. e exponential regression estimator: 4ŷ = 16",
+  "keys": [
+    "MENU",
+    "6",
+    "DOWN",
+    "1",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "DOWN",
+    "RIGHT",
+    "2",
+    "=",
+    "4",
+    "=",
+    "8",
+    "=",
+    "AC",
+    "4",
+    "OPTN",
+    "DOWN",
+    "4",
+    "DOWN",
+    "1",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "4ŷ",
+      "16"
+    ]
+  }
+}

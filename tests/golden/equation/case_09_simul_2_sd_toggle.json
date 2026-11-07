@@ -1,0 +1,27 @@
+{
+  "name": "9. Simultaneous 2 unknowns S<=>D toggles fraction to decimal",
+  "keys": [
+    "MENU",
+    "A",
+    "1",
+    "2",
+    "2",
+    "=",
+    "4",
+    "=",
+    "5",
+    "=",
+    "3",
+    "=",
+    "(-)",
+    "1",
+    "=",
+    "1",
+    "=",
+    "=",
+    "SD"
+  ],
+  "expect": {
+    "contains": "0.6428571429"
+  }
+}

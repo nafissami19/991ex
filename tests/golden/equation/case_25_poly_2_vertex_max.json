@@ -1,0 +1,24 @@
+{
+  "name": "25. Polynomial degree 2 local maximum vertex with a < 0",
+  "keys": [
+    "MENU",
+    "A",
+    "2",
+    "2",
+    "(-)",
+    "1",
+    "=",
+    "4",
+    "=",
+    "(-)",
+    "3",
+    "=",
+    "=",
+    "DOWN",
+    "DOWN"
+  ],
+  "expect": {
+    "contains": "x-Value of Max",
+    "result": "2"
+  }
+}

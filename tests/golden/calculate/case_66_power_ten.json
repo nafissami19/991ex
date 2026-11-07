@@ -1,0 +1,23 @@
+{
+  "name": "66. Power of ten template",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "LOG_AB",
+    "3",
+    "="
+  ],
+  "expect": {
+    "result": "1000",
+    "lines": [
+      "10^(3)",
+      "1000"
+    ],
+    "indicators": [
+      "Math"
+    ]
+  }
+}

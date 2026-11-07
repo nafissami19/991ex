@@ -1,0 +1,37 @@
+{
+  "name": "18. Exponential e regression y=a•e^(bx) results screen (a, b, r)",
+  "keys": [
+    "MENU",
+    "6",
+    "DOWN",
+    "1",
+    "0",
+    "=",
+    "1",
+    "=",
+    "2",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "UP",
+    "3",
+    "=",
+    "6",
+    "=",
+    "1",
+    "2",
+    "=",
+    "AC",
+    "OPTN",
+    "3"
+  ],
+  "expect": {
+    "lines": [
+      "y=a•e^(bx)",
+      "a=3",
+      "b=0.6931471806",
+      "r=1"
+    ]
+  }
+}

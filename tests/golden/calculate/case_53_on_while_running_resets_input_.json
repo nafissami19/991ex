@@ -1,0 +1,21 @@
+{
+  "name": "53. ON while running resets input and clears calculation history",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "+",
+    "1",
+    "=",
+    "ON",
+    "UP"
+  ],
+  "expect": {
+    "line": {
+      "index": 0,
+      "text": ""
+    }
+  }
+}

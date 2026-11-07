@@ -1,0 +1,25 @@
+{
+  "name": "7. Simultaneous 2 unknowns AC in editor clears all coefficients to zero",
+  "keys": [
+    "MENU",
+    "A",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "4",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "contains": "a1=0"
+  }
+}

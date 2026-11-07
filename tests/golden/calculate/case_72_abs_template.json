@@ -1,0 +1,25 @@
+{
+  "name": "72. Absolute value template evaluation",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "LPAREN",
+    "NEG",
+    "5",
+    "="
+  ],
+  "expect": {
+    "result": "5",
+    "lines": [
+      "|-5|",
+      "5"
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

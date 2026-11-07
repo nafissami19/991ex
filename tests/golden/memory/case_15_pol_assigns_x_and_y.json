@@ -1,0 +1,23 @@
+{
+  "name": "15. Pol(1, 1) stores r in x and θ in y",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "+",
+    "1",
+    "SHIFT",
+    ")",
+    "1",
+    ")",
+    "=",
+    "ALPHA",
+    "S<=>D",
+    "="
+  ],
+  "expect": {
+    "result": "45"
+  }
+}

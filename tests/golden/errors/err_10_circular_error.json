@@ -1,0 +1,20 @@
+{
+  "name": "Error 10: Circular ERROR on circular reference in Spreadsheet mode",
+  "keys": [
+    "MENU",
+    "8",
+    "==",
+    "A",
+    "1",
+    "+",
+    "1",
+    "="
+  ],
+  "expect": {
+    "error": "Circular ERROR",
+    "lines": [
+      "Circular ERROR",
+      "[AC] :Cancel"
+    ]
+  }
+}

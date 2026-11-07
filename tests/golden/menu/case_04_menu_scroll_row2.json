@@ -1,0 +1,15 @@
+{
+  "name": "4. MENU DOWN DOWN scrolls to row 2 highlighting Table with 9:Table",
+  "keys": [
+    "MENU",
+    "DOWN",
+    "DOWN"
+  ],
+  "expect": {
+    "lines": [
+      "Vector Statistics Distribution Spreadsheet",
+      "[Table] Equation/Func Inequality Ratio",
+      "9:Table"
+    ]
+  }
+}

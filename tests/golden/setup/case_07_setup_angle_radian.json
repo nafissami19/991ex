@@ -1,0 +1,23 @@
+{
+  "name": "7. SETUP Angle Unit Radian",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "2",
+    "2",
+    "sin",
+    "π",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "0",
+    "indicators": [
+      "R"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "10. SOLVE quadratic equation x²-4=0 from x=1 -> x=2",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "x",
+    "x²",
+    "-",
+    "4",
+    "==",
+    "0",
+    "SHIFT",
+    "CALC",
+    "1",
+    "=",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "x²−4=0",
+      "x=2",
+      "L−R=0"
+    ],
+    "result": "x=2"
+  }
+}

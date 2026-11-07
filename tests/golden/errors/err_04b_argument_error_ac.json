@@ -1,0 +1,35 @@
+{
+  "name": "Error 4b: Argument ERROR dismissal via AC key",
+  "setup": {
+    "inputOutput": "LineI/LineO"
+  },
+  "keys": [
+    "∫",
+    "sin",
+    "1",
+    "÷",
+    "X",
+    ")",
+    ",",
+    "0",
+    ".",
+    "0",
+    "0",
+    "0",
+    "1",
+    ",",
+    "1",
+    ",",
+    "(-)",
+    "1",
+    ")",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "lines": [
+      "",
+      ""
+    ]
+  }
+}

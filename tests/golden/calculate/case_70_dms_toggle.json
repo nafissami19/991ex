@@ -1,0 +1,25 @@
+{
+  "name": "70. DMS sexagesimal conversion with DEG key",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    ".",
+    "5",
+    "=",
+    "DEG"
+  ],
+  "expect": {
+    "result": "1°30'0\"",
+    "lines": [
+      "1.5",
+      "1°30'0\""
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

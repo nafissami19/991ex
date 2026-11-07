@@ -1,0 +1,22 @@
+{
+  "name": "18. log 1000",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "log",
+    "1",
+    "0",
+    "0",
+    "0",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "3",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

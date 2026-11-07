@@ -1,0 +1,32 @@
+{
+  "name": "8. History navigation survives power off and on",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "+",
+    "2",
+    "=",
+    "3",
+    "+",
+    "4",
+    "=",
+    "SHIFT",
+    "AC",
+    "ON",
+    "UP"
+  ],
+  "expect": {
+    "poweredOn": true,
+    "lines": [
+      "1+2",
+      "3"
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

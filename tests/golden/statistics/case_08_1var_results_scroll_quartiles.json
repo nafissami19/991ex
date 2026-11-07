@@ -1,0 +1,31 @@
+{
+  "name": "8. Scrolling DOWN in 1-Variable results reveals sample variance, n, quartiles",
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "2",
+    "=",
+    "4",
+    "=",
+    "6",
+    "=",
+    "8",
+    "=",
+    "AC",
+    "OPTN",
+    "2",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "DOWN"
+  ],
+  "expect": {
+    "lines": [
+      "σx=2.236067977",
+      "s²x=6.666666667",
+      "sx=2.581988897",
+      "n=4"
+    ]
+  }
+}

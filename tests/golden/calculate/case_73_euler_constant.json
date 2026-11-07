@@ -1,0 +1,23 @@
+{
+  "name": "73. Euler constant e with ALPHA EXP",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "ALPHA",
+    "EXP",
+    "="
+  ],
+  "expect": {
+    "result": "2.718281828",
+    "lines": [
+      "e",
+      "2.718281828"
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

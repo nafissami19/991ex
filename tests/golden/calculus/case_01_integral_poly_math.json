@@ -1,0 +1,12 @@
+{
+  "name": "1. Definite integral in MathI mode: ∫_0^2 (x³ - 2x + 1) dx = 2",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "INTEGRAL", "x", "^", "3", "RIGHT", "-", "2", "x", "+", "1", "RIGHT", "0", "RIGHT", "2", "="
+  ],
+  "expect": {
+    "result": "2"
+  }
+}

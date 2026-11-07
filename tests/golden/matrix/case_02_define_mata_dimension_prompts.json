@@ -1,0 +1,14 @@
+{
+  "name": "2. Selecting MatA displays Rows? prompt dialog",
+  "keys": [
+    "MENU",
+    "4",
+    "1"
+  ],
+  "expect": {
+    "lines": [
+      "MatA",
+      "Rows?  1~4"
+    ]
+  }
+}

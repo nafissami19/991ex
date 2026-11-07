@@ -1,0 +1,23 @@
+{
+  "name": "14. Cut & Paste moves formula without reference alteration and deletes source cell",
+  "keys": [
+    "MENU",
+    "8",
+    "==",
+    "B",
+    "1",
+    "+",
+    "5",
+    "=",
+    "UP",
+    "OPTN",
+    "DOWN",
+    "1",
+    "DOWN",
+    "DOWN",
+    "="
+  ],
+  "expect": {
+    "contains": "A3:=B1+5"
+  }
+}

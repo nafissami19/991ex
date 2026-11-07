@@ -1,0 +1,25 @@
+{
+  "name": "64. Nth root template evaluation",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "POWER",
+    "3",
+    "RIGHT",
+    "8",
+    "="
+  ],
+  "expect": {
+    "result": "2",
+    "lines": [
+      "3√8",
+      "2"
+    ],
+    "indicators": [
+      "Math"
+    ]
+  }
+}

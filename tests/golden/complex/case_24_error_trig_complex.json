@@ -1,0 +1,14 @@
+{
+  "name": "24. Error on trig of complex number sin(i) -> Math ERROR",
+  "keys": [
+    "MENU",
+    "2",
+    "sin",
+    "i",
+    ")",
+    "="
+  ],
+  "expect": {
+    "error": "Math ERROR"
+  }
+}

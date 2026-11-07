@@ -1,0 +1,13 @@
+{
+  "name": "1. MENU 8 enters Spreadsheet mode displaying column headers A and B and A1 cursor",
+  "keys": [
+    "MENU",
+    "8"
+  ],
+  "expect": {
+    "lines": [
+      "   |    A   |    B   |",
+      "A1:"
+    ]
+  }
+}

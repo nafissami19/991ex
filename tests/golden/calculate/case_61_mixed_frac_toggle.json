@@ -1,0 +1,29 @@
+{
+  "name": "61. Mixed fraction toggle with SHIFT SD",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "FRAC",
+    "1",
+    "RIGHT",
+    "2",
+    "RIGHT",
+    "3",
+    "=",
+    "SHIFT",
+    "SD"
+  ],
+  "expect": {
+    "result": "1 2/3",
+    "lines": [
+      "1 2/3",
+      "1 2/3"
+    ],
+    "indicators": [
+      "Math"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "19. Hex FFFFFFFF converted to DEC displays -1",
+  "keys": ["MENU", "3", "HEX", "hexF", "hexF", "hexF", "hexF", "hexF", "hexF", "hexF", "hexF", "=", "DEC"],
+  "expect": {
+    "result": "-1"
+  }
+}

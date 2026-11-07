@@ -1,0 +1,23 @@
+{
+  "name": "16. Rec(2, 60) stores x in x and y in y",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "-",
+    "2",
+    "SHIFT",
+    ")",
+    "6",
+    "0",
+    ")",
+    "=",
+    "x",
+    "="
+  ],
+  "expect": {
+    "result": "1"
+  }
+}

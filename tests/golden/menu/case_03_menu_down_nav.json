@@ -1,0 +1,14 @@
+{
+  "name": "3. MENU DOWN navigates column-wise to Vector mode with 5:Vector",
+  "keys": [
+    "MENU",
+    "DOWN"
+  ],
+  "expect": {
+    "lines": [
+      "Calculate Complex Base-N Matrix",
+      "[Vector] Statistics Distribution Spreadsheet",
+      "5:Vector"
+    ]
+  }
+}

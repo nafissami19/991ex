@@ -1,0 +1,12 @@
+{
+  "name": "14. LineI mode derivative with custom tolerance: d/dx(x², 2, 1×10⁻⁶) = 4",
+  "setup": {
+    "inputOutput": "LineI/LineO"
+  },
+  "keys": [
+    "d/dx", "x", "x²", ",", "2", ",", "1", "×10ˣ", "(-)", "6", ")", "="
+  ],
+  "expect": {
+    "result": "4"
+  }
+}

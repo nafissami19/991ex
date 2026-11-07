@@ -1,0 +1,19 @@
+{
+  "name": "17. Open RESET menu and cancel with AC",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "5",
+    "+",
+    "SHIFT",
+    "9",
+    "AC",
+    "3",
+    "="
+  ],
+  "expect": {
+    "result": "8"
+  }
+}

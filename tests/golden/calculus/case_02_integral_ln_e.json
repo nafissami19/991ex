@@ -1,0 +1,12 @@
+{
+  "name": "2. Official manual example: ∫_1^e ln(x) dx = 1",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "INTEGRAL", "ln", "x", ")", "RIGHT", "1", "RIGHT", "e", "="
+  ],
+  "expect": {
+    "result": "1"
+  }
+}

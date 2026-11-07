@@ -1,0 +1,20 @@
+{
+  "name": "24. STO transfers cell value into variable memory variable A, accessible in Calculate mode",
+  "keys": [
+    "MENU",
+    "8",
+    "4",
+    "2",
+    "=",
+    "UP",
+    "STO",
+    "A",
+    "MENU",
+    "1",
+    "A",
+    "="
+  ],
+  "expect": {
+    "result": "42"
+  }
+}

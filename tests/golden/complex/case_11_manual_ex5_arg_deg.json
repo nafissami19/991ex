@@ -1,0 +1,22 @@
+{
+  "name": "11. Manual Example 5: Arg(1+i) = 45 in Deg mode",
+  "setup": {
+    "angle": "Deg"
+  },
+  "keys": [
+    "MENU",
+    "2",
+    "Arg",
+    "1",
+    "+",
+    "i",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "45",
+    "indicators": [
+      "i"
+    ]
+  }
+}

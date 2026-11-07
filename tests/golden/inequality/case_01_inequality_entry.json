@@ -1,0 +1,14 @@
+{
+  "name": "1. Inequality mode entry shows Degree? 2~4 prompt",
+  "keys": [
+    "MENU",
+    "B"
+  ],
+  "expect": {
+    "contains": "Degree? 2~4",
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

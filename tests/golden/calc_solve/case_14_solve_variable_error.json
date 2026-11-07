@@ -1,0 +1,23 @@
+{
+  "name": "14. SOLVE on variable-less equation gives Variable ERROR",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "1",
+    "+",
+    "2",
+    "==",
+    "3",
+    "SHIFT",
+    "CALC"
+  ],
+  "expect": {
+    "error": "Variable ERROR",
+    "lines": [
+      "Variable ERROR",
+      "[AC] :Cancel",
+      "[◀][▶]:Goto"
+    ]
+  }
+}

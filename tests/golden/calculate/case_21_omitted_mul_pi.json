@@ -1,0 +1,21 @@
+{
+  "name": "21. Omitted multiplication 1 ÷ 2π",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "÷",
+    "2",
+    "SHIFT",
+    "EXP",
+    "="
+  ],
+  "expect": {
+    "result": "1/(2π)",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

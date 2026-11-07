@@ -1,0 +1,8 @@
+{
+  "name": "1. MENU 3 enters Base-N mode in DEC mode with initial 0",
+  "keys": ["MENU", "3"],
+  "expect": {
+    "contains": "Dec",
+    "result": "0"
+  }
+}

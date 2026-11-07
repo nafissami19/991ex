@@ -1,0 +1,19 @@
+{
+  "name": "14. OFF alias powers off calculator and clears screen",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "5",
+    "+",
+    "5",
+    "=",
+    "OFF"
+  ],
+  "expect": {
+    "poweredOn": false,
+    "lines": [],
+    "notIndicators": ["Math", "D"]
+  }
+}

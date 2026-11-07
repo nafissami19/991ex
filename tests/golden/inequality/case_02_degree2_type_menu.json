@@ -1,0 +1,17 @@
+{
+  "name": "2. Selecting degree 2 displays the four inequality types",
+  "keys": [
+    "MENU",
+    "B",
+    "2"
+  ],
+  "expect": {
+    "contains": "1:ax²+bx+c>0",
+    "lines": [
+      "1:ax²+bx+c>0",
+      "2:ax²+bx+c<0",
+      "3:ax²+bx+c≥0",
+      "4:ax²+bx+c≤0"
+    ]
+  }
+}

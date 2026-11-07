@@ -1,0 +1,23 @@
+{
+  "name": "14. SETUP Decimal Mark Comma displays 0,5",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "DOWN",
+    "DOWN",
+    "3",
+    "2",
+    "1",
+    "÷",
+    "2",
+    "=",
+    "S<=>D"
+  ],
+  "expect": {
+    "result": "0,5"
+  }
+}

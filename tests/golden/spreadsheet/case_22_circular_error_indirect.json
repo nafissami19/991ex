@@ -1,0 +1,25 @@
+{
+  "name": "22. Indirect dependency cycle A1=B1, B1=A1 triggers Circular ERROR modal",
+  "keys": [
+    "MENU",
+    "8",
+    "==",
+    "B",
+    "1",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "==",
+    "A",
+    "1",
+    "="
+  ],
+  "expect": {
+    "error": "Circular ERROR",
+    "lines": [
+      "Circular ERROR",
+      "[AC] :Cancel"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "20. ENG stepping: 1234 = ENG -> 1.234×10³",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "=",
+    "ENG"
+  ],
+  "expect": {
+    "lines": [
+      "1234",
+      "1.234×10³"
+    ]
+  }
+}

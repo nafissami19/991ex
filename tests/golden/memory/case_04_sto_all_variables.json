@@ -1,0 +1,30 @@
+{
+  "name": "4. Store and use variables A, B, C in formula A+B*C",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "2",
+    "STO",
+    "(-)",
+    "3",
+    "STO",
+    "° ' \"",
+    "4",
+    "STO",
+    "x⁻¹",
+    "ALPHA",
+    "(-)",
+    "+",
+    "ALPHA",
+    "° ' \"",
+    "×",
+    "ALPHA",
+    "x⁻¹",
+    "="
+  ],
+  "expect": {
+    "result": "14"
+  }
+}

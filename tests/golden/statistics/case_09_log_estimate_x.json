@@ -1,0 +1,44 @@
+{
+  "name": "9. Logarithmic regression estimated x value 7x̂ = 2.718",
+  "setup": {
+    "numberFormat": {
+      "type": "FIX",
+      "digits": 3
+    }
+  },
+  "keys": [
+    "MENU",
+    "6",
+    "4",
+    "1",
+    "=",
+    "2",
+    ".",
+    "7",
+    "1",
+    "8",
+    "2",
+    "8",
+    "1",
+    "8",
+    "2",
+    "8",
+    "=",
+    "RIGHT",
+    "DOWN",
+    "5",
+    "=",
+    "7",
+    "=",
+    "AC",
+    "7",
+    "OPTN",
+    "DOWN",
+    "4",
+    "4",
+    "="
+  ],
+  "expect": {
+    "result": "2.718"
+  }
+}

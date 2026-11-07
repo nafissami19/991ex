@@ -1,0 +1,21 @@
+{
+  "name": "24. Exact surd stored in variable squared yields integer",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "√",
+    "8",
+    "=",
+    "STO",
+    "(-)",
+    "ALPHA",
+    "(-)",
+    "x²",
+    "="
+  ],
+  "expect": {
+    "result": "8"
+  }
+}

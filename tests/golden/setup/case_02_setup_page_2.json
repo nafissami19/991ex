@@ -1,0 +1,26 @@
+{
+  "name": "2. SETUP menu Page 2 lines and Down/Up indicators",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "DOWN"
+  ],
+  "expect": {
+    "lines": [
+      "1:Fraction Result",
+      "2:Complex",
+      "3:Statistics",
+      "4:Spreadsheet"
+    ],
+    "indicators": [
+      "Math",
+      "D",
+      "Down",
+      "Up"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "8. OPTN Number Calculation Int(5.9) = 5",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "OPTN",
+    "4",
+    "2",
+    "5",
+    ".",
+    "9",
+    ")",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "Int(5.9)",
+      "5"
+    ]
+  }
+}

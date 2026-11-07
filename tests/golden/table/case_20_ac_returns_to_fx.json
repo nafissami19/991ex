@@ -1,0 +1,19 @@
+{
+  "name": "20. Pressing AC in generated table returns to f(x) editor retaining formula",
+  "keys": [
+    "MENU",
+    "9",
+    "x",
+    "x²",
+    "=",
+    "=",
+    "=",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "lines": [
+      "f(x)=x²"
+    ]
+  }
+}

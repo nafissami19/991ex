@@ -1,0 +1,31 @@
+{
+  "name": "3. Vector addition (1, 2) + (3, 4) = (4, 6) displays on VctAns screen",
+  "keys": [
+    "MENU",
+    "5",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "OPTN",
+    "1",
+    "2",
+    "2",
+    "3",
+    "=",
+    "4",
+    "=",
+    "AC",
+    "OPTN",
+    "3",
+    "+",
+    "OPTN",
+    "4",
+    "="
+  ],
+  "expect": {
+    "contains": "VctAns"
+  }
+}

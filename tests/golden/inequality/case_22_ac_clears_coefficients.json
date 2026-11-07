@@ -1,0 +1,19 @@
+{
+  "name": "22. AC in coefficient editor clears all coefficients to 0",
+  "keys": [
+    "MENU",
+    "B",
+    "2",
+    "1",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "contains": "a=0 b=0 c=0"
+  }
+}

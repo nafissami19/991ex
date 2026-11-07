@@ -1,0 +1,12 @@
+{
+  "name": "4. Reciprocal integral: ∫_1^2 1/x dx = ln(2) ≈ 0.6931471806",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "INTEGRAL", "1", "DIV", "x", "RIGHT", "1", "RIGHT", "2", "="
+  ],
+  "expect": {
+    "result": "0.6931471806"
+  }
+}

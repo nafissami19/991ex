@@ -1,0 +1,25 @@
+{
+  "name": "5. Ratio Mode Type 2 (A:B=C:X): 2:3=5:X -> X=15/2",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "MENU",
+    "C",
+    "2",
+    "2",
+    "EXE",
+    "3",
+    "EXE",
+    "5",
+    "EXE",
+    "EXE"
+  ],
+  "expect": {
+    "lines": [
+      "X=",
+      "15/2"
+    ],
+    "result": "15/2"
+  }
+}

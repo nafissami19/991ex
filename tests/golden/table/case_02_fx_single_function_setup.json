@@ -1,0 +1,21 @@
+{
+  "name": "2. f(x) single function mode advances directly to Table Range",
+  "setup": {
+    "table": "F"
+  },
+  "keys": [
+    "MENU",
+    "9",
+    "x",
+    "x²",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "Table Range",
+      "Start :1",
+      "End   :5",
+      "Step  :1"
+    ]
+  }
+}

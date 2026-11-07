@@ -1,0 +1,21 @@
+{
+  "name": "30. Trig function squared sin(30)²",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "sin",
+    "3",
+    "0",
+    ")",
+    "x²",
+    "="
+  ],
+  "expect": {
+    "result": "1/4",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

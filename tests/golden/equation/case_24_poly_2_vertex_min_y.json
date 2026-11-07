@@ -1,0 +1,27 @@
+{
+  "name": "24. Polynomial degree 2 local minimum vertex y-Value of Min = -3",
+  "keys": [
+    "MENU",
+    "A",
+    "2",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "(-)",
+    "2",
+    "=",
+    "=",
+    "DOWN",
+    "DOWN",
+    "DOWN"
+  ],
+  "expect": {
+    "contains": "y-Value of Min",
+    "result": "−3",
+    "indicators": [
+      "Up"
+    ]
+  }
+}

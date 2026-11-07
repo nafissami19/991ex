@@ -1,0 +1,19 @@
+{
+  "name": "7. CALC on variable-less expression evaluates immediately",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "7",
+    "+",
+    "8",
+    "CALC"
+  ],
+  "expect": {
+    "lines": [
+      "7+8",
+      "15"
+    ],
+    "result": "15"
+  }
+}

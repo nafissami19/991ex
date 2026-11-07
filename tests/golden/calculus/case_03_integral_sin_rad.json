@@ -1,0 +1,13 @@
+{
+  "name": "3. Trig integral in Radian mode: ∫_0^π sin(x) dx = 2",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "RAD"
+  },
+  "keys": [
+    "INTEGRAL", "sin", "x", ")", "RIGHT", "0", "RIGHT", "π", "="
+  ],
+  "expect": {
+    "result": "2"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "13. ab-Exponential regression y=a•b^x basic fit a=1, b=2",
+  "keys": [
+    "MENU",
+    "6",
+    "DOWN",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "4",
+    "=",
+    "RIGHT",
+    "DOWN",
+    "2",
+    "=",
+    "4",
+    "=",
+    "8",
+    "=",
+    "1",
+    "6",
+    "=",
+    "OPTN",
+    "4"
+  ],
+  "expect": {
+    "contains": "a=1"
+  }
+}

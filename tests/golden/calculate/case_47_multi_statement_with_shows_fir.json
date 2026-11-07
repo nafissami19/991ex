@@ -1,0 +1,28 @@
+{
+  "name": "47. Multi-statement with : shows first part with Disp indicator",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "3",
+    "+",
+    "3",
+    "ALPHA",
+    "INTEGRAL",
+    "3",
+    "×",
+    "3",
+    "="
+  ],
+  "expect": {
+    "result": "6",
+    "line": {
+      "index": 0,
+      "text": "3+3"
+    },
+    "indicators": [
+      "Disp"
+    ]
+  }
+}

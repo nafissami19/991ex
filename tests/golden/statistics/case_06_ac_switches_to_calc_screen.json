@@ -1,0 +1,21 @@
+{
+  "name": "6. AC in editor switches to stat calc screen, and OPTN 3 returns to editor",
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "7",
+    "=",
+    "AC",
+    "OPTN",
+    "3"
+  ],
+  "expect": {
+    "lines": [
+      "x",
+      "1: 7",
+      "2:",
+      "0"
+    ]
+  }
+}

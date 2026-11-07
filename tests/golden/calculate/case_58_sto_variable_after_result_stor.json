@@ -1,0 +1,23 @@
+{
+  "name": "58. STO variable after result stores and allows recall",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "3",
+    "+",
+    "5",
+    "=",
+    "STO",
+    "(-)",
+    "ALPHA",
+    "(-)",
+    "×",
+    "2",
+    "="
+  ],
+  "expect": {
+    "result": "16"
+  }
+}

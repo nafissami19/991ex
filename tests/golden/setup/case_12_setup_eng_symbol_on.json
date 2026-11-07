@@ -1,0 +1,18 @@
+{
+  "name": "12. SETUP Engineer Symbol On activates E indicator",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "4",
+    "1"
+  ],
+  "expect": {
+    "indicators": [
+      "E"
+    ]
+  }
+}

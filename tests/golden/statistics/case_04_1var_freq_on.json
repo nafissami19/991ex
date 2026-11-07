@@ -1,0 +1,35 @@
+{
+  "name": "4. 1-Variable with Frequency ON",
+  "setup": {
+    "statFreq": true
+  },
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "1",
+    "0",
+    "=",
+    "2",
+    "0",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "2",
+    "=",
+    "3",
+    "=",
+    "AC",
+    "OPTN",
+    "2"
+  ],
+  "expect": {
+    "lines": [
+      "x̄=16",
+      "Σx=80",
+      "Σx²=1400",
+      "σ²x=24"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "17. Sum with negative start limit: Σ_{x=-3}^3 x = 0",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "Σ", "x", "RIGHT", "(-)", "3", "RIGHT", "3", "="
+  ],
+  "expect": {
+    "result": "0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "16. Scalar division VctA ÷ 2 = (1/2, 1)",
+  "keys": [
+    "MENU",
+    "5",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "AC",
+    "OPTN",
+    "3",
+    "÷",
+    "2",
+    "="
+  ],
+  "expect": {
+    "contains": "VctAns"
+  }
+}

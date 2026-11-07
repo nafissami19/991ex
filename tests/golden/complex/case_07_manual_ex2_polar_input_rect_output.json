@@ -1,0 +1,21 @@
+{
+  "name": "7. Manual Example 2: 2∠45 = √2 + √2i (Deg, a+bi)",
+  "setup": {
+    "angle": "Deg"
+  },
+  "keys": [
+    "MENU",
+    "2",
+    "2",
+    "∠",
+    "4",
+    "5",
+    "="
+  ],
+  "expect": {
+    "result": "√2+√2i",
+    "indicators": [
+      "i"
+    ]
+  }
+}

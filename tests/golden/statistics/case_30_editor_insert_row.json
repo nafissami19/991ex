@@ -1,0 +1,23 @@
+{
+  "name": "30. Stat Editor OPTN 2 1 inserts row with zero",
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "1",
+    "0",
+    "=",
+    "2",
+    "0",
+    "=",
+    "UP",
+    "OPTN",
+    "2",
+    "1",
+    "OPTN",
+    "3"
+  ],
+  "expect": {
+    "contains": "Σx=30"
+  }
+}

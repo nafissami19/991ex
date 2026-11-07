@@ -1,0 +1,27 @@
+{
+  "name": "5. Simultaneous 2 unknowns EXE on final solution returns to editor",
+  "keys": [
+    "MENU",
+    "A",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "4",
+    "=",
+    "=",
+    "=",
+    "="
+  ],
+  "expect": {
+    "contains": "anx+bny=cn"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "7. 0.1 + 0.2 fraction form",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "0",
+    ".",
+    "1",
+    "+",
+    "0",
+    ".",
+    "2",
+    "="
+  ],
+  "expect": {
+    "result": "3/10",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

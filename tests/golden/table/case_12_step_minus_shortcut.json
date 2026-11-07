@@ -1,0 +1,27 @@
+{
+  "name": "12. Shortcut key - on x cell inputs cell above minus step (Guide tip)",
+  "keys": [
+    "MENU",
+    "9",
+    "x",
+    "x²",
+    "=",
+    "5",
+    "=",
+    "7",
+    "=",
+    "1",
+    "=",
+    "DOWN",
+    "-"
+  ],
+  "expect": {
+    "lines": [
+      "x f(x)",
+      "1 5 25",
+      "2 4 16",
+      "3 7 49",
+      "4"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "18. Metric conversion negative temperature: -40 °F▸°C = -40",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "(-)",
+    "4",
+    "0",
+    "SHIFT",
+    "8",
+    "DOWN",
+    "DOWN",
+    "1",
+    "1",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "-40°F▸°C",
+      "−40"
+    ]
+  }
+}

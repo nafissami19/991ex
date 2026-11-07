@@ -1,0 +1,29 @@
+{
+  "name": "69. Rec(r, theta) polar to rectangular conversion",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "SUB",
+    "2",
+    "SHIFT",
+    "RPAREN",
+    "6",
+    "0",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "x=1, y=1.732050808",
+    "lines": [
+      "Rec(2,60)",
+      "x=1, y=1.732050808"
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

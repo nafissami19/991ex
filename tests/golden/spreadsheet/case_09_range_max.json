@@ -1,0 +1,35 @@
+{
+  "name": "9. Max(A1:A3) calculates maximum of cell values (50, 20, 80 -> 80)",
+  "keys": [
+    "MENU",
+    "8",
+    "5",
+    "0",
+    "=",
+    "2",
+    "0",
+    "=",
+    "8",
+    "0",
+    "=",
+    "==",
+    "OPTN",
+    "DOWN",
+    "2",
+    "A",
+    "1",
+    ":",
+    "A",
+    "3",
+    ")",
+    "=",
+    "UP"
+  ],
+  "expect": {
+    "contains": "80",
+    "line": {
+      "index": 4,
+      "text": "A4:=Max(A1:A3)"
+    }
+  }
+}

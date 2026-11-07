@@ -1,0 +1,29 @@
+{
+  "name": "8. Navigating RIGHT highlights f(x) column and shows value",
+  "keys": [
+    "MENU",
+    "9",
+    "x",
+    "x²",
+    "=",
+    "=",
+    "=",
+    "=",
+    "DOWN",
+    "RIGHT"
+  ],
+  "expect": {
+    "lines": [
+      "x f(x)",
+      "1 1 1",
+      "2 2 4",
+      "3 3 9",
+      "4"
+    ],
+    "indicators": [
+      "Up",
+      "Down",
+      "Left"
+    ]
+  }
+}

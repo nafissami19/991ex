@@ -1,0 +1,24 @@
+{
+  "name": "7. Ratio Mode AC resets all coefficients to 1 in Coefficient Editor",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "MENU",
+    "C",
+    "1",
+    "5",
+    "EXE",
+    "6",
+    "EXE",
+    "7",
+    "EXE",
+    "AC"
+  ],
+  "expect": {
+    "lines": [
+      "1:1=X:1",
+      "A=1"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "8. Manual Ex 3: DEC 15 * 37 = 555 converted to HEX 0000022B",
+  "keys": ["MENU", "3", "1", "5", "*", "3", "7", "=", "HEX"],
+  "expect": {
+    "contains": "Hex",
+    "result": "0000022B"
+  }
+}

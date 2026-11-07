@@ -1,0 +1,20 @@
+{
+  "name": "Error 9b: Range ERROR dismissal via AC key",
+  "keys": [
+    "MENU",
+    "9",
+    "x",
+    "=",
+    "=",
+    "1",
+    "0",
+    "0",
+    "=",
+    "=",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "contains": "Table Range"
+  }
+}

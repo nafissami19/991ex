@@ -1,0 +1,42 @@
+{
+  "name": "12. Angle between VctA and VctB in Degree mode with Fix 3 = 10.305",
+  "setup": {
+    "angle": "Deg",
+    "numberFormat": {
+      "type": "FIX",
+      "value": 3
+    }
+  },
+  "keys": [
+    "MENU",
+    "5",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "OPTN",
+    "1",
+    "2",
+    "2",
+    "3",
+    "=",
+    "4",
+    "=",
+    "AC",
+    "OPTN",
+    "DOWN",
+    "3",
+    "OPTN",
+    "3",
+    ",",
+    "OPTN",
+    "4",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "10.305"
+  }
+}

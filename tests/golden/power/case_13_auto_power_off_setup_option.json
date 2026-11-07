@@ -1,0 +1,27 @@
+{
+  "name": "13. Auto Power Off setting configured via SETUP Page 4",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "4",
+    "2"
+  ],
+  "expect": {
+    "poweredOn": true,
+    "lines": [
+      "",
+      ""
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

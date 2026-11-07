@@ -1,0 +1,52 @@
+{
+  "name": "27. Normal distribution CDF User Guide Ex 5: P(Ans) = 0.193",
+  "setup": {
+    "statFreq": true,
+    "numberFormat": {
+      "type": "FIX",
+      "digits": 3
+    }
+  },
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "4",
+    "=",
+    "5",
+    "=",
+    "RIGHT",
+    "DOWN",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "2",
+    "=",
+    "AC",
+    "2",
+    "OPTN",
+    "DOWN",
+    "4",
+    "4",
+    "=",
+    "OPTN",
+    "DOWN",
+    "4",
+    "1",
+    "Ans",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "0.193"
+  }
+}

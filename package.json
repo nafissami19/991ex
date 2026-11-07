@@ -1,0 +1,20 @@
+{
+  "name": "casio-991ex-classwiz",
+  "version": "1.0.0",
+  "description": "Pixel-accurate web re-creation of the Casio fx-991EX ClassWiz scientific calculator",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "test": "node --test \"tests/**/*.js\""
+  },
+  "keywords": [
+    "casio",
+    "fx-991ex",
+    "classwiz",
+    "calculator",
+    "emulator"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true
+}

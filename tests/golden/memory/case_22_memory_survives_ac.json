@@ -1,0 +1,22 @@
+{
+  "name": "22. Variables survive multiple AC presses",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "9",
+    "9",
+    "STO",
+    "(-)",
+    "AC",
+    "AC",
+    "AC",
+    "ALPHA",
+    "(-)",
+    "="
+  ],
+  "expect": {
+    "result": "99"
+  }
+}

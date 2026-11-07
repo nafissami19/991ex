@@ -1,0 +1,10 @@
+{
+  "name": "8. MENU 3 jumps directly to Base-N mode",
+  "keys": [
+    "MENU",
+    "3"
+  ],
+  "expect": {
+    "contains": "Dec"
+  }
+}

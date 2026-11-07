@@ -1,0 +1,24 @@
+{
+  "name": "16. SETUP Contrast adjust with RIGHT and EXE exit",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "3",
+    "RIGHT",
+    "RIGHT",
+    "EXE"
+  ],
+  "expect": {
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

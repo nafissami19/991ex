@@ -1,0 +1,28 @@
+{
+  "name": "13. Ratio Mode STO variable stores solved value of X",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "MENU",
+    "C",
+    "1",
+    "1",
+    "EXE",
+    "2",
+    "EXE",
+    "1",
+    "0",
+    "EXE",
+    "EXE",
+    "STO",
+    "A"
+  ],
+  "expect": {
+    "lines": [
+      "X=",
+      "5"
+    ],
+    "result": "5"
+  }
+}

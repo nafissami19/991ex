@@ -1,0 +1,29 @@
+{
+  "name": "20. RESET 2 (Memory) clears variables and M, turns off M indicator, keeps Rad",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Rad"
+  },
+  "keys": [
+    "1",
+    "0",
+    "M+",
+    "SHIFT",
+    "9",
+    "2",
+    "=",
+    "AC",
+    "ALPHA",
+    "M+",
+    "="
+  ],
+  "expect": {
+    "result": "0",
+    "indicators": [
+      "R"
+    ],
+    "notIndicators": [
+      "M"
+    ]
+  }
+}

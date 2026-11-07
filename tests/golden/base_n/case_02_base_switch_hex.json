@@ -1,0 +1,8 @@
+{
+  "name": "2. HEX key (x■) switches base to HEX displaying 00000000",
+  "keys": ["MENU", "3", "HEX"],
+  "expect": {
+    "contains": "Hex",
+    "result": "00000000"
+  }
+}

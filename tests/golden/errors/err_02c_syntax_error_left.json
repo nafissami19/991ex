@@ -1,0 +1,20 @@
+{
+  "name": "Error 2c: Syntax ERROR cursor jump via LEFT key",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "1",
+    "+",
+    "×",
+    "2",
+    "=",
+    "LEFT"
+  ],
+  "expect": {
+    "lines": [
+      "1+×2",
+      ""
+    ]
+  }
+}

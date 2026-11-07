@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Casio Asset & Binary Exclusions (HARD RULE 2)
+assets/fonts/
+assets/images/faceplate*.png
+assets/images/status_bar_*.png
+assets/images/indicators/
+assets/images/*screenshot*.png
+assets/images/*preview*.png
+
+# Reference PDFs (HARD RULE 2)
+docs/reference/*.pdf
+docs/*.pdf
+
+# Firmware / Binary ROM Dumps
+*.rom
+*.bin
+*.hex
+
+# Environment & OS files
+.env
+.DS_Store
+Thumbs.db

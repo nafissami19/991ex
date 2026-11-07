@@ -1,0 +1,12 @@
+{
+  "name": "18. LineI mode summation: Σ(x+1, 1, 5) = 20",
+  "setup": {
+    "inputOutput": "LineI/LineO"
+  },
+  "keys": [
+    "Σ", "x", "+", "1", ",", "1", ",", "5", ")", "="
+  ],
+  "expect": {
+    "result": "20"
+  }
+}

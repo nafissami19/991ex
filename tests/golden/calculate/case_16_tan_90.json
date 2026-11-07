@@ -1,0 +1,18 @@
+{
+  "name": "16. tan 90 degrees Math ERROR",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "tan",
+    "9",
+    "0",
+    ")",
+    "="
+  ],
+  "expect": {
+    "error": "Math ERROR"
+  },
+  "expectedFail": false
+}

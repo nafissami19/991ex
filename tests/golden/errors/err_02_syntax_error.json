@@ -1,0 +1,21 @@
+{
+  "name": "Error 2: Syntax ERROR on adjacent operators 1+×2",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "1",
+    "+",
+    "×",
+    "2",
+    "="
+  ],
+  "expect": {
+    "error": "Syntax ERROR",
+    "lines": [
+      "Syntax ERROR",
+      "[AC] :Cancel",
+      "[◀][▶]:Goto"
+    ]
+  }
+}

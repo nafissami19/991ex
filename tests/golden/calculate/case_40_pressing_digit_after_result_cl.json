@@ -1,0 +1,24 @@
+{
+  "name": "40. Pressing digit after result clears and starts fresh calculation",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "2",
+    "+",
+    "3",
+    "=",
+    "7",
+    "+",
+    "1",
+    "="
+  ],
+  "expect": {
+    "result": "8",
+    "line": {
+      "index": 0,
+      "text": "7+1"
+    }
+  }
+}

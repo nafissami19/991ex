@@ -1,0 +1,21 @@
+{
+  "name": "22. Exact polar in Gradian mode 2∠50 = √2+√2i",
+  "setup": {
+    "angle": "Gra"
+  },
+  "keys": [
+    "MENU",
+    "2",
+    "2",
+    "∠",
+    "5",
+    "0",
+    "="
+  ],
+  "expect": {
+    "result": "√2+√2i",
+    "indicators": [
+      "i"
+    ]
+  }
+}

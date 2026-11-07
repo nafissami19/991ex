@@ -1,0 +1,24 @@
+{
+  "name": "29. Percentage calculation 50%×200",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "5",
+    "0",
+    "SHIFT",
+    "ANS",
+    "×",
+    "2",
+    "0",
+    "0",
+    "="
+  ],
+  "expect": {
+    "result": "100",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

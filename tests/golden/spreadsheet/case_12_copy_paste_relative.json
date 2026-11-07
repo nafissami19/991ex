@@ -1,0 +1,30 @@
+{
+  "name": "12. Copy & Paste formula shifts relative cell references",
+  "keys": [
+    "MENU",
+    "8",
+    "1",
+    "0",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "==",
+    "A",
+    "1",
+    "+",
+    "5",
+    "=",
+    "UP",
+    "OPTN",
+    "DOWN",
+    "2",
+    "RIGHT",
+    "DOWN",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "contains": "C2:=B2+5"
+  }
+}

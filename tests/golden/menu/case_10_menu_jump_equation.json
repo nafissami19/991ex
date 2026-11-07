@@ -1,0 +1,10 @@
+{
+  "name": "10. MENU A jumps directly to Equation/Func mode",
+  "keys": [
+    "MENU",
+    "A"
+  ],
+  "expect": {
+    "contains": "Equation/Func"
+  }
+}

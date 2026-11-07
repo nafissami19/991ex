@@ -1,0 +1,25 @@
+{
+  "name": "11. Simultaneous 2 unknowns dependent system displays Infinite Solution",
+  "keys": [
+    "MENU",
+    "A",
+    "1",
+    "2",
+    "1",
+    "=",
+    "1",
+    "=",
+    "1",
+    "=",
+    "2",
+    "=",
+    "2",
+    "=",
+    "2",
+    "=",
+    "="
+  ],
+  "expect": {
+    "contains": "Infinite Solution"
+  }
+}

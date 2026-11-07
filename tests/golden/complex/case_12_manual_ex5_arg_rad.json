@@ -1,0 +1,22 @@
+{
+  "name": "12. Manual Example 5: Arg(1+i) = 1/4π in Rad mode",
+  "setup": {
+    "angle": "Rad"
+  },
+  "keys": [
+    "MENU",
+    "2",
+    "Arg",
+    "1",
+    "+",
+    "i",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "1/4π",
+    "indicators": [
+      "i"
+    ]
+  }
+}

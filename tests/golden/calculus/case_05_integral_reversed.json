@@ -1,0 +1,12 @@
+{
+  "name": "5. Integral with reversed limits: ∫_2^0 (x³ - 2x + 1) dx = -2",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "INTEGRAL", "x", "^", "3", "RIGHT", "-", "2", "x", "+", "1", "RIGHT", "2", "RIGHT", "0", "="
+  ],
+  "expect": {
+    "result": "−2"
+  }
+}

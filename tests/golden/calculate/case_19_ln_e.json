@@ -1,0 +1,20 @@
+{
+  "name": "19. ln e",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "ln",
+    "ALPHA",
+    "EXP",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "1",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

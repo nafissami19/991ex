@@ -1,0 +1,19 @@
+{
+  "name": "21. Leading coefficient 0 triggers Math ERROR",
+  "keys": [
+    "MENU",
+    "B",
+    "2",
+    "1",
+    "0",
+    "=",
+    "1",
+    "=",
+    "2",
+    "=",
+    "="
+  ],
+  "expect": {
+    "error": "Math ERROR"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "15. SETUP Digit Separator On displays 1 000 000",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "DOWN",
+    "DOWN",
+    "4",
+    "1",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "="
+  ],
+  "expect": {
+    "result": "1 000 000"
+  }
+}

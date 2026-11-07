@@ -1,0 +1,18 @@
+{
+  "name": "3. Square root of 8",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "√",
+    "8",
+    "="
+  ],
+  "expect": {
+    "result": "2√2",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

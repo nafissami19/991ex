@@ -1,0 +1,34 @@
+{
+  "name": "3. 1-Variable result screen scrolling down",
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "1",
+    "0",
+    "=",
+    "2",
+    "0",
+    "=",
+    "3",
+    "0",
+    "=",
+    "AC",
+    "OPTN",
+    "2",
+    "DOWN",
+    "DOWN"
+  ],
+  "expect": {
+    "lines": [
+      "Σx²=1400",
+      "σ²x=66.66666667",
+      "σx=8.164965809",
+      "s²x=100"
+    ],
+    "indicators": [
+      "Up",
+      "Down"
+    ]
+  }
+}

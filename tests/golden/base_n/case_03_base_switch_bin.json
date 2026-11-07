@@ -1,0 +1,12 @@
+{
+  "name": "3. BIN key (log■□) switches base to BIN displaying two 16-bit rows of zeros",
+  "keys": ["MENU", "3", "BIN"],
+  "expect": {
+    "contains": "Bin",
+    "lines": [
+      "Bin",
+      "0000 0000 0000 0000",
+      "0000 0000 0000 0000"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "32. Omitted multiplication with power 2(3)²",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "2",
+    "(",
+    "3",
+    ")",
+    "x²",
+    "="
+  ],
+  "expect": {
+    "result": "18",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

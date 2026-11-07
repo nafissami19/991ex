@@ -1,0 +1,35 @@
+{
+  "name": "7. Mean(A1:A3) calculates arithmetic mean of cell values (10, 20, 30 -> 20)",
+  "keys": [
+    "MENU",
+    "8",
+    "1",
+    "0",
+    "=",
+    "2",
+    "0",
+    "=",
+    "3",
+    "0",
+    "=",
+    "==",
+    "OPTN",
+    "DOWN",
+    "3",
+    "A",
+    "1",
+    ":",
+    "A",
+    "3",
+    ")",
+    "=",
+    "UP"
+  ],
+  "expect": {
+    "contains": "20",
+    "line": {
+      "index": 4,
+      "text": "A4:=Mean(A1:A3)"
+    }
+  }
+}

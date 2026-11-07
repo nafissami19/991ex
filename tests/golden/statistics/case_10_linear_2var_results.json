@@ -1,0 +1,35 @@
+{
+  "name": "10. Linear regression 2-Variable Calc results screen",
+  "keys": [
+    "MENU",
+    "6",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "UP",
+    "2",
+    "=",
+    "3",
+    "=",
+    "5",
+    "=",
+    "AC",
+    "OPTN",
+    "2"
+  ],
+  "expect": {
+    "lines": [
+      "x̄=2",
+      "Σx=6",
+      "Σx²=14",
+      "σ²x=0.6666666667"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "4. Input formula =A1+7 into B1 evaluates dynamically to 42",
+  "keys": [
+    "MENU",
+    "8",
+    "7",
+    "*",
+    "5",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "==",
+    "A",
+    "1",
+    "+",
+    "7",
+    "=",
+    "UP"
+  ],
+  "expect": {
+    "contains": "B1:=A1+7"
+  }
+}

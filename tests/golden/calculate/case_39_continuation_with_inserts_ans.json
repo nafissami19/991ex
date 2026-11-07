@@ -1,0 +1,23 @@
+{
+  "name": "39. Continuation with % inserts Ans",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "2",
+    "0",
+    "0",
+    "=",
+    "SHIFT",
+    "ANS",
+    "="
+  ],
+  "expect": {
+    "result": "2",
+    "line": {
+      "index": 0,
+      "text": "Ans%"
+    }
+  }
+}

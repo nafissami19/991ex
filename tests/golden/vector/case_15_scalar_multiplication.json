@@ -1,0 +1,22 @@
+{
+  "name": "15. Scalar multiplication 3 × VctA = (3, 6)",
+  "keys": [
+    "MENU",
+    "5",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "AC",
+    "3",
+    "×",
+    "OPTN",
+    "3",
+    "="
+  ],
+  "expect": {
+    "contains": "VctAns"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "37. Continuation with square x² inserts Ans",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "3",
+    "+",
+    "1",
+    "=",
+    "SQUARE",
+    "="
+  ],
+  "expect": {
+    "result": "16",
+    "line": {
+      "index": 0,
+      "text": "Ans²"
+    }
+  }
+}

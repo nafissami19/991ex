@@ -1,0 +1,24 @@
+{
+  "name": "5. Store and use variables x and y",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "0",
+    "STO",
+    "x",
+    "2",
+    "STO",
+    "S<=>D",
+    "x",
+    "÷",
+    "ALPHA",
+    "S<=>D",
+    "="
+  ],
+  "expect": {
+    "result": "5"
+  }
+}

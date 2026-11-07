@@ -1,0 +1,30 @@
+{
+  "name": "77. Round function Rnd evaluation",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "0",
+    "1",
+    ".",
+    "2",
+    "3",
+    "4",
+    "5",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "2469/2000",
+    "lines": [
+      "Rnd(1.2345)",
+      "2469/2000"
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

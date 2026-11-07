@@ -1,0 +1,12 @@
+{
+  "name": "19. Integral singularity produces Math ERROR",
+  "setup": {
+    "inputOutput": "LineI/LineO"
+  },
+  "keys": [
+    "∫", "1", "÷", "x", "x²", ",", "(-)", "1", ",", "1", ")", "="
+  ],
+  "expect": {
+    "error": "Math ERROR"
+  }
+}

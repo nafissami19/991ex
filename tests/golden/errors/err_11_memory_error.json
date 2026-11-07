@@ -1,0 +1,26 @@
+{
+  "name": "Error 11: Memory ERROR on batch fill exceeding 1700 bytes in Spreadsheet mode",
+  "keys": [
+    "MENU",
+    "8",
+    "OPTN",
+    "1",
+    "2",
+    "x²",
+    "=",
+    "A",
+    "1",
+    ":",
+    "E",
+    "4",
+    "5",
+    "="
+  ],
+  "expect": {
+    "error": "Memory ERROR",
+    "lines": [
+      "Memory ERROR",
+      "[AC] :Cancel"
+    ]
+  }
+}

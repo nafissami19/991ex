@@ -1,0 +1,24 @@
+{
+  "name": "1. Store 3+5 to variable A and recall in calculation",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "3",
+    "+",
+    "5",
+    "=",
+    "STO",
+    "(-)",
+    "ALPHA",
+    "(-)",
+    "×",
+    "1",
+    "0",
+    "="
+  ],
+  "expect": {
+    "result": "80"
+  }
+}

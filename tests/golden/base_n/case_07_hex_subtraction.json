@@ -1,0 +1,7 @@
+{
+  "name": "7. Hex subtraction FF - A = F5 in HEX",
+  "keys": ["MENU", "3", "HEX", "hexF", "hexF", "-", "hexA", "="],
+  "expect": {
+    "result": "000000F5"
+  }
+}

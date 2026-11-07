@@ -1,0 +1,37 @@
+{
+  "name": "24. Power regression y=a•x^b results screen (a, b, r)",
+  "keys": [
+    "MENU",
+    "6",
+    "DOWN",
+    "3",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "UP",
+    "2",
+    "=",
+    "8",
+    "=",
+    "1",
+    "8",
+    "=",
+    "AC",
+    "OPTN",
+    "3"
+  ],
+  "expect": {
+    "lines": [
+      "y=a•x^b",
+      "a=2",
+      "b=2",
+      "r=1"
+    ]
+  }
+}

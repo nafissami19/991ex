@@ -1,0 +1,22 @@
+{
+  "name": "4. Skipping g(x) advances to Table Range",
+  "setup": {
+    "table": "FG"
+  },
+  "keys": [
+    "MENU",
+    "9",
+    "x",
+    "x²",
+    "=",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "Table Range",
+      "Start :1",
+      "End   :5",
+      "Step  :1"
+    ]
+  }
+}

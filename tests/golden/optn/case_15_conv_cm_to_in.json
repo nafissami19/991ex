@@ -1,0 +1,21 @@
+{
+  "name": "15. Metric conversion: 5 cm▸in = 1.968503937",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "5",
+    "SHIFT",
+    "8",
+    "1",
+    "2",
+    "=",
+    "S<=>D"
+  ],
+  "expect": {
+    "lines": [
+      "5cm▸in",
+      "1.968503937"
+    ]
+  }
+}

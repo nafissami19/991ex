@@ -1,0 +1,27 @@
+{
+  "name": "50. PreAns recalls answer from two calculations ago",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "0",
+    "=",
+    "2",
+    "0",
+    "=",
+    "ALPHA",
+    "ANS",
+    "+",
+    "5",
+    "="
+  ],
+  "expect": {
+    "result": "15",
+    "line": {
+      "index": 0,
+      "text": "PreAns+5"
+    }
+  }
+}

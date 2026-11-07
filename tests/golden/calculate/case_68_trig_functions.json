@@ -1,0 +1,27 @@
+{
+  "name": "68. Inverse trig sin-1 evaluation",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "SIN",
+    "0",
+    ".",
+    "5",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "30",
+    "lines": [
+      "sin⁻¹(0.5)",
+      "30"
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Error 6: Cannot Solve on non-converging SOLVE equation x²+1=0",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "x",
+    "x²",
+    "+",
+    "1",
+    "==",
+    "0",
+    "SHIFT",
+    "CALC",
+    "=",
+    "="
+  ],
+  "expect": {
+    "error": "Cannot Solve",
+    "lines": [
+      "Cannot Solve",
+      "[AC] :Cancel"
+    ]
+  }
+}

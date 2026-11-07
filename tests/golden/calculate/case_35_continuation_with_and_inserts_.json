@@ -1,0 +1,23 @@
+{
+  "name": "35. Continuation with × and ÷ inserts Ans",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "6",
+    "×",
+    "7",
+    "=",
+    "÷",
+    "2",
+    "="
+  ],
+  "expect": {
+    "result": "21",
+    "line": {
+      "index": 0,
+      "text": "Ans÷2"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "26. Power regression Math ERROR on non-positive x",
+  "keys": [
+    "MENU",
+    "6",
+    "DOWN",
+    "3",
+    "0",
+    "=",
+    "1",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "2",
+    "=",
+    "3",
+    "=",
+    "AC",
+    "OPTN",
+    "3"
+  ],
+  "expect": {
+    "lines": [
+      "Math ERROR",
+      "[AC] :Cancel"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "4. SETUP menu Page 4 lines and Up indicator",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "DOWN",
+    "DOWN",
+    "DOWN"
+  ],
+  "expect": {
+    "lines": [
+      "1:MultiLine Font",
+      "2:QR Code",
+      "3:Contrast",
+      "4:Auto Power Off"
+    ],
+    "indicators": [
+      "Math",
+      "D",
+      "Up"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "7. Define 3-dimensional vector VctC = (2, -1, 2)",
+  "keys": [
+    "MENU",
+    "5",
+    "3",
+    "3",
+    "2",
+    "=",
+    "(-)",
+    "1",
+    "=",
+    "2",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "indicators": [
+      "D",
+      "Math"
+    ]
+  }
+}

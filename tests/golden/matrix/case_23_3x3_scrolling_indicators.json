@@ -1,0 +1,16 @@
+{
+  "name": "23. 3x3 matrix editor displays Down and Right scrolling indicators",
+  "keys": [
+    "MENU",
+    "4",
+    "1",
+    "3",
+    "3"
+  ],
+  "expect": {
+    "indicators": [
+      "Down",
+      "Right"
+    ]
+  }
+}

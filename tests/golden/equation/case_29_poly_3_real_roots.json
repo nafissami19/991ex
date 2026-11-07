@@ -1,0 +1,31 @@
+{
+  "name": "29. Polynomial degree 3 with 3 real roots",
+  "keys": [
+    "MENU",
+    "A",
+    "2",
+    "3",
+    "1",
+    "=",
+    "(-)",
+    "6",
+    "=",
+    "1",
+    "1",
+    "=",
+    "(-)",
+    "6",
+    "=",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "x1=",
+      "3"
+    ],
+    "result": "3",
+    "indicators": [
+      "Down"
+    ]
+  }
+}

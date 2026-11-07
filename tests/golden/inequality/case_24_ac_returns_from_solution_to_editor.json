@@ -1,0 +1,21 @@
+{
+  "name": "24. AC returns from solution to Coefficient Editor preserving values",
+  "keys": [
+    "MENU",
+    "B",
+    "2",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "(-)",
+    "3",
+    "=",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "contains": "a=1 b=2 c=-3"
+  }
+}

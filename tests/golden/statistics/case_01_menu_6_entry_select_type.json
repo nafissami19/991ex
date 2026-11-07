@@ -1,0 +1,15 @@
+{
+  "name": "1. MENU 6 enters Statistics mode showing Select Type menu",
+  "keys": [
+    "MENU",
+    "6"
+  ],
+  "expect": {
+    "lines": [
+      "1:1-Variable",
+      "2:y=a+bx",
+      "3:y=a+bx+cx²",
+      "4:y=a+b•ln(x)"
+    ]
+  }
+}

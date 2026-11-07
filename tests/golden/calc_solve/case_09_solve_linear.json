@@ -1,0 +1,25 @@
+{
+  "name": "9. SOLVE linear equation 2x-6=0 -> x=3, L-R=0",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "2",
+    "x",
+    "-",
+    "6",
+    "==",
+    "0",
+    "SHIFT",
+    "CALC",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "2x−6=0",
+      "x=3",
+      "L−R=0"
+    ],
+    "result": "x=3"
+  }
+}

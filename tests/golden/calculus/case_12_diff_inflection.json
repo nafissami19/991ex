@@ -1,0 +1,12 @@
+{
+  "name": "12. Derivative at inflection point: d/dx(x³)|_{x=0} = 0",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "d/dx", "x", "^", "3", "RIGHT", "RIGHT", "0", "="
+  ],
+  "expect": {
+    "result": "0"
+  }
+}

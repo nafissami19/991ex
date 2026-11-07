@@ -1,0 +1,19 @@
+{
+  "name": "8. Unary minus power precedence (-)2^2",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "(-)",
+    "2",
+    "x²",
+    "="
+  ],
+  "expect": {
+    "result": "−4",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

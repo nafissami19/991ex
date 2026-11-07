@@ -1,0 +1,32 @@
+{
+  "name": "1. Simultaneous 2 unknowns integer solution x=-1, y=2",
+  "keys": [
+    "MENU",
+    "A",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "4",
+    "=",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "x=",
+      "−1"
+    ],
+    "result": "−1",
+    "indicators": [
+      "Down"
+    ]
+  }
+}

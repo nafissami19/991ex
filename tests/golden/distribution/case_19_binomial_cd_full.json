@@ -1,0 +1,26 @@
+{
+  "name": "19. Binomial CD full cumulative sum (x=5, N=5, p=0.5 -> 1)",
+  "keys": [
+    "MENU",
+    "7",
+    "DOWN",
+    "1",
+    "2",
+    "5",
+    "=",
+    "5",
+    "=",
+    "0",
+    ".",
+    "5",
+    "=",
+    "="
+  ],
+  "expect": {
+    "result": "1",
+    "lines": [
+      "p=",
+      "1"
+    ]
+  }
+}

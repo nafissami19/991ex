@@ -1,0 +1,28 @@
+{
+  "name": "19. Inverse regression y=a+b/x basic fit a=1, b=4",
+  "keys": [
+    "MENU",
+    "6",
+    "DOWN",
+    "4",
+    "1",
+    "=",
+    "2",
+    "=",
+    "4",
+    "=",
+    "RIGHT",
+    "DOWN",
+    "5",
+    "=",
+    "3",
+    "=",
+    "2",
+    "=",
+    "OPTN",
+    "4"
+  ],
+  "expect": {
+    "contains": "a=1"
+  }
+}

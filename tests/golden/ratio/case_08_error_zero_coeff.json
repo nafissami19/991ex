@@ -1,0 +1,22 @@
+{
+  "name": "8. Ratio Mode zero coefficient triggers Math ERROR",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "MENU",
+    "C",
+    "1",
+    "0",
+    "EXE",
+    "2",
+    "EXE",
+    "1",
+    "0",
+    "EXE",
+    "EXE"
+  ],
+  "expect": {
+    "error": "Math ERROR"
+  }
+}

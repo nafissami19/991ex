@@ -1,0 +1,11 @@
+{
+  "name": "7. MENU DOWN EXE enters Vector mode",
+  "keys": [
+    "MENU",
+    "DOWN",
+    "EXE"
+  ],
+  "expect": {
+    "contains": "VctA"
+  }
+}

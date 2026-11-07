@@ -1,0 +1,7 @@
+{
+  "name": "20. Integer division truncates towards zero: 7 / 2 = 3",
+  "keys": ["MENU", "3", "7", "/", "2", "="],
+  "expect": {
+    "result": "3"
+  }
+}

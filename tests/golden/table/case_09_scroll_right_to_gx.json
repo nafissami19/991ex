@@ -1,0 +1,33 @@
+{
+  "name": "9. Navigating RIGHT twice highlights g(x) column and shows value",
+  "setup": {
+    "table": "FG"
+  },
+  "keys": [
+    "MENU",
+    "9",
+    "x",
+    "=",
+    "2",
+    "x",
+    "=",
+    "=",
+    "=",
+    "=",
+    "RIGHT",
+    "RIGHT"
+  ],
+  "expect": {
+    "lines": [
+      "x f(x) g(x)",
+      "1 1 1 2",
+      "2 2 2 4",
+      "3 3 3 6",
+      "2"
+    ],
+    "indicators": [
+      "Down",
+      "Left"
+    ]
+  }
+}

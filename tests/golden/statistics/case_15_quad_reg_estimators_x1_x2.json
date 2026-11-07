@@ -1,0 +1,35 @@
+{
+  "name": "15. Quadratic regression estimators x̂₁ and x̂₂ for y=5: 5x̂₁ = 2",
+  "keys": [
+    "MENU",
+    "6",
+    "3",
+    "0",
+    "=",
+    "1",
+    "=",
+    "2",
+    "=",
+    "DOWN",
+    "RIGHT",
+    "1",
+    "=",
+    "2",
+    "=",
+    "5",
+    "=",
+    "AC",
+    "5",
+    "OPTN",
+    "DOWN",
+    "4",
+    "4",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "5x̂₁",
+      "2"
+    ]
+  }
+}

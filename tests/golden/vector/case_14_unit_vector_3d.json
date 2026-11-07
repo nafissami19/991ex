@@ -1,0 +1,27 @@
+{
+  "name": "14. UnitVector(VctC) normalizes 3D vector",
+  "keys": [
+    "MENU",
+    "5",
+    "3",
+    "3",
+    "2",
+    "=",
+    "(-)",
+    "1",
+    "=",
+    "2",
+    "=",
+    "AC",
+    "OPTN",
+    "DOWN",
+    "4",
+    "OPTN",
+    "5",
+    ")",
+    "="
+  ],
+  "expect": {
+    "contains": "VctAns"
+  }
+}

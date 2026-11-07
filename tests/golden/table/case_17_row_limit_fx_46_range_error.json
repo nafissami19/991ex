@@ -1,0 +1,26 @@
+{
+  "name": "17. Row limit 46 for f(x) exceeds 45 capacity and throws Range ERROR",
+  "setup": {
+    "table": "F"
+  },
+  "keys": [
+    "MENU",
+    "9",
+    "x",
+    "=",
+    "1",
+    "=",
+    "4",
+    "6",
+    "=",
+    "1",
+    "="
+  ],
+  "expect": {
+    "error": "Range ERROR",
+    "lines": [
+      "Range ERROR",
+      "[AC] :Cancel"
+    ]
+  }
+}

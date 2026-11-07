@@ -1,0 +1,25 @@
+{
+  "name": "11. Recall M in calculation via ALPHA M+",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "5",
+    "0",
+    "M+",
+    "1",
+    "5",
+    "SHIFT",
+    "M+",
+    "ALPHA",
+    "M+",
+    "="
+  ],
+  "expect": {
+    "result": "35",
+    "indicators": [
+      "M"
+    ]
+  }
+}

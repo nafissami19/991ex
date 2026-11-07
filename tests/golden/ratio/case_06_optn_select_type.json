@@ -1,0 +1,29 @@
+{
+  "name": "6. Ratio Mode OPTN Select Type: switch to A:B=X:D and solve",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "MENU",
+    "C",
+    "2",
+    "OPTN",
+    "1",
+    "1",
+    "1",
+    "EXE",
+    "2",
+    "EXE",
+    "1",
+    "0",
+    "EXE",
+    "EXE"
+  ],
+  "expect": {
+    "lines": [
+      "X=",
+      "5"
+    ],
+    "result": "5"
+  }
+}

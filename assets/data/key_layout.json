@@ -1,0 +1,1108 @@
+[
+  {
+    "index": 0,
+    "raw_id": "[SHIFT]",
+    "name": "SHIFT",
+    "type": "function",
+    "code": [
+      128,
+      1
+    ],
+    "rect": {
+      "x": 99,
+      "y": 479,
+      "w": 49,
+      "h": 49
+    },
+    "raw_keychar": 113,
+    "raw_char": "q",
+    "shortcut": "q",
+    "primary": "SHIFT",
+    "shift": "",
+    "alpha": ""
+  },
+  {
+    "index": 1,
+    "raw_id": "[ALPHA]",
+    "name": "ALPHA",
+    "type": "function",
+    "code": [
+      128,
+      2
+    ],
+    "rect": {
+      "x": 169,
+      "y": 479,
+      "w": 49,
+      "h": 49
+    },
+    "raw_keychar": 81,
+    "raw_char": "Q",
+    "shortcut": "Q",
+    "primary": "ALPHA",
+    "shift": "",
+    "alpha": ""
+  },
+  {
+    "index": 2,
+    "raw_id": "[MENU]",
+    "name": "MENU",
+    "type": "function",
+    "code": [
+      128,
+      16
+    ],
+    "rect": {
+      "x": 427,
+      "y": 479,
+      "w": 49,
+      "h": 49
+    },
+    "raw_keychar": 119,
+    "raw_char": "w",
+    "shortcut": "w",
+    "primary": "MENU",
+    "shift": "SETUP",
+    "alpha": ""
+  },
+  {
+    "index": 3,
+    "raw_id": "[ON]",
+    "name": "ON",
+    "type": "power",
+    "code": [
+      0,
+      0
+    ],
+    "rect": {
+      "x": 496,
+      "y": 479,
+      "w": 49,
+      "h": 49
+    },
+    "raw_keychar": 87,
+    "raw_char": "W",
+    "shortcut": "W",
+    "primary": "ON",
+    "shift": "",
+    "alpha": ""
+  },
+  {
+    "index": 4,
+    "raw_id": "[Up]",
+    "name": "UP",
+    "type": "dpad",
+    "code": [
+      128,
+      4
+    ],
+    "rect": {
+      "x": 298,
+      "y": 478,
+      "w": 49,
+      "h": 49
+    },
+    "raw_keychar": 69,
+    "raw_char": "E",
+    "shortcut": "ArrowUp",
+    "primary": "▲",
+    "shift": "",
+    "alpha": ""
+  },
+  {
+    "index": 5,
+    "raw_id": "[Down]",
+    "name": "DOWN",
+    "type": "dpad",
+    "code": [
+      64,
+      8
+    ],
+    "rect": {
+      "x": 298,
+      "y": 546,
+      "w": 49,
+      "h": 49
+    },
+    "raw_keychar": 82,
+    "raw_char": "R",
+    "shortcut": "ArrowDown",
+    "primary": "▼",
+    "shift": "",
+    "alpha": ""
+  },
+  {
+    "index": 6,
+    "raw_id": "[Left]",
+    "name": "LEFT",
+    "type": "dpad",
+    "code": [
+      64,
+      4
+    ],
+    "rect": {
+      "x": 236,
+      "y": 512,
+      "w": 49,
+      "h": 49
+    },
+    "raw_keychar": 33,
+    "raw_char": "!",
+    "shortcut": "ArrowLeft",
+    "primary": "◀",
+    "shift": "",
+    "alpha": ""
+  },
+  {
+    "index": 7,
+    "raw_id": "[Right]",
+    "name": "RIGHT",
+    "type": "dpad",
+    "code": [
+      128,
+      8
+    ],
+    "rect": {
+      "x": 360,
+      "y": 512,
+      "w": 49,
+      "h": 49
+    },
+    "raw_keychar": 36,
+    "raw_char": "$",
+    "shortcut": "ArrowRight",
+    "primary": "▶",
+    "shift": "",
+    "alpha": ""
+  },
+  {
+    "index": 8,
+    "raw_id": "[OPTN]",
+    "name": "OPTN",
+    "type": "function",
+    "code": [
+      64,
+      1
+    ],
+    "rect": {
+      "x": 94,
+      "y": 575,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 84,
+    "raw_char": "T",
+    "shortcut": "t",
+    "primary": "OPTN",
+    "shift": "QR",
+    "alpha": ""
+  },
+  {
+    "index": 9,
+    "raw_id": "[CALC]",
+    "name": "CALC",
+    "type": "function",
+    "code": [
+      64,
+      2
+    ],
+    "rect": {
+      "x": 172,
+      "y": 575,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 114,
+    "raw_char": "r",
+    "shortcut": "r",
+    "primary": "CALC",
+    "shift": "SOLVE",
+    "alpha": "="
+  },
+  {
+    "index": 10,
+    "raw_id": "[Integral]",
+    "name": "INTEGRAL",
+    "type": "function",
+    "code": [
+      64,
+      16
+    ],
+    "rect": {
+      "x": 406,
+      "y": 575,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 121,
+    "raw_char": "y",
+    "shortcut": "y",
+    "primary": "∫■□",
+    "shift": "d/dx",
+    "alpha": ":"
+  },
+  {
+    "index": 11,
+    "raw_id": "[x]",
+    "name": "X",
+    "type": "function",
+    "code": [
+      64,
+      32
+    ],
+    "rect": {
+      "x": 484,
+      "y": 575,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 91,
+    "raw_char": "[",
+    "shortcut": "[",
+    "primary": "x",
+    "shift": "Σ",
+    "alpha": ""
+  },
+  {
+    "index": 12,
+    "raw_id": "[d/c]",
+    "name": "FRAC",
+    "type": "function",
+    "code": [
+      32,
+      1
+    ],
+    "rect": {
+      "x": 94,
+      "y": 640,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 97,
+    "raw_char": "a",
+    "shortcut": "a",
+    "primary": "■/□",
+    "shift": "■■/□",
+    "alpha": ""
+  },
+  {
+    "index": 13,
+    "raw_id": "[Square Root]",
+    "name": "SQRT",
+    "type": "function",
+    "code": [
+      32,
+      2
+    ],
+    "rect": {
+      "x": 172,
+      "y": 640,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 115,
+    "raw_char": "s",
+    "shortcut": "s",
+    "primary": "√■",
+    "shift": "∛",
+    "alpha": ""
+  },
+  {
+    "index": 14,
+    "raw_id": "[x^2]",
+    "name": "SQUARE",
+    "type": "function",
+    "code": [
+      32,
+      4
+    ],
+    "rect": {
+      "x": 250,
+      "y": 640,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 100,
+    "raw_char": "d",
+    "shortcut": "d",
+    "primary": "x²",
+    "shift": "x³",
+    "alpha": "",
+    "baseN": "DEC"
+  },
+  {
+    "index": 15,
+    "raw_id": "[^]",
+    "name": "POWER",
+    "type": "function",
+    "code": [
+      32,
+      8
+    ],
+    "rect": {
+      "x": 329,
+      "y": 640,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 94,
+    "raw_char": "^",
+    "shortcut": "^",
+    "primary": "x■",
+    "shift": "■√□",
+    "alpha": "",
+    "baseN": "HEX"
+  },
+  {
+    "index": 16,
+    "raw_id": "[log(a,b)]",
+    "name": "LOG_AB",
+    "type": "function",
+    "code": [
+      32,
+      16
+    ],
+    "rect": {
+      "x": 406,
+      "y": 640,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 105,
+    "raw_char": "i",
+    "shortcut": "i",
+    "primary": "log■□",
+    "shift": "10■",
+    "alpha": "",
+    "baseN": "BIN"
+  },
+  {
+    "index": 17,
+    "raw_id": "[ln]",
+    "name": "LN",
+    "type": "function",
+    "code": [
+      32,
+      32
+    ],
+    "rect": {
+      "x": 484,
+      "y": 640,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 104,
+    "raw_char": "h",
+    "shortcut": "h",
+    "primary": "ln",
+    "shift": "e■",
+    "alpha": "",
+    "baseN": "OCT"
+  },
+  {
+    "index": 18,
+    "raw_id": "[(-)]",
+    "name": "NEG",
+    "type": "function",
+    "code": [
+      16,
+      1
+    ],
+    "rect": {
+      "x": 94,
+      "y": 706,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 122,
+    "raw_char": "z",
+    "shortcut": "z",
+    "primary": "(-)",
+    "shift": "log",
+    "alpha": "A"
+  },
+  {
+    "index": 19,
+    "raw_id": "[''\"]",
+    "name": "DEG",
+    "type": "function",
+    "code": [
+      16,
+      2
+    ],
+    "rect": {
+      "x": 172,
+      "y": 706,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 120,
+    "raw_char": "x",
+    "shortcut": "x",
+    "primary": "° ' \"",
+    "shift": "FACT",
+    "alpha": "B"
+  },
+  {
+    "index": 20,
+    "raw_id": "[x^-1]",
+    "name": "INV",
+    "type": "function",
+    "code": [
+      16,
+      4
+    ],
+    "rect": {
+      "x": 250,
+      "y": 706,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 117,
+    "raw_char": "u",
+    "shortcut": "u",
+    "primary": "x⁻¹",
+    "shift": "x!",
+    "alpha": "C"
+  },
+  {
+    "index": 21,
+    "raw_id": "[sin]",
+    "name": "SIN",
+    "type": "function",
+    "code": [
+      16,
+      8
+    ],
+    "rect": {
+      "x": 329,
+      "y": 706,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 106,
+    "raw_char": "j",
+    "shortcut": "j",
+    "primary": "sin",
+    "shift": "sin⁻¹",
+    "alpha": "D"
+  },
+  {
+    "index": 22,
+    "raw_id": "[cos]",
+    "name": "COS",
+    "type": "function",
+    "code": [
+      16,
+      16
+    ],
+    "rect": {
+      "x": 406,
+      "y": 706,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 107,
+    "raw_char": "k",
+    "shortcut": "k",
+    "primary": "cos",
+    "shift": "cos⁻¹",
+    "alpha": "E"
+  },
+  {
+    "index": 23,
+    "raw_id": "[tan]",
+    "name": "TAN",
+    "type": "function",
+    "code": [
+      16,
+      32
+    ],
+    "rect": {
+      "x": 484,
+      "y": 706,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 108,
+    "raw_char": "l",
+    "shortcut": "l",
+    "primary": "tan",
+    "shift": "tan⁻¹",
+    "alpha": "F"
+  },
+  {
+    "index": 24,
+    "raw_id": "[STO]",
+    "name": "STO",
+    "type": "function",
+    "code": [
+      8,
+      1
+    ],
+    "rect": {
+      "x": 94,
+      "y": 772,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 74,
+    "raw_char": "J",
+    "shortcut": "J",
+    "primary": "STO",
+    "shift": "RECALL",
+    "alpha": ""
+  },
+  {
+    "index": 25,
+    "raw_id": "[ENG]",
+    "name": "ENG",
+    "type": "function",
+    "code": [
+      8,
+      2
+    ],
+    "rect": {
+      "x": 172,
+      "y": 772,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 98,
+    "raw_char": "b",
+    "shortcut": "b",
+    "primary": "ENG",
+    "shift": "←",
+    "alpha": "",
+    "complex": "i",
+    "complexShift": "∠"
+  },
+  {
+    "index": 26,
+    "raw_id": "[(]",
+    "name": "LPAREN",
+    "type": "function",
+    "code": [
+      8,
+      4
+    ],
+    "rect": {
+      "x": 250,
+      "y": 772,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 40,
+    "raw_char": "(",
+    "shortcut": "(",
+    "primary": "(",
+    "shift": "Abs",
+    "alpha": ""
+  },
+  {
+    "index": 27,
+    "raw_id": "[)]",
+    "name": "RPAREN",
+    "type": "function",
+    "code": [
+      8,
+      8
+    ],
+    "rect": {
+      "x": 329,
+      "y": 772,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 41,
+    "raw_char": ")",
+    "shortcut": ")",
+    "primary": ")",
+    "shift": ",",
+    "alpha": "x"
+  },
+  {
+    "index": 28,
+    "raw_id": "[S<>D]",
+    "name": "SD",
+    "type": "function",
+    "code": [
+      8,
+      16
+    ],
+    "rect": {
+      "x": 406,
+      "y": 772,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 110,
+    "raw_char": "n",
+    "shortcut": "n",
+    "primary": "S⇔D",
+    "shift": "a b/c⇔d/c",
+    "alpha": "y"
+  },
+  {
+    "index": 29,
+    "raw_id": "[M+]",
+    "name": "M_PLUS",
+    "type": "function",
+    "code": [
+      8,
+      32
+    ],
+    "rect": {
+      "x": 484,
+      "y": 772,
+      "w": 68,
+      "h": 40
+    },
+    "raw_keychar": 109,
+    "raw_char": "m",
+    "shortcut": "m",
+    "primary": "M+",
+    "shift": "M−",
+    "alpha": "M"
+  },
+  {
+    "index": 30,
+    "raw_id": "[7]",
+    "name": "7",
+    "type": "digit",
+    "code": [
+      4,
+      1
+    ],
+    "rect": {
+      "x": 96,
+      "y": 841,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 55,
+    "raw_char": "7",
+    "shortcut": "7",
+    "primary": "7",
+    "shift": "CONST",
+    "alpha": ""
+  },
+  {
+    "index": 31,
+    "raw_id": "[8]",
+    "name": "8",
+    "type": "digit",
+    "code": [
+      4,
+      2
+    ],
+    "rect": {
+      "x": 189,
+      "y": 841,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 56,
+    "raw_char": "8",
+    "shortcut": "8",
+    "primary": "8",
+    "shift": "CONV",
+    "alpha": ""
+  },
+  {
+    "index": 32,
+    "raw_id": "[9]",
+    "name": "9",
+    "type": "digit",
+    "code": [
+      4,
+      4
+    ],
+    "rect": {
+      "x": 282,
+      "y": 841,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 57,
+    "raw_char": "9",
+    "shortcut": "9",
+    "primary": "9",
+    "shift": "RESET",
+    "alpha": ""
+  },
+  {
+    "index": 33,
+    "raw_id": "[DEL]",
+    "name": "DEL",
+    "type": "edit",
+    "code": [
+      4,
+      8
+    ],
+    "rect": {
+      "x": 375,
+      "y": 841,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 111,
+    "raw_char": "o",
+    "shortcut": "Backspace",
+    "primary": "DEL",
+    "shift": "INS",
+    "alpha": "UNDO"
+  },
+  {
+    "index": 34,
+    "raw_id": "[AC]",
+    "name": "AC",
+    "type": "edit",
+    "code": [
+      4,
+      16
+    ],
+    "rect": {
+      "x": 468,
+      "y": 841,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 67,
+    "raw_char": "C",
+    "shortcut": "Escape",
+    "primary": "AC",
+    "shift": "OFF",
+    "alpha": ""
+  },
+  {
+    "index": 35,
+    "raw_id": "[4]",
+    "name": "4",
+    "type": "digit",
+    "code": [
+      2,
+      1
+    ],
+    "rect": {
+      "x": 96,
+      "y": 921,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 52,
+    "raw_char": "4",
+    "shortcut": "4",
+    "primary": "4",
+    "shift": "",
+    "alpha": ""
+  },
+  {
+    "index": 36,
+    "raw_id": "[5]",
+    "name": "5",
+    "type": "digit",
+    "code": [
+      2,
+      2
+    ],
+    "rect": {
+      "x": 189,
+      "y": 921,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 53,
+    "raw_char": "5",
+    "shortcut": "5",
+    "primary": "5",
+    "shift": "",
+    "alpha": ""
+  },
+  {
+    "index": 37,
+    "raw_id": "[6]",
+    "name": "6",
+    "type": "digit",
+    "code": [
+      2,
+      4
+    ],
+    "rect": {
+      "x": 282,
+      "y": 921,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 54,
+    "raw_char": "6",
+    "shortcut": "6",
+    "primary": "6",
+    "shift": "",
+    "alpha": ""
+  },
+  {
+    "index": 38,
+    "raw_id": "[*]",
+    "name": "MUL",
+    "type": "operator",
+    "code": [
+      2,
+      8
+    ],
+    "rect": {
+      "x": 375,
+      "y": 921,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 79,
+    "raw_char": "O",
+    "shortcut": "*",
+    "primary": "×",
+    "shift": "nPr",
+    "alpha": ""
+  },
+  {
+    "index": 39,
+    "raw_id": "[/]",
+    "name": "DIV",
+    "type": "operator",
+    "code": [
+      2,
+      16
+    ],
+    "rect": {
+      "x": 468,
+      "y": 921,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 80,
+    "raw_char": "P",
+    "shortcut": "/",
+    "primary": "÷",
+    "shift": "nCr",
+    "alpha": ""
+  },
+  {
+    "index": 40,
+    "raw_id": "[1]",
+    "name": "1",
+    "type": "digit",
+    "code": [
+      1,
+      1
+    ],
+    "rect": {
+      "x": 96,
+      "y": 1001,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 49,
+    "raw_char": "1",
+    "shortcut": "1",
+    "primary": "1",
+    "shift": "",
+    "alpha": ""
+  },
+  {
+    "index": 41,
+    "raw_id": "[2]",
+    "name": "2",
+    "type": "digit",
+    "code": [
+      1,
+      2
+    ],
+    "rect": {
+      "x": 189,
+      "y": 1001,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 50,
+    "raw_char": "2",
+    "shortcut": "2",
+    "primary": "2",
+    "shift": "",
+    "alpha": ""
+  },
+  {
+    "index": 42,
+    "raw_id": "[3]",
+    "name": "3",
+    "type": "digit",
+    "code": [
+      1,
+      4
+    ],
+    "rect": {
+      "x": 282,
+      "y": 1001,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 51,
+    "raw_char": "3",
+    "shortcut": "3",
+    "primary": "3",
+    "shift": "",
+    "alpha": ""
+  },
+  {
+    "index": 43,
+    "raw_id": "[+]",
+    "name": "ADD",
+    "type": "operator",
+    "code": [
+      1,
+      8
+    ],
+    "rect": {
+      "x": 375,
+      "y": 1001,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 43,
+    "raw_char": "+",
+    "shortcut": "+",
+    "primary": "+",
+    "shift": "Pol",
+    "alpha": ""
+  },
+  {
+    "index": 44,
+    "raw_id": "[-]",
+    "name": "SUB",
+    "type": "operator",
+    "code": [
+      1,
+      16
+    ],
+    "rect": {
+      "x": 468,
+      "y": 1001,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 112,
+    "raw_char": "p",
+    "shortcut": "-",
+    "primary": "-",
+    "shift": "Rec",
+    "alpha": ""
+  },
+  {
+    "index": 45,
+    "raw_id": "[0]",
+    "name": "0",
+    "type": "digit",
+    "code": [
+      16,
+      64
+    ],
+    "rect": {
+      "x": 96,
+      "y": 1081,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 48,
+    "raw_char": "0",
+    "shortcut": "0",
+    "primary": "0",
+    "shift": "Rnd",
+    "alpha": ""
+  },
+  {
+    "index": 46,
+    "raw_id": "[.]",
+    "name": "DOT",
+    "type": "digit",
+    "code": [
+      8,
+      64
+    ],
+    "rect": {
+      "x": 189,
+      "y": 1081,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 46,
+    "raw_char": ".",
+    "shortcut": ".",
+    "primary": ".",
+    "shift": "Ran#",
+    "alpha": "RanInt"
+  },
+  {
+    "index": 47,
+    "raw_id": "[*10^x]",
+    "name": "EXP",
+    "type": "digit",
+    "code": [
+      4,
+      64
+    ],
+    "rect": {
+      "x": 282,
+      "y": 1081,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 75,
+    "raw_char": "K",
+    "shortcut": "k",
+    "primary": "×10ⁿ",
+    "shift": "π",
+    "alpha": "e"
+  },
+  {
+    "index": 48,
+    "raw_id": "[Ans]",
+    "name": "ANS",
+    "type": "digit",
+    "code": [
+      2,
+      64
+    ],
+    "rect": {
+      "x": 375,
+      "y": 1081,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 77,
+    "raw_char": "M",
+    "shortcut": "m",
+    "primary": "Ans",
+    "shift": "%",
+    "alpha": ""
+  },
+  {
+    "index": 49,
+    "raw_id": "[=]",
+    "name": "EXE",
+    "type": "action",
+    "code": [
+      1,
+      64
+    ],
+    "rect": {
+      "x": 468,
+      "y": 1081,
+      "w": 80,
+      "h": 56
+    },
+    "raw_keychar": 61,
+    "raw_char": "=",
+    "shortcut": "Enter",
+    "primary": "=",
+    "shift": "≈",
+    "alpha": ""
+  }
+]

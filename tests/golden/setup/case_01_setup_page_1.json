@@ -1,0 +1,24 @@
+{
+  "name": "1. SETUP menu Page 1 lines and Down indicator",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU"
+  ],
+  "expect": {
+    "lines": [
+      "1:Input/Output",
+      "2:Angle Unit",
+      "3:Number Format",
+      "4:Engineer Symbol"
+    ],
+    "indicators": [
+      "Math",
+      "D",
+      "Down"
+    ]
+  }
+}

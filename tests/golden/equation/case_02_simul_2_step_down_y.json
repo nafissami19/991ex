@@ -1,0 +1,33 @@
+{
+  "name": "2. Simultaneous 2 unknowns step down to y=2",
+  "keys": [
+    "MENU",
+    "A",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "4",
+    "=",
+    "=",
+    "DOWN"
+  ],
+  "expect": {
+    "lines": [
+      "y=",
+      "2"
+    ],
+    "result": "2",
+    "indicators": [
+      "Up"
+    ]
+  }
+}

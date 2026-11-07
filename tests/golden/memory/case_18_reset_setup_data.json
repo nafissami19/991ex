@@ -1,0 +1,27 @@
+{
+  "name": "18. RESET 1 (Setup Data) resets setup angle to DEG but keeps A",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Rad"
+  },
+  "keys": [
+    "4",
+    "2",
+    "STO",
+    "(-)",
+    "SHIFT",
+    "9",
+    "1",
+    "=",
+    "AC",
+    "ALPHA",
+    "(-)",
+    "="
+  ],
+  "expect": {
+    "result": "42",
+    "indicators": [
+      "D"
+    ]
+  }
+}

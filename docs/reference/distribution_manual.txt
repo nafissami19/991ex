@@ -1,0 +1,290 @@
+=== Page 31 ===
+• To return to the Coefﬁcient Editor while the solutions are displayed,
+press .
+To change the Inequality Type: Pressing (Polynomial) displays a
+dialog box that you can use to select an inequality degree. Changing the
+degree of an inequality causes the values of all Coefﬁcient Editor
+coefﬁcients to become zero.
+Inequality Mode Calculation Examples
+3x3 + 3x2 − x > 0
+ (Polynomial)(3rd degree inequality)(ax3+bx2+cx+d>0)
+331
+
+
+Note
+• Solutions are displayed as shown in the
+screen shot nearby when something
+other than MathI/MathO is selected for
+the Input/Output setting on the setup
+menu.
+• “All Real Numbers” appears on the solution screen when the solution of
+an inequality is all numbers (such as x2 ≧ 0).
+• “No Solution” appears on the solution screen when no solution exists for
+an inequality (such as x2 < 0).
+Ratio Calculations 
+The Ratio Mode lets you determine the value of X in the ratio expression A :
+B = X : D (or A : B = C : X) when the values of A, B, C and D are known. The
+following shows the general procedure for using Ratio.
+1. Press , select the Ratio Mode icon, and then press .
+2. On the menu that appears, select (A:B=X:D) or (A:B=C:X).
+3. On the Coefﬁcient Editor screen that appears, input up to 10 digits for
+each of the required values (A, B, C, D).
+• To solve 3 : 8 = X : 12 for X, for example, press  in step 1, and
+then input the following for the coefﬁcients (A = 3, B = 8, D = 12):
+3812.
+• Pressing  will reset all of the coefﬁcients to one.
+4. After all the values are the way you want, press .
+• This displays the solution (value of X). Pressing  again will return
+to the Coefﬁcient Editor.
+Important: A Math ERROR will occur if you perform a calculation while 0 is
+input for a coefﬁcient.
+To calculate X in the ratio 1 : 2 = X : 10
+(Select Type)(A:B=X:D)
+1210
+ (X=) 5
+Changing the Ratio Expression Type
+Press (Select Type) and then select the ratio expression type you
+want from the menu that appears.
+30
+
+=== Page 32 ===
+Distribution Calculations 
+You can use the procedures below to perform seven different types of
+distribution calculations.
+1. Press , select the Distribution Mode icon, and then press .
+2. On the menu that appears, select a distribution calculation type.
+To select this calculation type: Press this key:
+Normal probability density (Normal PD)
+Normal cumulative distribution (Normal CD)
+Inverse normal cumulative distribution (Inverse Normal)
+Binomial probability (Binomial PD)
+Binomial cumulative distribution (Binomial CD)
+Poisson probability (Poisson PD)
+Poisson cumulative distribution (Poisson CD)
+• If you selected Normal PD, Normal CD, or Inverse Normal as the
+calculation type, go to step 4 of this procedure. For any other
+calculation type, go to step 3.
+3. On the dialog box that appears, select a data (x) input method.
+• To input multiple x data items at the same time, press (List). To
+input a single data item, press (Variable).
+• If you selected (List) above, a list screen will appear at this time so
+you can input the x data items.
+4. Input values for the variables.
+• The variables that require data input depend on the calculation type
+you selected in step 2 of this procedure.
+5. After inputting values for all of the variables, press .
+• This displays the calculation results.
+• Pressing  while a calculation result is displayed will return to the
+variable input screen.
+Note
+• If you selected something other than “List” in step 3 of this procedure the
+calculation result will be stored in Ans memory.
+• Distribution calculation accuracy is up to six signiﬁcant digits.
+To change the distribution calculation type: Press (Select Type)
+and then select the distribution type you want.
+Variables that Accept Input
+Distribution calculation variables that accept input values are those below.
+Normal PD: x, σ, μ
+Normal CD: Lower, Upper, σ, μ
+Inverse Normal: Area, σ, μ (Tail setting always left.)
+Binomial PD, Binomial CD: x, N, p
+Poisson PD, Poisson CD: x, λ
+x: data, σ: standard deviation (σ > 0), μ, λ: mean, Lower: lower boundary,
+Upper: upper boundary, Area: probability value (0 ≦ Area ≦ 1), N: number
+of trials, p: success probability (0 ≦ p ≦ 1)
+31
+
+=== Page 33 ===
+List Screen
+You can input up to 45 data samples for each variable. Calculation results
+are also displayed on the List Screen.
+(1) Distribution calculation type
+(2) Value at current cursor position
+(3) Data (x)
+(4) Calculation results (P)
+To edit data: Move the cursor to the cell that contains the data you want to
+edit, input the new data, and then press .
+To delete data: Move the cursor to the data you want to delete and then
+press .
+To insert data: Move the cursor to the position where you want to insert the
+data, press (Editor)(Insert Row), and then input the data.
+To delete all data: Press (Editor)(Delete All).
+Distribution Mode Calculation Examples
+To calculate the normal probability density when x = 36, σ = 2, μ = 35
+1. Perform the key operation below to select Normal PD.
+(Select Type)(Normal PD)
+• This displays the variable input
+screen.
+2. Input values for x, σ, and μ.   36235
+3. Press .
+• This displays the calculation results. (p=) 0.1760326634
+• Pressing  again or pressing  returns to the variable input
+screen in step 1 of this procedure.
+Note: You can assign the currently displayed solution to a variable. While
+the solution is displayed, press  and then the key that corresponds to
+the name of the variable to which you want to assign it.
+To calculate binomial probability for the data {10, 11, 12, 13} when N = 15
+and p = 0.6
+1. Perform the key operation below to select Binomial PD.
+(Select Type)(Binomial PD)
+2. Because you want to input four data (x) values, press (List) here.
+• This displays the List Screen.
+3. Input a value for x.  10111213
+4. After inputting all of the values, press .
+• This displays the variable input screen.
+5. Input values for N and p.  150.6
+6. Press .
+• This returns to the List Screen, with
+the calculation result for each x value
+shown in the P column.
+Pressing  returns to the variable input screen in step 4 of this procedure.
+Note
+• Changing any x value in step 6 of the above procedure will clear all
+calculation results and return to step 2. In this case, all of the other x
+values (except for the one you changed), and the values assigned to
+32
+
+=== Page 34 ===
+variables N and p remain the same. This means you can repeat a
+calculation changing only one speciﬁc value.
+• On the List Screen, you can assign the value in a cell to a variable. Move
+the cell cursor to cell that contains the value you want to assign, press
+, and then press the key that corresponds to the desired variable
+name.
+• An error message appears if the input value is outside the allowable
+range. “ERROR” will appear in the P column of the Result Screen when
+the value input for the corresponding data is outside the allowable range.
+Using Spreadsheet 
+To perform the operations in this section, ﬁrst enter the Spreadsheet Mode.
+The Spreadsheet Mode makes it possible to
+perform calculations using a 45-row × 5-
+column (cell A1 to E45) spreadsheet.
+(1) Row numbers (1 to 45)
+(2) Column letters (A to E)
+(3) Cell cursor: Indicates the currently
+selected cell.
+(4) Edit box: Shows the contents of the cell
+where the cell cursor is currently located.
+Important: Any time you exit the Spreadsheet Mode, turn off the calculator
+or press the  key, every input into the spreadsheet is cleared.
+Inputting and Editing Cell Contents
+You can input a constant or a formula into each cell.
+Constants: A constant is something whose value is ﬁxed as soon as you
+ﬁnalize its input. A constant can be either a numeric value, or a calculation
+formula (such as 7+3, sin30, A1×2, etc.) that does not have an equal sign
+(=) in front of it.
+Formula: A formula that starts out with an equal sign (=), such as =A1×2, is
+executed as it is written.
+Note: Up to 10 bytes can be input into each cell in the case of a constant.
+In the case of a formula, you can input up to 49 bytes into each cell.
+Inputting a formula into a cell requires 11 bytes in addition to the number of
+bytes for the actual formula data.
+To display the remaining input capacity: Press (Free Space).
+To input a constant and/or formula into a cell
+Ex 1: Into cells A1, A2, and A3, input constants 7×5, 7×6, and A2+7
+respectively. And then, input the following formula into cell B1: =A1+7.
+1. Move the cell cursor to cell A1.
+2. Perform the key operation below.
+7576(A)7
+3. Move the cell cursor to cell B1, and then perform the key operation
+below.
+(=)(A)7
+Note: You can specify whether a formula in the edit box should be
+displayed as it is or as its calculation result value.
+33
+
+=== Page 35 ===
+To edit existing cell data
+1. Move the cell cursor to the cell whose contents you want to edit, and
+then press (Edit Cell).
+• Cell contents in the edit box will change from align right to align left. A
+text cursor will appear in the edit box so you can edit its contents.
+2. Use  and  to move the cursor around the contents of the cell, and
+edit them as required.
+3. To ﬁnalize and apply your edits, press .
+To input a cell reference name using the Grab command
+The Grab command can be used in place of manual reference name (such
+as A1) input using a key operation to select and input a cell you want to
+reference.
+Ex 2: Continuing from Ex 1, input the following formula into cell B2: =A2+7.
+1. Move the cell cursor to cell B2.
+2. Perform the key operation below.
+(=)(Grab)
+7
+Cell Relative and Absolute References
+There are two types of cell reference: relative and absolute.
+Relative cell reference: The cell reference (A1) in a formula like =A1+7 is a
+relative reference, which means that it changes depending on the cell
+where the formula is located. If the formula =A1+7 is originally located in
+cell B1, for example, copying and then pasting to cell C3 will result in
+=B3+7 being input into cell C3. Since the copy and paste operation moves
+the formula one column (B to C) and two rows (1 to 3) causes the A1
+relative cell reference in the formula to change to B3. If the result of a copy
+and paste operation causes a relative cell reference name to change to
+something that is outside the range of the spreadsheet cells, the applicable
+column letter and/or row number will be replaced by a question mark (?),
+and “ERROR” will be displayed as the cell’s data.
+Absolute cell reference: If you want the row or the column, or both the row
+and the column parts of a cell reference name to remain the same no matter
+where you paste them, you need to create an absolute cell reference name.
+To create an absolute cell reference put a dollar sign () in front of the
+column name and/or row number. You can use one of three different
+absolute cell references: absolute column with relative row (A1), relative
+column with absolute row (A1), or absolute row and column (A1).
+To input the absolute cell reference symbol (
+)
+While inputting a formula into a cell, press ().
+To cut and paste spreadsheet data
+1. Move the cursor to the cell whose data you want to cut and then press
+(Cut & Paste).
+• This enters paste standby. To cancel paste standby, press .
+2. Move the cursor to the cell into which you want to paste the data you
+just cut, and then press .
+34
+
+=== Page 36 ===
+• Pasting data simultaneously deletes the data from the cell where you
+performed the cut operation, and automatically cancels paste
+standby.
+Note: In the case of a cut and paste operation, cell references do not
+change when pasted, regardless of whether they are relative or absolute.
+To copy and paste spreadsheet data
+1. Move the cursor to the cell whose data you want to copy and then press
+(Copy & Paste).
+• This enters paste standby. To cancel paste standby, press .
+2. Move the cursor to the cell into which you want to paste the data you
+just copied, and then press .
+• Paste standby remains enabled until you press , so you can paste
+the copied data to other cells, if you want.
+Note: When you copy the contents of a cell that contains a formula with a
+relative reference, the relative reference will change in accordance with the
+location of the cell where the contents are pasted.
+To delete input data from a specific cell
+Move the cell cursor to the cell whose contents you want to delete and then
+press .
+To delete the contents of all the cells in a spreadsheet
+Press (Delete All).
+Using Variables (A, B, C, D, E, F, M, x, y)
+You can use  to assign the value of a cell to a variable. You can also use
+(RECALL) to input the value assigned to a variable into a cell.
+Using Spreadsheet Mode Special Commands
+In the Spreadsheet Mode, the commands below can be used inside
+formulas or constants. These command are on the menu that appears when
+you press .
+Min( Returns the minimum of the values in a speciﬁed range of cells.
+Syntax: Min(start cell:end cell)
+Max( Returns the maximum of the values in a speciﬁed range of cells.
+Syntax: Max(start cell:end cell)
+Mean( Returns the mean of the values in a speciﬁed range of cells.
+Syntax: Mean(start cell:end cell)
+Sum( Returns the sum of the values in a speciﬁed range of cells.
+Syntax: Sum(start cell:end cell)
+Ex 3: Continuing from Ex 1, input the formula =Sum(A1:A3), which
+calculates the sum of cells A1, A2, and A3, into cell A4.
+1. Move the cell cursor to cell A4.
+2. Input =Sum(A1:A3).
+(=)(Sum)
+(A)(:)(A)
+3. Press .
+35
+

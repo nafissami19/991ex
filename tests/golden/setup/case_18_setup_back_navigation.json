@@ -1,0 +1,21 @@
+{
+  "name": "18. SETUP back navigation via LEFT key",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "2",
+    "LEFT"
+  ],
+  "expect": {
+    "lines": [
+      "1:Input/Output",
+      "2:Angle Unit",
+      "3:Number Format",
+      "4:Engineer Symbol"
+    ]
+  }
+}

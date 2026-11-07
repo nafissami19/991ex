@@ -1,0 +1,24 @@
+{
+  "name": "4. Insert row in editor via OPTN Editor 1 inserts row at cursor position",
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "1",
+    "=",
+    "3",
+    "=",
+    "UP",
+    "OPTN",
+    "2",
+    "1"
+  ],
+  "expect": {
+    "lines": [
+      "x",
+      "1: 1",
+      "2: 0",
+      "0"
+    ]
+  }
+}

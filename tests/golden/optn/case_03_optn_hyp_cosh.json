@@ -1,0 +1,20 @@
+{
+  "name": "3. OPTN Hyperbolic Func cosh(0) = 1",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "OPTN",
+    "1",
+    "2",
+    "0",
+    ")",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "cosh(0)",
+      "1"
+    ]
+  }
+}

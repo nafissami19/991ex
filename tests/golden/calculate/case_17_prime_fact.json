@@ -1,0 +1,22 @@
+{
+  "name": "17. Prime factorization 2016",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "2",
+    "0",
+    "1",
+    "6",
+    "=",
+    "SHIFT",
+    "FACT"
+  ],
+  "expect": {
+    "result": "2⁵×3²×7",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

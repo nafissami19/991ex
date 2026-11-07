@@ -1,0 +1,22 @@
+{
+  "name": "7. Pick variable from RECALL screen into calculation",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "9",
+    "STO",
+    "(-)",
+    "AC",
+    "5",
+    "×",
+    "SHIFT",
+    "STO",
+    "(-)",
+    "="
+  ],
+  "expect": {
+    "result": "45"
+  }
+}

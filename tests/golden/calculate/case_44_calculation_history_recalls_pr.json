@@ -1,0 +1,25 @@
+{
+  "name": "44. Calculation history ▲ recalls previous calculation",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "+",
+    "1",
+    "=",
+    "2",
+    "+",
+    "2",
+    "=",
+    "UP"
+  ],
+  "expect": {
+    "result": "2",
+    "line": {
+      "index": 0,
+      "text": "1+1"
+    }
+  }
+}

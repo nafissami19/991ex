@@ -1,0 +1,19 @@
+{
+  "name": "13. Scientific constant Planck constant h = 6.62606957×10⁻³⁴",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "SHIFT",
+    "7",
+    "1",
+    "1",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "h",
+      "6.62606957×10⁻³⁴"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "24. Invalid digit hexB in DEC mode triggers Syntax ERROR",
+  "keys": ["MENU", "3", "hexB", "+", "1", "="],
+  "expect": {
+    "error": "Syntax ERROR"
+  }
+}

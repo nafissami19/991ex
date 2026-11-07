@@ -1,0 +1,23 @@
+{
+  "name": "63. Cube power evaluation",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "3",
+    "SHIFT",
+    "SQUARE",
+    "="
+  ],
+  "expect": {
+    "result": "27",
+    "lines": [
+      "3³",
+      "27"
+    ],
+    "indicators": [
+      "Math"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "19. Using undefined vector variable produces Dimension ERROR",
+  "keys": [
+    "MENU",
+    "5",
+    "AC",
+    "OPTN",
+    "6",
+    "+",
+    "OPTN",
+    "6",
+    "="
+  ],
+  "expect": {
+    "error": "Dimension ERROR"
+  }
+}

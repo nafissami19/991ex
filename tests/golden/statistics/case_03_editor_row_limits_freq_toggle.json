@@ -1,0 +1,14 @@
+{
+  "name": "3. Freq ON in setup displays both x and Freq columns in 1-Variable editor",
+  "setup": {
+    "statFreq": true
+  },
+  "keys": [
+    "MENU",
+    "6",
+    "1"
+  ],
+  "expect": {
+    "contains": "x    Freq"
+  }
+}

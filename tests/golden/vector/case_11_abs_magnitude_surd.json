@@ -1,0 +1,21 @@
+{
+  "name": "11. Abs(VctA) magnitude yields exact surd √5",
+  "keys": [
+    "MENU",
+    "5",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "AC",
+    "Abs",
+    "OPTN",
+    "3",
+    "="
+  ],
+  "expect": {
+    "result": "√5"
+  }
+}

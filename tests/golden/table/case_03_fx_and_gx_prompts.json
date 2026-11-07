@@ -1,0 +1,21 @@
+{
+  "name": "3. Table mode with f(x) and g(x) prompts for g(x)",
+  "setup": {
+    "table": "FG"
+  },
+  "keys": [
+    "MENU",
+    "9",
+    "x",
+    "x²",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "g(x)="
+    ],
+    "indicators": [
+      "Up"
+    ]
+  }
+}

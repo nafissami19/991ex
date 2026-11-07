@@ -1,0 +1,24 @@
+{
+  "name": "2. S<=>D toggle fraction to decimal",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "÷",
+    "2",
+    "+",
+    "1",
+    "÷",
+    "3",
+    "=",
+    "S<=>D"
+  ],
+  "expect": {
+    "result": "0.8333333333",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

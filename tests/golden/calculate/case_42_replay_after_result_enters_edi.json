@@ -1,0 +1,28 @@
+{
+  "name": "42. Replay ◀ after result enters edit at end of expression",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "4",
+    "×",
+    "3",
+    "+",
+    "2",
+    "=",
+    "LEFT",
+    "DEL",
+    "DEL",
+    "-",
+    "7",
+    "="
+  ],
+  "expect": {
+    "result": "5",
+    "line": {
+      "index": 0,
+      "text": "4×3−7"
+    }
+  }
+}

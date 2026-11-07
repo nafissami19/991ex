@@ -1,0 +1,10 @@
+{
+  "name": "1. Vector Mode entry initial define screen",
+  "keys": [
+    "MENU",
+    "5"
+  ],
+  "expect": {
+    "contains": "Vector"
+  }
+}

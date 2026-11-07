@@ -1,0 +1,20 @@
+{
+  "name": "9. Manual Example 4: Conjg(2+3i) = 2-3i",
+  "keys": [
+    "MENU",
+    "2",
+    "Conjg",
+    "2",
+    "+",
+    "3",
+    "i",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "2−3i",
+    "indicators": [
+      "i"
+    ]
+  }
+}

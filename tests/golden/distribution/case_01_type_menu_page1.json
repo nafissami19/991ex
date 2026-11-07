@@ -1,0 +1,18 @@
+{
+  "name": "1. Distribution mode entry shows Page 1 with Down indicator",
+  "keys": [
+    "MENU",
+    "7"
+  ],
+  "expect": {
+    "lines": [
+      "1:Normal PD",
+      "2:Normal CD",
+      "3:Inverse Normal",
+      "4:Binomial PD"
+    ],
+    "indicators": [
+      "Down"
+    ]
+  }
+}

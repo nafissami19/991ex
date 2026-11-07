@@ -1,0 +1,24 @@
+{
+  "name": "11. Inverse Normal standard median Area=0.5 -> xInv=0",
+  "keys": [
+    "MENU",
+    "7",
+    "3",
+    "0",
+    ".",
+    "5",
+    "=",
+    "1",
+    "=",
+    "0",
+    "=",
+    "="
+  ],
+  "expect": {
+    "result": "0",
+    "lines": [
+      "xInv=",
+      "0"
+    ]
+  }
+}

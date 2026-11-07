@@ -1,0 +1,24 @@
+{
+  "name": "11. SETUP Number Format Norm 1 clears FIX/SCI",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg",
+    "numberFormat": {
+      "type": "FIX",
+      "value": 3
+    }
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "3",
+    "3",
+    "1"
+  ],
+  "expect": {
+    "notIndicators": [
+      "FIX",
+      "SCI"
+    ]
+  }
+}

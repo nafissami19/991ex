@@ -1,0 +1,33 @@
+{
+  "name": "22. STO on MatAns screen copies matrix to MatC and opens editor",
+  "keys": [
+    "MENU",
+    "4",
+    "1",
+    "2",
+    "2",
+    "2",
+    "=",
+    "1",
+    "=",
+    "1",
+    "=",
+    "1",
+    "=",
+    "AC",
+    "OPTN",
+    "3",
+    "x²",
+    "=",
+    "STO",
+    "x⁻¹"
+  ],
+  "expect": {
+    "lines": [
+      "MatC",
+      "[ 5  3 ]",
+      "[ 3  2 ]",
+      "5"
+    ]
+  }
+}

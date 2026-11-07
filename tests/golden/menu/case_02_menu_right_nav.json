@@ -1,0 +1,14 @@
+{
+  "name": "2. MENU RIGHT highlights Complex mode with 2:Complex",
+  "keys": [
+    "MENU",
+    "RIGHT"
+  ],
+  "expect": {
+    "lines": [
+      "Calculate [Complex] Base-N Matrix",
+      "Vector Statistics Distribution Spreadsheet",
+      "2:Complex"
+    ]
+  }
+}

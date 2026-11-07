@@ -1,0 +1,13 @@
+{
+  "name": "1. MENU opens mode icon grid with 1:Calculate selected",
+  "keys": [
+    "MENU"
+  ],
+  "expect": {
+    "lines": [
+      "[Calculate] Complex Base-N Matrix",
+      "Vector Statistics Distribution Spreadsheet",
+      "1:Calculate"
+    ]
+  }
+}

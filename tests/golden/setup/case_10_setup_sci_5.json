@@ -1,0 +1,25 @@
+{
+  "name": "10. SETUP Number Format Sci 5",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "3",
+    "2",
+    "5",
+    "1",
+    "÷",
+    "7",
+    "=",
+    "S<=>D"
+  ],
+  "expect": {
+    "result": "1.4286×10⁻¹",
+    "indicators": [
+      "SCI"
+    ]
+  }
+}

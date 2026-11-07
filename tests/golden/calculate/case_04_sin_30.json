@@ -1,0 +1,21 @@
+{
+  "name": "4. sin 30 degrees",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "sin",
+    "3",
+    "0",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "1/2",
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

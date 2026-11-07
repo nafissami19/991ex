@@ -1,0 +1,12 @@
+{
+  "name": "16. Sum of squares: Σ_{x=1}^{10} x² = 385",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "Σ", "x", "x²", "RIGHT", "1", "RIGHT", "1", "0", "="
+  ],
+  "expect": {
+    "result": "385"
+  }
+}

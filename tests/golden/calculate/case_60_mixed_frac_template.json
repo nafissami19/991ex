@@ -1,0 +1,27 @@
+{
+  "name": "60. Mixed fraction template input and evaluation",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "FRAC",
+    "1",
+    "RIGHT",
+    "2",
+    "RIGHT",
+    "3",
+    "="
+  ],
+  "expect": {
+    "result": "5/3",
+    "lines": [
+      "1 2/3",
+      "5/3"
+    ],
+    "indicators": [
+      "Math"
+    ]
+  }
+}

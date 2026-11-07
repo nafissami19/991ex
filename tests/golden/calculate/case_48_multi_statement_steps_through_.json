@@ -1,0 +1,35 @@
+{
+  "name": "48. Multi-statement steps through all parts via EXE",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "+",
+    "1",
+    "ALPHA",
+    "INTEGRAL",
+    "2",
+    "+",
+    "2",
+    "ALPHA",
+    "INTEGRAL",
+    "3",
+    "+",
+    "3",
+    "=",
+    "=",
+    "="
+  ],
+  "expect": {
+    "result": "6",
+    "line": {
+      "index": 0,
+      "text": "3+3"
+    },
+    "notIndicators": [
+      "Disp"
+    ]
+  }
+}

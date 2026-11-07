@@ -1,0 +1,27 @@
+{
+  "name": "23. Polynomial degree 2 local minimum vertex x-Value of Min = -1",
+  "keys": [
+    "MENU",
+    "A",
+    "2",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "(-)",
+    "2",
+    "=",
+    "=",
+    "DOWN",
+    "DOWN"
+  ],
+  "expect": {
+    "contains": "x-Value of Min",
+    "result": "−1",
+    "indicators": [
+      "Up",
+      "Down"
+    ]
+  }
+}

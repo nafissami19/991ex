@@ -1,0 +1,23 @@
+{
+  "name": "20. Degree 4: x⁴ + 1 > 0 -> All Real Numbers",
+  "keys": [
+    "MENU",
+    "B",
+    "4",
+    "1",
+    "1",
+    "=",
+    "0",
+    "=",
+    "0",
+    "=",
+    "0",
+    "=",
+    "1",
+    "=",
+    "="
+  ],
+  "expect": {
+    "result": "All Real Numbers"
+  }
+}

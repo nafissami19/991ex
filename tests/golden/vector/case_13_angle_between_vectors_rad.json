@@ -1,0 +1,47 @@
+{
+  "name": "13. Angle between 3D vectors in Radian mode with Fix 4",
+  "setup": {
+    "angle": "Rad",
+    "numberFormat": {
+      "type": "FIX",
+      "value": 4
+    }
+  },
+  "keys": [
+    "MENU",
+    "5",
+    "3",
+    "3",
+    "2",
+    "=",
+    "(-)",
+    "1",
+    "=",
+    "2",
+    "=",
+    "OPTN",
+    "1",
+    "4",
+    "3",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "AC",
+    "OPTN",
+    "DOWN",
+    "3",
+    "OPTN",
+    "5",
+    ",",
+    "OPTN",
+    "6",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "1.0069"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "6. Simultaneous 2 unknowns AC key returns to editor",
+  "keys": [
+    "MENU",
+    "A",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "4",
+    "=",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "contains": "anx+bny=cn"
+  }
+}

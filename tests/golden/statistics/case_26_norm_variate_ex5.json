@@ -1,0 +1,45 @@
+{
+  "name": "26. Normal distribution normalized variate User Guide Ex 5: 2▸t = −0.866",
+  "setup": {
+    "statFreq": true,
+    "numberFormat": {
+      "type": "FIX",
+      "digits": 3
+    }
+  },
+  "keys": [
+    "MENU",
+    "6",
+    "1",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "4",
+    "=",
+    "5",
+    "=",
+    "RIGHT",
+    "DOWN",
+    "1",
+    "=",
+    "2",
+    "=",
+    "3",
+    "=",
+    "2",
+    "=",
+    "AC",
+    "2",
+    "OPTN",
+    "DOWN",
+    "4",
+    "4",
+    "="
+  ],
+  "expect": {
+    "result": "−0.866"
+  }
+}

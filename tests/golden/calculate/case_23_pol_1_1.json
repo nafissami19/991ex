@@ -1,0 +1,25 @@
+{
+  "name": "23. Pol(1, 1)",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "+",
+    "1",
+    "SHIFT",
+    ")",
+    "1",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "r=1.414213562, θ=45",
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  },
+  "expectedFail": false
+}

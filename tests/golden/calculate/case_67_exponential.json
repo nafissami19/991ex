@@ -1,0 +1,23 @@
+{
+  "name": "67. Exponential e^x template",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "LN",
+    "2",
+    "="
+  ],
+  "expect": {
+    "result": "7.389056099",
+    "lines": [
+      "e^(2)",
+      "7.389056099"
+    ],
+    "indicators": [
+      "Math"
+    ]
+  }
+}

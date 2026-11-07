@@ -1,0 +1,25 @@
+{
+  "name": "49. Ans updates with each statement in multi-statement",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "0",
+    "ALPHA",
+    "INTEGRAL",
+    "Ans",
+    "×",
+    "2",
+    "=",
+    "="
+  ],
+  "expect": {
+    "result": "20",
+    "line": {
+      "index": 0,
+      "text": "Ans×2"
+    }
+  }
+}

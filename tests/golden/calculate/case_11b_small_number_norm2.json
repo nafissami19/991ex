@@ -1,0 +1,25 @@
+{
+  "name": "11b. 0.001 in Norm 2 (MathI/DecimalO)",
+  "setup": {
+    "inputOutput": "MathI/DecimalO",
+    "angle": "Deg",
+    "numberFormat": {
+      "type": "NORM",
+      "value": 2
+    }
+  },
+  "keys": [
+    "0",
+    ".",
+    "0",
+    "0",
+    "1",
+    "="
+  ],
+  "expect": {
+    "result": "0.001",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

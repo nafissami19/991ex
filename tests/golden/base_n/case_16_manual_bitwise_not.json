@@ -1,0 +1,11 @@
+{
+  "name": "16. Manual Ex: Bitwise complement Not(1010_2) in BIN",
+  "keys": ["MENU", "3", "BIN", "Not", "1", "0", "1", "0", ")", "="],
+  "expect": {
+    "lines": [
+      "Not(1010)",
+      "1111 1111 1111 1111",
+      "1111 1111 1111 0101"
+    ]
+  }
+}

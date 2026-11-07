@@ -1,0 +1,19 @@
+{
+  "name": "6. pi exact then S<=>D",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "EXP",
+    "=",
+    "S<=>D"
+  ],
+  "expect": {
+    "result": "3.141592654",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

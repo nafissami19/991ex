@@ -1,0 +1,15 @@
+{
+  "name": "17. OPTN 4 (Free Space) displays remaining capacity (1700 Bytes when empty)",
+  "keys": [
+    "MENU",
+    "8",
+    "OPTN",
+    "4"
+  ],
+  "expect": {
+    "lines": [
+      "Free Space",
+      "1700 Bytes"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "13. SOLVE expression without equals sign x²-9 treated as x²-9=0",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "x",
+    "x²",
+    "-",
+    "9",
+    "SHIFT",
+    "CALC",
+    "1",
+    "=",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "x²−9",
+      "x=3",
+      "L−R=0"
+    ],
+    "result": "x=3"
+  }
+}

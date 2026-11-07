@@ -1,0 +1,20 @@
+{
+  "name": "28. Factorial squared 3!²",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "3",
+    "SHIFT",
+    "x⁻¹",
+    "x²",
+    "="
+  ],
+  "expect": {
+    "result": "36",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

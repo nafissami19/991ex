@@ -1,0 +1,20 @@
+{
+  "name": "13. M+ on empty line adds Ans to M",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "2",
+    "5",
+    "=",
+    "AC",
+    "M+"
+  ],
+  "expect": {
+    "result": "25",
+    "indicators": [
+      "M"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "13. Manual Example 6: ReP(2+3i) = 2",
+  "keys": [
+    "MENU",
+    "2",
+    "ReP",
+    "2",
+    "+",
+    "3",
+    "i",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "2",
+    "indicators": [
+      "i"
+    ]
+  }
+}

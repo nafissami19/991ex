@@ -1,0 +1,22 @@
+{
+  "name": "17. SETUP Auto Power Off 60 Min",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "4",
+    "2"
+  ],
+  "expect": {
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "9. OPTN Number Calculation Intg(-5.1) = -6 (floor)",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "OPTN",
+    "4",
+    "3",
+    "(-)",
+    "5",
+    ".",
+    "1",
+    ")",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "Intg(-5.1)",
+      "−6"
+    ]
+  }
+}

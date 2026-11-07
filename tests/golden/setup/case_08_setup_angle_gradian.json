@@ -1,0 +1,25 @@
+{
+  "name": "8. SETUP Angle Unit Gradian",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "2",
+    "3",
+    "sin",
+    "1",
+    "0",
+    "0",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "1",
+    "indicators": [
+      "G"
+    ]
+  }
+}

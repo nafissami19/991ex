@@ -1,0 +1,34 @@
+{
+  "name": "20. Inverse regression estimator 8ŷ = 3/2",
+  "keys": [
+    "MENU",
+    "6",
+    "DOWN",
+    "4",
+    "1",
+    "=",
+    "2",
+    "=",
+    "4",
+    "=",
+    "RIGHT",
+    "DOWN",
+    "5",
+    "=",
+    "3",
+    "=",
+    "2",
+    "=",
+    "AC",
+    "8",
+    "OPTN",
+    "DOWN",
+    "4",
+    "DOWN",
+    "1",
+    "="
+  ],
+  "expect": {
+    "result": "3/2"
+  }
+}

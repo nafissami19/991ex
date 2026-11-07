@@ -1,0 +1,24 @@
+{
+  "name": "8. CALC editing variable input with DEL",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "A",
+    "+",
+    "1",
+    "CALC",
+    "4",
+    "9",
+    "DEL",
+    "=",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "A+1",
+      "5"
+    ],
+    "result": "5"
+  }
+}

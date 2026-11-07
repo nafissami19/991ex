@@ -1,0 +1,28 @@
+{
+  "name": "3. ON key wakes up and restores calculation result and indicators",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "+",
+    "1",
+    "=",
+    "SHIFT",
+    "AC",
+    "ON"
+  ],
+  "expect": {
+    "poweredOn": true,
+    "result": "2",
+    "lines": [
+      "1+1",
+      "2"
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

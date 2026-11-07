@@ -1,0 +1,20 @@
+{
+  "name": "14. Inverse Normal Area >= 1 triggers Math ERROR",
+  "keys": [
+    "MENU",
+    "7",
+    "3",
+    "1",
+    ".",
+    "5",
+    "=",
+    "1",
+    "=",
+    "0",
+    "=",
+    "="
+  ],
+  "expect": {
+    "error": "Math ERROR"
+  }
+}

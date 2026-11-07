@@ -1,0 +1,21 @@
+{
+  "name": "19. Prime factorization: 1014 = 2×3×13²",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "1",
+    "0",
+    "1",
+    "4",
+    "=",
+    "SHIFT",
+    "DEG"
+  ],
+  "expect": {
+    "lines": [
+      "1014",
+      "2×3×13²"
+    ]
+  }
+}

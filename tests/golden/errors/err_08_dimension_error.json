@@ -1,0 +1,22 @@
+{
+  "name": "Error 8: Dimension ERROR on undefined matrix in Matrix mode",
+  "keys": [
+    "MENU",
+    "4",
+    "AC",
+    "OPTN",
+    "3",
+    "+",
+    "OPTN",
+    "4",
+    "="
+  ],
+  "expect": {
+    "error": "Dimension ERROR",
+    "lines": [
+      "Dimension ERROR",
+      "[AC] :Cancel",
+      "[◀][▶]:Goto"
+    ]
+  }
+}

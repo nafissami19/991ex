@@ -1,0 +1,32 @@
+{
+  "name": "13. Copy & Paste formula preserves absolute $ references ($A$1)",
+  "keys": [
+    "MENU",
+    "8",
+    "1",
+    "0",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "==",
+    "$",
+    "A",
+    "$",
+    "1",
+    "+",
+    "5",
+    "=",
+    "UP",
+    "OPTN",
+    "DOWN",
+    "2",
+    "RIGHT",
+    "DOWN",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "contains": "C2:=$A$1+5"
+  }
+}

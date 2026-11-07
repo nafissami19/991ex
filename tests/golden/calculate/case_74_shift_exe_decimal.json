@@ -1,0 +1,26 @@
+{
+  "name": "74. Decimal evaluation approx with SHIFT EXE",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "FRAC",
+    "1",
+    "DOWN",
+    "2",
+    "SHIFT",
+    "EXE"
+  ],
+  "expect": {
+    "result": "0.5",
+    "lines": [
+      "1/2",
+      "0.5"
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

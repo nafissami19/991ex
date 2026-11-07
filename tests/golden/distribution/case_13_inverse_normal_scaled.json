@@ -1,0 +1,25 @@
+{
+  "name": "13. Inverse Normal scaled distribution Area=0.5, σ=2, μ=35 -> xInv=35",
+  "keys": [
+    "MENU",
+    "7",
+    "3",
+    "0",
+    ".",
+    "5",
+    "=",
+    "2",
+    "=",
+    "3",
+    "5",
+    "=",
+    "="
+  ],
+  "expect": {
+    "result": "35",
+    "lines": [
+      "xInv=",
+      "35"
+    ]
+  }
+}

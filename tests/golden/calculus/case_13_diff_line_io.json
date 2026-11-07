@@ -1,0 +1,13 @@
+{
+  "name": "13. LineI mode derivative syntax: d/dx(sin(x), π/2) = 0",
+  "setup": {
+    "inputOutput": "LineI/LineO",
+    "angle": "RAD"
+  },
+  "keys": [
+    "d/dx", "sin", "x", ")", ",", "π", "÷", "2", ")", "="
+  ],
+  "expect": {
+    "result": "0"
+  }
+}

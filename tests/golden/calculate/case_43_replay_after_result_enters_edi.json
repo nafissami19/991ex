@@ -1,0 +1,24 @@
+{
+  "name": "43. Replay ▶ after result enters edit at start of expression",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "4",
+    "×",
+    "3",
+    "=",
+    "RIGHT",
+    "1",
+    "+",
+    "="
+  ],
+  "expect": {
+    "result": "13",
+    "line": {
+      "index": 0,
+      "text": "1+4×3"
+    }
+  }
+}

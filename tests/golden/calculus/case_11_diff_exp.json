@@ -1,0 +1,12 @@
+{
+  "name": "11. Exponential derivative: d/dx(e^x)|_{x=0} = 1",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "d/dx", "e^", "x", "RIGHT", "RIGHT", "0", "="
+  ],
+  "expect": {
+    "result": "1"
+  }
+}

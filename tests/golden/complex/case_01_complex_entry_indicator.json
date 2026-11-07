@@ -1,0 +1,12 @@
+{
+  "name": "1. Complex mode entry shows i indicator",
+  "keys": [
+    "MENU",
+    "2"
+  ],
+  "expect": {
+    "indicators": [
+      "i"
+    ]
+  }
+}

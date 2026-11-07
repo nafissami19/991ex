@@ -1,0 +1,22 @@
+{
+  "name": "31. Omitted multiplication 1÷2(3)",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "÷",
+    "2",
+    "(",
+    "3",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "1/6",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

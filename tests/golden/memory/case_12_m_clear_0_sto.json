@@ -1,0 +1,21 @@
+{
+  "name": "12. 0 STO M clears M and turns off M indicator",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "5",
+    "0",
+    "M+",
+    "0",
+    "STO",
+    "M+"
+  ],
+  "expect": {
+    "result": "0",
+    "notIndicators": [
+      "M"
+    ]
+  }
+}

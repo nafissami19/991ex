@@ -1,0 +1,27 @@
+{
+  "name": "3. SETUP menu Page 3 lines and Down/Up indicators",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "DOWN",
+    "DOWN"
+  ],
+  "expect": {
+    "lines": [
+      "1:Equation/Func",
+      "2:Table",
+      "3:Decimal Mark",
+      "4:Digit Separator"
+    ],
+    "indicators": [
+      "Math",
+      "D",
+      "Down",
+      "Up"
+    ]
+  }
+}

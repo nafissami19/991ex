@@ -1,0 +1,26 @@
+{
+  "name": "2. CALC substitutes A=5, B=10 and calculates 25",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "3",
+    "A",
+    "+",
+    "B",
+    "CALC",
+    "5",
+    "=",
+    "1",
+    "0",
+    "=",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "3A+B",
+      "25"
+    ],
+    "result": "25"
+  }
+}

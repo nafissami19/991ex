@@ -1,0 +1,14 @@
+{
+  "name": "2. Input constant 7*5 into cell A1 evaluates to 35 and moves cursor to A2",
+  "keys": [
+    "MENU",
+    "8",
+    "7",
+    "*",
+    "5",
+    "="
+  ],
+  "expect": {
+    "contains": "A2:"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Error 9: Range ERROR on table range exceeding row limit in Table mode",
+  "keys": [
+    "MENU",
+    "9",
+    "x",
+    "=",
+    "=",
+    "1",
+    "0",
+    "0",
+    "=",
+    "=",
+    "="
+  ],
+  "expect": {
+    "error": "Range ERROR",
+    "lines": [
+      "Range ERROR",
+      "[AC] :Cancel"
+    ]
+  }
+}

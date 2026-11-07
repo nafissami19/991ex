@@ -1,0 +1,19 @@
+{
+  "name": "11. Scientific constant c0 = 299792458",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "SHIFT",
+    "7",
+    "1",
+    "3",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "c₀",
+      "299792458"
+    ]
+  }
+}

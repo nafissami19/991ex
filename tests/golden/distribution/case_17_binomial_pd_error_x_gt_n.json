@@ -1,0 +1,21 @@
+{
+  "name": "17. Binomial PD with x > N triggers Math ERROR",
+  "keys": [
+    "MENU",
+    "7",
+    "4",
+    "2",
+    "6",
+    "=",
+    "5",
+    "=",
+    "0",
+    ".",
+    "5",
+    "=",
+    "="
+  ],
+  "expect": {
+    "error": "Math ERROR"
+  }
+}

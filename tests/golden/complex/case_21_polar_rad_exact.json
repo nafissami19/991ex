@@ -1,0 +1,26 @@
+{
+  "name": "21. Exact polar in Radian mode √2∠(π/4) = 1+i",
+  "setup": {
+    "angle": "Rad"
+  },
+  "keys": [
+    "MENU",
+    "2",
+    "SQRT",
+    "2",
+    "RIGHT",
+    "∠",
+    "(",
+    "π",
+    "÷",
+    "4",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "1+i",
+    "indicators": [
+      "i"
+    ]
+  }
+}

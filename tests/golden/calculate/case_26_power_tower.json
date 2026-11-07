@@ -1,0 +1,22 @@
+{
+  "name": "26. Power tower 2^(3^2) in MathI",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "2",
+    "^",
+    "(",
+    "3",
+    "x²",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "512",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

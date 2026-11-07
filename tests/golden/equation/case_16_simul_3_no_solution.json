@@ -1,0 +1,37 @@
+{
+  "name": "16. Simultaneous 3 unknowns inconsistent system displays No Solution",
+  "keys": [
+    "MENU",
+    "A",
+    "1",
+    "3",
+    "1",
+    "=",
+    "1",
+    "=",
+    "1",
+    "=",
+    "1",
+    "=",
+    "1",
+    "=",
+    "1",
+    "=",
+    "1",
+    "=",
+    "2",
+    "=",
+    "2",
+    "=",
+    "1",
+    "=",
+    "1",
+    "=",
+    "3",
+    "=",
+    "="
+  ],
+  "expect": {
+    "contains": "No Solution"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "10. Abs(VctC) magnitude of 3D vector = 3",
+  "keys": [
+    "MENU",
+    "5",
+    "3",
+    "3",
+    "2",
+    "=",
+    "(-)",
+    "1",
+    "=",
+    "2",
+    "=",
+    "AC",
+    "Abs",
+    "OPTN",
+    "5",
+    "="
+  ],
+  "expect": {
+    "result": "3"
+  }
+}

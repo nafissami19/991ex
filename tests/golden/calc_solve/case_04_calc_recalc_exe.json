@@ -1,0 +1,26 @@
+{
+  "name": "4. Pressing EXE on CALC result re-prompts with stored values",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "3",
+    "A",
+    "+",
+    "B",
+    "CALC",
+    "5",
+    "=",
+    "1",
+    "0",
+    "=",
+    "=",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "3A+B",
+      "A=5"
+    ]
+  }
+}

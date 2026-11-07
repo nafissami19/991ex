@@ -1,0 +1,22 @@
+{
+  "name": "28. Polynomial degree 2 with eqComplex Off displays No Real Roots",
+  "setup": {
+    "eqComplex": false
+  },
+  "keys": [
+    "MENU",
+    "A",
+    "2",
+    "2",
+    "1",
+    "=",
+    "0",
+    "=",
+    "1",
+    "=",
+    "="
+  ],
+  "expect": {
+    "contains": "No Real Roots"
+  }
+}

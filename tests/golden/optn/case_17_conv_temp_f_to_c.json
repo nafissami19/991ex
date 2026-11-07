@@ -1,0 +1,23 @@
+{
+  "name": "17. Metric conversion: 32 °F▸°C = 0",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "3",
+    "2",
+    "SHIFT",
+    "8",
+    "DOWN",
+    "DOWN",
+    "1",
+    "1",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "32°F▸°C",
+      "0"
+    ]
+  }
+}

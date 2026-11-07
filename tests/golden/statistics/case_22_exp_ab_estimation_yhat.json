@@ -1,0 +1,40 @@
+{
+  "name": "22. Exponential ab regression estimation 3ŷ",
+  "keys": [
+    "MENU",
+    "6",
+    "DOWN",
+    "2",
+    "0",
+    "=",
+    "1",
+    "=",
+    "2",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "UP",
+    "3",
+    "=",
+    "6",
+    "=",
+    "1",
+    "2",
+    "=",
+    "AC",
+    "3",
+    "OPTN",
+    "DOWN",
+    "4",
+    "DOWN",
+    "1",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "3ŷ",
+      "24"
+    ]
+  }
+}

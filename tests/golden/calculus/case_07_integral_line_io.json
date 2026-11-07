@@ -1,0 +1,12 @@
+{
+  "name": "7. LineI mode integral: ∫(ln(x), 1, e) = 1",
+  "setup": {
+    "inputOutput": "LineI/LineO"
+  },
+  "keys": [
+    "∫", "ln", "x", ")", ",", "1", ",", "e", ")", "="
+  ],
+  "expect": {
+    "result": "1"
+  }
+}

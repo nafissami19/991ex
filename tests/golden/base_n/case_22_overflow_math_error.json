@@ -1,0 +1,7 @@
+{
+  "name": "22. Overflow beyond 32-bit signed range triggers Math ERROR",
+  "keys": ["MENU", "3", "2", "1", "4", "7", "4", "8", "3", "6", "4", "7", "+", "1", "="],
+  "expect": {
+    "error": "Math ERROR"
+  }
+}

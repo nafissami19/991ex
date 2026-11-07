@@ -1,0 +1,16 @@
+{
+  "name": "17. Pure imaginary square i² = -1",
+  "keys": [
+    "MENU",
+    "2",
+    "i",
+    "x²",
+    "="
+  ],
+  "expect": {
+    "result": "−1",
+    "indicators": [
+      "i"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "46. AC clears display but retains calculation history",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "1",
+    "+",
+    "1",
+    "=",
+    "AC",
+    "UP"
+  ],
+  "expect": {
+    "result": "2",
+    "line": {
+      "index": 0,
+      "text": "1+1"
+    }
+  }
+}

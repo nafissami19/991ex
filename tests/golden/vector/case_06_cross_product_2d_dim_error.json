@@ -1,0 +1,31 @@
+{
+  "name": "6. Cross product of 2D vectors produces Dimension ERROR",
+  "keys": [
+    "MENU",
+    "5",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "OPTN",
+    "1",
+    "2",
+    "2",
+    "3",
+    "=",
+    "4",
+    "=",
+    "AC",
+    "OPTN",
+    "3",
+    "×",
+    "OPTN",
+    "4",
+    "="
+  ],
+  "expect": {
+    "error": "Dimension ERROR"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "11. First start after Initialize All shows brand-new calculator screens",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Rad"
+  },
+  "keys": [
+    "1",
+    "0",
+    "M+",
+    "SHIFT",
+    "9",
+    "3",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "poweredOn": true,
+    "contrast": 8,
+    "lines": [
+      "",
+      ""
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ],
+    "notIndicators": [
+      "M",
+      "R"
+    ]
+  }
+}

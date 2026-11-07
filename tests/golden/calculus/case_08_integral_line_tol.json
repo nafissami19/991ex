@@ -1,0 +1,12 @@
+{
+  "name": "8. LineI mode integral with custom tolerance: ∫(x², 0, 1, 1×10⁻⁴) = 0.3333333333",
+  "setup": {
+    "inputOutput": "LineI/LineO"
+  },
+  "keys": [
+    "∫", "x", "x²", ",", "0", ",", "1", ",", "1", "×10ˣ", "(-)", "4", ")", "="
+  ],
+  "expect": {
+    "result": "0.3333333333"
+  }
+}

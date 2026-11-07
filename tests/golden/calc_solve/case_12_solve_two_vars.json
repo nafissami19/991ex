@@ -1,0 +1,31 @@
+{
+  "name": "12. SOLVE two-variable equation x²+B=0 with B=-2 (guide page 20)",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "x",
+    "x²",
+    "+",
+    "B",
+    "==",
+    "0",
+    "SHIFT",
+    "CALC",
+    "1",
+    "=",
+    "(-)",
+    "2",
+    "=",
+    "UP",
+    "="
+  ],
+  "expect": {
+    "lines": [
+      "x²+B=0",
+      "x=1.414213562",
+      "L−R=0"
+    ],
+    "result": "x=1.414213562"
+  }
+}

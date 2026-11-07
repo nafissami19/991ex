@@ -1,0 +1,22 @@
+{
+  "name": "Error 6b: Cannot Solve dismissal via AC key returns to Solve for",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "x",
+    "x²",
+    "+",
+    "1",
+    "==",
+    "0",
+    "SHIFT",
+    "CALC",
+    "=",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "contains": "x="
+  }
+}

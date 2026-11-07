@@ -1,0 +1,23 @@
+{
+  "name": "16. OPTN DOWN 3 (Delete All) completely empties all grid cells",
+  "keys": [
+    "MENU",
+    "8",
+    "1",
+    "2",
+    "=",
+    "RIGHT",
+    "3",
+    "4",
+    "=",
+    "OPTN",
+    "DOWN",
+    "3"
+  ],
+  "expect": {
+    "lines": [
+      "   |    A   |    B   |",
+      "A1:"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "12. Initialize All restores defaults but retains custom contrast setting",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "SHIFT",
+    "MENU",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "3",
+    "RIGHT",
+    "RIGHT",
+    "EXE",
+    "SHIFT",
+    "9",
+    "3",
+    "=",
+    "AC"
+  ],
+  "expect": {
+    "poweredOn": true,
+    "contrast": 10,
+    "lines": [
+      "",
+      ""
+    ],
+    "indicators": [
+      "Math",
+      "D"
+    ]
+  }
+}

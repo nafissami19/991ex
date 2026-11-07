@@ -1,0 +1,24 @@
+{
+  "name": "22. 6 ÷ 2(1+2)",
+  "setup": {
+    "inputOutput": "MathI/MathO",
+    "angle": "Deg"
+  },
+  "keys": [
+    "6",
+    "÷",
+    "2",
+    "(",
+    "1",
+    "+",
+    "2",
+    ")",
+    "="
+  ],
+  "expect": {
+    "result": "1",
+    "indicators": [
+      "Math"
+    ]
+  }
+}

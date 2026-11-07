@@ -1,0 +1,26 @@
+{
+  "name": "8. Manual Example 3: √2 + √2i = 2∠45 (Deg, r∠θ)",
+  "setup": {
+    "angle": "Deg",
+    "complex": "POLAR"
+  },
+  "keys": [
+    "MENU",
+    "2",
+    "SQRT",
+    "2",
+    "RIGHT",
+    "+",
+    "SQRT",
+    "2",
+    "RIGHT",
+    "i",
+    "="
+  ],
+  "expect": {
+    "result": "2∠45",
+    "indicators": [
+      "∠"
+    ]
+  }
+}

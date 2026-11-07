@@ -1,0 +1,19 @@
+{
+  "name": "Error 1c: Math ERROR cursor jump via LEFT key",
+  "setup": {
+    "inputOutput": "MathI/MathO"
+  },
+  "keys": [
+    "1",
+    "÷",
+    "0",
+    "=",
+    "LEFT"
+  ],
+  "expect": {
+    "lines": [
+      "1÷0",
+      ""
+    ]
+  }
+}

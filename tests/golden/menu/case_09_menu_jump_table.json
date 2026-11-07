@@ -1,0 +1,10 @@
+{
+  "name": "9. MENU 9 jumps directly to Table mode",
+  "keys": [
+    "MENU",
+    "9"
+  ],
+  "expect": {
+    "contains": "f(x)="
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "1. MENU 4 enters Matrix mode displaying initial Define Matrix screen",
+  "keys": [
+    "MENU",
+    "4"
+  ],
+  "expect": {
+    "contains": "1:MatA"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "17. VctAns continuation with + operator",
+  "keys": [
+    "MENU",
+    "5",
+    "1",
+    "2",
+    "1",
+    "=",
+    "2",
+    "=",
+    "OPTN",
+    "1",
+    "2",
+    "2",
+    "3",
+    "=",
+    "4",
+    "=",
+    "AC",
+    "OPTN",
+    "3",
+    "+",
+    "OPTN",
+    "4",
+    "=",
+    "+",
+    "OPTN",
+    "3",
+    "="
+  ],
+  "expect": {
+    "contains": "VctAns"
+  }
+}

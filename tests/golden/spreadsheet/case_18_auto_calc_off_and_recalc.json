@@ -1,0 +1,38 @@
+{
+  "name": "18. Auto Calc Off disables auto recompute; OPTN DOWN 4 manually triggers recalculation",
+  "keys": [
+    "MENU",
+    "8",
+    "SHIFT",
+    "MENU",
+    "DOWN",
+    "4",
+    "1",
+    "2",
+    "1",
+    "0",
+    "=",
+    "RIGHT",
+    "UP",
+    "UP",
+    "==",
+    "A",
+    "1",
+    "*",
+    "2",
+    "=",
+    "UP",
+    "LEFT",
+    "5",
+    "0",
+    "=",
+    "RIGHT",
+    "UP",
+    "OPTN",
+    "DOWN",
+    "4"
+  ],
+  "expect": {
+    "contains": "100"
+  }
+}
