@@ -22,3 +22,11 @@ docs/*.pdf
 .env
 .DS_Store
 Thumbs.db
+
+# Traced from official emulator screenshots (Casio-derived, HARD RULE 2).
+# Rebuild with: python scripts/lcd_from_screenshots.py
+docs/reference/screenshots/
+js/lcd/fonts/lcd_large.js
+js/lcd/fonts/lcd_icons.js
+tests/pixel/reference/
+tests/pixel/out/

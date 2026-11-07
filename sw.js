@@ -7,7 +7,7 @@
  * Bump VERSION to drop old caches.
  */
 
-const VERSION = 'v6';
+const VERSION = 'v7';
 const CACHE = `fx991ex-${VERSION}`;
 const DEV_HOSTS = ['localhost', '127.0.0.1', '[::1]'];
 const NETWORK_FIRST = DEV_HOSTS.includes(self.location.hostname);
@@ -27,6 +27,8 @@ const SHELL = [
   'js/lcd/raster.js',
   'js/lcd/fonts/icons.js',
   'js/lcd/fonts/large.js',
+  'js/lcd/fonts/lcd_large.js',
+  'js/lcd/fonts/lcd_icons.js',
   'js/lcd/fonts/small.js',
   'js/core/Calculator.js',
   'js/core/errors.js',

@@ -1,5 +1,5 @@
 {
-  "name": "2. SETUP menu Page 2 lines and Down/Up indicators",
+  "name": "2. SETUP menu Page 2 lines (scroll bar, no ▲▼ icons: official SETUP screen)",
   "setup": {
     "inputOutput": "MathI/MathO",
     "angle": "Deg"
@@ -18,9 +18,7 @@
     ],
     "indicators": [
       "Math",
-      "D",
-      "Down",
-      "Up"
+      "D"
     ]
   }
 }

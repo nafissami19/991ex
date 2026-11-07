@@ -32,15 +32,21 @@ export async function startPopoutPage() {
   const gap = Math.max(0, (display.y ?? 256) - (status.y ?? 237) - (status.height || 17));
   const unitH = (status.height || 17) + gap + (display.height || 126);
   const dotUnit = unitW / 192;
+  // The status strip starts left of the dot matrix (measured on the official emulator).
+  const dx = Math.max(0, (display.x ?? 130) - (status.x ?? 130));
+  frame.style.background = display.backgroundColor || '#C9D5CA';
 
   function layout() {
     const pad = 24;
-    let s = Math.min((innerWidth - pad) / unitW, (innerHeight - pad) / unitH);
+    let s = Math.min((innerWidth - pad) / (unitW + dx), (innerHeight - pad) / unitH);
     s = Math.max(0.25, snapScale(s, dotUnit));
     frame.style.setProperty('--s', s);
-    frame.style.width = `${unitW * s}px`;
+    frame.style.width = `${(unitW + dx) * s}px`;
+    statusCanvas.style.width = `${unitW * s}px`;
     statusCanvas.style.height = `${(status.height || 17) * s}px`;
     statusCanvas.style.marginBottom = `${gap * s}px`;
+    mainCanvas.style.width = `${unitW * s}px`;
+    mainCanvas.style.marginLeft = `${dx * s}px`;
     mainCanvas.style.height = `${(display.height || 126) * s}px`;
     lcd?.resize();
   }

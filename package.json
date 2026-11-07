@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node scripts/serve.js",
     "test": "node --test \"tests/**/*.js\"",
-    "build:exe": "node scripts/build_exe.js"
+    "build:exe": "node scripts/build_exe.js",
+    "build:installer": "node scripts/build_installer.js"
   },
   "keywords": [
     "casio",

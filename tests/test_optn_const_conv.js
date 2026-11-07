@@ -108,7 +108,7 @@ describe('Prompt 17 — OPTN Menu in Calculate Mode', () => {
 });
 
 describe('Prompt 17 — Scientific Constants (SHIFT 7 CONST)', () => {
-  it('opens CONST menu with categories and pagination indicators', () => {
+  it('opens CONST menu with categories and pages (scroll bar, no ▲▼ icons)', () => {
     const calc = new Calculator();
     calc.pressSequence('SHIFT 7');
     assert(calc.topView instanceof MenuView);
@@ -117,15 +117,15 @@ describe('Prompt 17 — Scientific Constants (SHIFT 7 CONST)', () => {
     assert.strictEqual(scr1.lines[1], '2:Electromagnetic');
     assert.strictEqual(scr1.lines[2], '3:Atomic&Nuclear');
     assert.strictEqual(scr1.lines[3], '4:Physico-Chem');
-    assert(calc.indicators().includes('Down'));
-    assert(!calc.indicators().includes('Up'));
+    assert(!calc.indicators().includes('Down')); // official: scroll bar, no ▲▼ icon
+    assert(!calc.indicators().includes('Up')); // official: scroll bar, no ▲▼ icon
 
     calc.pressSequence('DOWN');
     const scr2 = calc.getScreen();
     assert.strictEqual(scr2.lines[0], '1:Adopted Values');
     assert.strictEqual(scr2.lines[1], '2:Other');
-    assert(!calc.indicators().includes('Down'));
-    assert(calc.indicators().includes('Up'));
+    assert(!calc.indicators().includes('Down')); // official: scroll bar, no ▲▼ icon
+    assert(!calc.indicators().includes('Up')); // official: scroll bar, no ▲▼ icon
   });
 
   it('inserts and evaluates speed of light c0', () => {
@@ -188,8 +188,8 @@ describe('Prompt 17 — Metric Conversions (SHIFT 8 CONV)', () => {
     assert.strictEqual(scr1.lines[1], '2:Area');
     assert.strictEqual(scr1.lines[2], '3:Volume');
     assert.strictEqual(scr1.lines[3], '4:Mass');
-    assert(calc.indicators().includes('Down'));
-    assert(!calc.indicators().includes('Up'));
+    assert(!calc.indicators().includes('Down')); // official: scroll bar, no ▲▼ icon
+    assert(!calc.indicators().includes('Up')); // official: scroll bar, no ▲▼ icon
 
     calc.pressSequence('DOWN');
     const scr2 = calc.getScreen();
@@ -197,14 +197,14 @@ describe('Prompt 17 — Metric Conversions (SHIFT 8 CONV)', () => {
     assert.strictEqual(scr2.lines[1], '2:Pressure');
     assert.strictEqual(scr2.lines[2], '3:Energy');
     assert.strictEqual(scr2.lines[3], '4:Power');
-    assert(calc.indicators().includes('Down'));
-    assert(calc.indicators().includes('Up'));
+    assert(!calc.indicators().includes('Down')); // official: scroll bar, no ▲▼ icon
+    assert(!calc.indicators().includes('Up')); // official: scroll bar, no ▲▼ icon
 
     calc.pressSequence('DOWN');
     const scr3 = calc.getScreen();
     assert.strictEqual(scr3.lines[0], '1:Temperature');
-    assert(!calc.indicators().includes('Down'));
-    assert(calc.indicators().includes('Up'));
+    assert(!calc.indicators().includes('Down')); // official: scroll bar, no ▲▼ icon
+    assert(!calc.indicators().includes('Up')); // official: scroll bar, no ▲▼ icon
   });
 
   it('converts 5 cm into inches (fraction in MathI/MathO and decimal via S<=>D)', () => {

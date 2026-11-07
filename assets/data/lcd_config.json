@@ -13,15 +13,15 @@
     "matrixWidth": 192,
     "matrixHeight": 63,
     "scale": 2,
-    "backgroundColor": "#D6E3D6",
-    "pixelOnColor": "#1A221A",
-    "pixelOffColor": "#C8D7C8"
+    "backgroundColor": "#C9D5CA",
+    "pixelOnColor": "#414540",
+    "pixelOffColor": "#C9D5CA"
   },
   "statusBar": {
-    "x": 130,
-    "y": 237,
+    "x": 116,
+    "y": 240,
     "width": 384,
-    "height": 17,
+    "height": 16,
     "height1x": 8,
     "width1x": 192
   },
@@ -98,5 +98,12 @@
       "label": "C: Ratio",
       "code": "C"
     }
-  ]
+  ],
+  "glass": {
+    "x": 107,
+    "y": 223,
+    "width": 430,
+    "height": 172,
+    "radius": 12
+  }
 }

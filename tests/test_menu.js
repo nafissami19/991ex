@@ -1,6 +1,7 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import { Calculator } from '../js/core/Calculator.js';
+import { TRACED_FONT } from '../js/lcd/raster.js';
 
 describe('Prompt 20 — MENU screen (mode icons)', () => {
   it('opens MENU screen displaying mode icon grid and 1:Calculate', () => {
@@ -169,10 +170,19 @@ describe('Prompt 20 — MENU screen (mode icons)', () => {
     // Text is drawn with dark pixels
     assert.strictEqual(scr.lines[2], '1:Calculate');
 
-    // Selected cell 0 (x=0..47, y=0..23) is inverted: top-left interior (x=1, y=1) should be light (0)
-    assert.strictEqual(pixel(1, 1), 0);
-
-    // Unselected cell 1 (x=48..95, y=0..23) has dark background: interior (x=49, y=1) should be dark (1)
-    assert.strictEqual(pixel(49, 1), 1);
+    if (TRACED_FONT) {
+      // Official layout (menu_sel1 screenshot): cells start at row 2.
+      // Selected cell 0 is a dark rounded box (cols 1-46, rows 2-23) with rounded corners.
+      assert.strictEqual(pixel(1, 10), 1);
+      assert.strictEqual(pixel(1, 2), 0, 'rounded corner');
+      // Unselected cell 1: light background, frame line up its right edge, bottom line at row 24.
+      assert.strictEqual(pixel(49, 3), 0);
+      assert.strictEqual(pixel(95, 5), 1);
+      assert.strictEqual(pixel(60, 24), 1);
+    } else {
+      // Original icons: selected cell inverted, unselected cells dark.
+      assert.strictEqual(pixel(1, 1), 0);
+      assert.strictEqual(pixel(49, 1), 1);
+    }
   });
 });

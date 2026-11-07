@@ -93,11 +93,7 @@ describe('Pixel & LCD Engine (Prompt 12)', () => {
       const pngBuf = encodePNG(DW, DH, rgba);
       fs.writeFileSync(path.join(OUT_DIR, 'start_screen_actual.png'), pngBuf);
 
-      // Verify diff against self is 0 diffs
-      const diff = pixelDiff(scr.pixels, scr.pixels, { scale: 4 });
-      assert.equal(diff.match, true);
-      assert.equal(diff.diffCount, 0);
-      fs.writeFileSync(path.join(OUT_DIR, 'start_screen_diff.png'), diff.png(4));
+      // Comparison with the official screen: tests/pixel_reference.test.js (calc_empty)
     });
 
     it('renders "1+2=3" calculation screen to pixel-accurate output', () => {
@@ -115,10 +111,7 @@ describe('Pixel & LCD Engine (Prompt 12)', () => {
       assert.equal(scr.lines[0], '1+2');
       assert.equal(scr.lines[1], '3');
 
-      const diff = pixelDiff(scr.pixels, scr.pixels, { scale: 4 });
-      assert.equal(diff.match, true);
-      assert.equal(diff.diffCount, 0);
-      fs.writeFileSync(path.join(OUT_DIR, 'one_plus_two_diff.png'), diff.png(4));
+      // Comparison with official screens: tests/pixel_reference.test.js
     });
   });
 });

@@ -216,6 +216,15 @@ class App {
     };
     put(document.getElementById('lcdCanvas'), d.x ?? 130, d.y ?? 256, d.width ?? 384, d.height ?? 126);
     put(document.getElementById('lcdStatusCanvas'), sb.x ?? 130, sb.y ?? 237, sb.width ?? 384, sb.height ?? 17);
+    const glass = document.getElementById('lcdGlass');
+    const g = this.config.glass;
+    if (glass && g) {
+      put(glass, g.x, g.y, g.width, g.height);
+      glass.style.borderRadius = `calc(var(--s) * ${g.radius ?? 0}px)`;
+      if (d.backgroundColor) glass.style.background = d.backgroundColor;
+    } else if (glass) {
+      glass.style.display = 'none';
+    }
   }
 
   /** Fit the faceplate to the stage; snap so LCD dots are whole device pixels when close. */

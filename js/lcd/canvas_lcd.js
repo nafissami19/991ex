@@ -20,7 +20,8 @@ export const STATUS_ICONS = [
 
 const FALLBACK_DISPLAY = {
   matrixWidth: LCD_W, matrixHeight: LCD_H,
-  backgroundColor: '#D6E3D6', pixelOnColor: '#1A221A',
+  // Measured from official emulator screenshots.
+  backgroundColor: '#C9D5CA', pixelOnColor: '#414540',
 };
 
 export async function loadLcdConfig(url = 'assets/data/lcd_config.json') {

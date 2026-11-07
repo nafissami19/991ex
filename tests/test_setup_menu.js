@@ -9,7 +9,7 @@ import assert from 'node:assert/strict';
 import { Calculator } from '../js/core/Calculator.js';
 
 describe('SETUP Menu Structure and Pagination', () => {
-  it('opens SETUP menu on SHIFT MENU with Page 1 items and Down indicator', () => {
+  it('opens SETUP menu on SHIFT MENU with Page 1 items and scroll bar (no ▼ icon)', () => {
     const calc = new Calculator();
     calc.pressSequence('SHIFT MENU');
     assert.equal(calc.topView.constructor.name, 'MenuView');
@@ -21,11 +21,11 @@ describe('SETUP Menu Structure and Pagination', () => {
       '4:Engineer Symbol'
     ]);
     const inds = calc.indicators();
-    assert.ok(inds.includes('Down'));
-    assert.ok(!inds.includes('Up'));
+    assert.ok(!inds.includes('Down')); // official: scroll bar, no ▲▼ icon
+    assert.ok(!inds.includes('Up')); // official: scroll bar, no ▲▼ icon
   });
 
-  it('scrolls to Page 2 with Down and Up indicators', () => {
+  it('scrolls to Page 2 (scroll bar, no ▲▼ icons)', () => {
     const calc = new Calculator();
     calc.pressSequence('SHIFT MENU DOWN');
     const lines = calc.renderLines();
@@ -36,11 +36,11 @@ describe('SETUP Menu Structure and Pagination', () => {
       '4:Spreadsheet'
     ]);
     const inds = calc.indicators();
-    assert.ok(inds.includes('Down'));
-    assert.ok(inds.includes('Up'));
+    assert.ok(!inds.includes('Down')); // official: scroll bar, no ▲▼ icon
+    assert.ok(!inds.includes('Up')); // official: scroll bar, no ▲▼ icon
   });
 
-  it('scrolls to Page 3 with Down and Up indicators', () => {
+  it('scrolls to Page 3 (scroll bar, no ▲▼ icons)', () => {
     const calc = new Calculator();
     calc.pressSequence('SHIFT MENU DOWN DOWN');
     const lines = calc.renderLines();
@@ -51,11 +51,11 @@ describe('SETUP Menu Structure and Pagination', () => {
       '4:Digit Separator'
     ]);
     const inds = calc.indicators();
-    assert.ok(inds.includes('Down'));
-    assert.ok(inds.includes('Up'));
+    assert.ok(!inds.includes('Down')); // official: scroll bar, no ▲▼ icon
+    assert.ok(!inds.includes('Up')); // official: scroll bar, no ▲▼ icon
   });
 
-  it('scrolls to Page 4 with Up indicator only', () => {
+  it('scrolls to Page 4 (scroll bar, no ▲ icon)', () => {
     const calc = new Calculator();
     calc.pressSequence('SHIFT MENU DOWN DOWN DOWN');
     const lines = calc.renderLines();
@@ -66,8 +66,8 @@ describe('SETUP Menu Structure and Pagination', () => {
       '4:Auto Power Off'
     ]);
     const inds = calc.indicators();
-    assert.ok(inds.includes('Up'));
-    assert.ok(!inds.includes('Down'));
+    assert.ok(!inds.includes('Up')); // official: scroll bar, no ▲▼ icon
+    assert.ok(!inds.includes('Down')); // official: scroll bar, no ▲▼ icon
   });
 
   it('wraps from Page 4 to Page 1 when DOWN is pressed', () => {
@@ -75,8 +75,8 @@ describe('SETUP Menu Structure and Pagination', () => {
     calc.pressSequence('SHIFT MENU DOWN DOWN DOWN DOWN');
     const lines = calc.renderLines();
     assert.equal(lines[0], '1:Input/Output');
-    assert.ok(calc.indicators().includes('Down'));
-    assert.ok(!calc.indicators().includes('Up'));
+    assert.ok(!calc.indicators().includes('Down')); // official: scroll bar, no ▲▼ icon
+    assert.ok(!calc.indicators().includes('Up')); // official: scroll bar, no ▲▼ icon
   });
 
   it('wraps from Page 1 to Page 4 when UP is pressed', () => {
@@ -84,8 +84,8 @@ describe('SETUP Menu Structure and Pagination', () => {
     calc.pressSequence('SHIFT MENU UP');
     const lines = calc.renderLines();
     assert.equal(lines[0], '1:MultiLine Font');
-    assert.ok(calc.indicators().includes('Up'));
-    assert.ok(!calc.indicators().includes('Down'));
+    assert.ok(!calc.indicators().includes('Up')); // official: scroll bar, no ▲▼ icon
+    assert.ok(!calc.indicators().includes('Down')); // official: scroll bar, no ▲▼ icon
   });
 
   it('closes SETUP menu with AC key', () => {

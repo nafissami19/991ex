@@ -25,9 +25,10 @@ import {
   emptyBox,
   textBox,
   integralBox,
-  bigOpBox
+  bigOpBox,
+  AXIS
 } from '../js/lcd/natural_display.js';
-import { Framebuffer, LCD_WIDTH, LCD_HEIGHT } from '../js/lcd/raster.js';
+import { Framebuffer, LCD_WIDTH, LCD_HEIGHT, TRACED_FONT } from '../js/lcd/raster.js';
 import { pixelDiff, binaryToRGBA, LCD_WIDTH as DW, LCD_HEIGHT as DH } from './pixel/diff.js';
 import { encodePNG } from './pixel/png.js';
 
@@ -41,25 +42,29 @@ describe('Natural Textbook Display Layout (Prompt 13)', () => {
       const den = textBox('123', 'large');
       const frac = fracBox(num, den, 'large');
 
-      assert.ok(frac.w >= den.w + 2, 'fraction bar extends beyond denominator width');
+      // Official screen: the bar is 3 dots longer than the wider part
+      assert.equal(frac.w, den.w + 3, 'fraction bar is 3 dots longer than the denominator');
       assert.ok(frac.asc > num.asc, 'fraction ascent covers numerator above math axis');
       assert.ok(frac.desc > den.desc, 'fraction descent covers denominator below math axis');
 
       frac.draw(fb, 10, 30);
-      // Axis for large font is 5, bar is at by - axis = 30 - 5 = 25
-      const barY = 25;
-      for (let x = 10; x < 10 + frac.w - 1; x++) {
+      // Bar at by - axis (axis 6 with the traced font, 5 with the original one)
+      const barY = 30 - AXIS.large;
+      for (let x = 10; x < 10 + frac.w; x++) {
         assert.equal(fb.get(x, barY), 1, `fraction bar should be solid at y=${barY}, x=${x}`);
       }
-      // Blank 1-pixel gap above and below fraction bar
+      // Blank gap (2 rows with the traced font) above and below the bar
+      const gap = TRACED_FONT ? 2 : 1;
       let gapAboveBlank = true;
       let gapBelowBlank = true;
-      for (let x = 10; x < 10 + frac.w - 1; x++) {
-        if (fb.get(x, barY - 1) !== 0) gapAboveBlank = false;
-        if (fb.get(x, barY + 1) !== 0) gapBelowBlank = false;
+      for (let x = 10; x < 10 + frac.w; x++) {
+        for (let k = 1; k <= gap; k++) {
+          if (fb.get(x, barY - k) !== 0) gapAboveBlank = false;
+          if (fb.get(x, barY + k) !== 0) gapBelowBlank = false;
+        }
       }
-      assert.ok(gapAboveBlank, '1-pixel blank gap above fraction bar');
-      assert.ok(gapBelowBlank, '1-pixel blank gap below fraction bar');
+      assert.ok(gapAboveBlank, 'blank gap above fraction bar');
+      assert.ok(gapBelowBlank, 'blank gap below fraction bar');
     });
 
     it('roots draw radical sign sized to content with overbar', () => {
@@ -106,19 +111,23 @@ describe('Natural Textbook Display Layout (Prompt 13)', () => {
   describe('2. Empty slot dashed box (dottedRect)', () => {
     it('empty slot produces a dashed rectangular box with cursor mark inside', () => {
       const slot = layoutSlot([], { font: 'large', path: [{ i: 0, s: 0 }] });
-      assert.equal(slot.w, 8);
-      assert.equal(slot.asc, 9);
+      // traced font: 9x12 box; original font: 7x9 box
+      const bw = TRACED_FONT ? 9 : 7;
+      const bh = TRACED_FONT ? 12 : 9;
+      assert.equal(slot.w, bw + 1);
+      assert.equal(slot.asc, bh);
       assert.equal(slot.desc, 0);
       assert.equal(slot.marks.length, 1);
       assert.equal(slot.marks[0].dx, 2, 'cursor inside dashed box');
-      assert.equal(slot.marks[0].asc, 9);
+      assert.equal(slot.marks[0].asc, bh);
 
       const fb = new Framebuffer();
-      slot.draw(fb, 4, 15);
-      // Top of dottedRect is by - 9 + 1 = 15 - 8 = 7
-      assert.equal(fb.get(4, 7), 1);
-      assert.equal(fb.get(5, 7), 0);
-      assert.equal(fb.get(6, 7), 1);
+      slot.draw(fb, 4, 20);
+      // Top of dottedRect is by - h + 1
+      const top = 20 - bh + 1;
+      assert.equal(fb.get(4, top), 1);
+      assert.equal(fb.get(5, top), 0);
+      assert.equal(fb.get(6, top), 1);
     });
   });
 
@@ -260,14 +269,8 @@ describe('Natural Textbook Display Layout (Prompt 13)', () => {
       const actualPath = path.join(OUT_DIR, `${name}_actual.png`);
       fs.writeFileSync(actualPath, pngBuf);
 
-      // 2. Perform pixel diff against self (guaranteeing 0 diffs and valid diff generation)
-      const diff = pixelDiff(scr.pixels, scr.pixels, { scale: 2 });
-      assert.equal(diff.match, true, `${name}: pixel match`);
-      assert.equal(diff.diffCount, 0, `${name}: zero pixel discrepancies`);
-
-      // 3. Write visual diff artifact
-      const diffPath = path.join(OUT_DIR, `${name}_diff.png`);
-      fs.writeFileSync(diffPath, diff.png(2));
+      // (These screens have no official screenshot yet; official comparisons live in
+      // tests/pixel_reference.test.js. Comparing our output with itself proves nothing.)
 
       return { calc, scr };
     }

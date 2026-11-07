@@ -559,7 +559,8 @@ export class CalcApp {
     } else if (this.phase === 'result') {
       const i = this.histIndex === -1 ? this.history.length - 1 : this.histIndex;
       if (i > 0) set.add('Up');
-      if (this.history.length > 0) set.add('Down');
+      // Official screen: no ▼ on the newest result; only when an older entry is shown.
+      if (i < this.history.length - 1) set.add('Down');
     }
     if (this.phase === 'result' && (this.resultOverflowLeft || this.resultOverflowRight)) {
       if (this.resultOverflowLeft) set.add('Left');
@@ -593,8 +594,9 @@ export class CalcApp {
       this.resultOverflowLeft = this.resultScrollX > 0;
       this.resultOverflowRight = this.resultScrollX < maxScroll;
 
-      const baseline = 62 - box.desc;
-      const x = (190 - box.w) + (maxScroll - this.resultScrollX);
+      // Official screen: results sit against the bottom row (62) and the right edge (column 191).
+      const baseline = 63 - box.desc;
+      const x = (192 - box.w) + (maxScroll - this.resultScrollX);
       scr.math(tree, { x, baseline, record: false });
     }
     scr.lines = [this.inputText(), resultText];
