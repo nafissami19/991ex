@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node scripts/serve.js",
-    "test": "node --test \"tests/**/*.js\""
+    "test": "node --test \"tests/**/*.js\"",
+    "build:exe": "node scripts/build_exe.js"
   },
   "keywords": [
     "casio",

@@ -1,0 +1,6 @@
+{
+  "name": "casio-991ex-classwiz",
+  "version": "1.0.0",
+  "description": "Casio fx-991EX ClassWiz Desktop Calculator",
+  "main": "electron-main.cjs"
+}

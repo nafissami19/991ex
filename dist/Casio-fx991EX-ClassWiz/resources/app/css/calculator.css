@@ -1,0 +1,99 @@
+/* fx-991EX web re-creation: authentic calculator chassis and LCD rendering */
+
+:root {
+  --page-bg: #15171a;
+  --text: #e6e9ec;
+  --text-dim: #9aa4ad;
+  --s: 0.6; /* faceplate scale, set dynamically by app.js */
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--page-bg);
+  color: var(--text);
+  font: 14px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+}
+
+/* Stage + faceplate */
+.stage {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px;
+}
+
+.chassis {
+  position: relative;
+  flex: none;
+  width: calc(644px * var(--s));
+  height: calc(1250px * var(--s));
+  background: url('../assets/images/faceplate.png') no-repeat 0 0 / 100% 100%;
+  border-radius: calc(24px * var(--s));
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7);
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* Fallback when the local-only faceplate image is missing */
+.chassis.no-faceplate {
+  background: linear-gradient(#3a3d42, #26282c);
+}
+.chassis.no-faceplate .lcd-canvas { outline: calc(10px * var(--s)) solid #202225; }
+
+.lcd-canvas {
+  position: absolute;
+  display: block;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+.keypad { position: absolute; inset: 0; }
+
+.calc-key {
+  position: absolute;
+  border-radius: calc(10px * var(--s));
+  cursor: pointer;
+  touch-action: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 60ms, box-shadow 60ms;
+}
+.calc-key:hover { background: rgba(255, 255, 255, 0.08); }
+.calc-key.pressed {
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 calc(3px * var(--s)) calc(6px * var(--s)) rgba(0, 0, 0, 0.7);
+}
+.calc-key.calc-key-dpad {
+  border-radius: 50%;
+}
+
+.key-label { display: none; pointer-events: none; }
+.no-faceplate .calc-key { background: #4a4e55; box-shadow: 0 2px 0 #1b1c1f; }
+.no-faceplate .calc-key.pressed { background: #33363b; box-shadow: none; }
+.no-faceplate .key-label {
+  display: block;
+  font-size: calc(18px * var(--s));
+  color: #f1f3f5;
+  white-space: nowrap;
+}
