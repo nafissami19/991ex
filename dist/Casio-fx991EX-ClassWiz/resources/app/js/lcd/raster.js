@@ -3,8 +3,19 @@
  * Pure JS: runs in Node and in the browser.
  */
 
-import LARGE from './fonts/large.js';
+import ORIGINAL_LARGE from './fonts/large.js';
 import SMALL from './fonts/small.js';
+
+// The traced font (scripts/lcd_from_screenshots.py) is local-only; fall back to the original design.
+async function optionalModule(path) {
+  try {
+    return (await import(path)).default;
+  } catch {
+    return null;
+  }
+}
+const LARGE = (await optionalModule('./fonts/lcd_large.js')) || ORIGINAL_LARGE;
+export const TRACED_FONT = LARGE !== ORIGINAL_LARGE;
 
 export const LCD_WIDTH = 192;
 export const LCD_HEIGHT = 63;

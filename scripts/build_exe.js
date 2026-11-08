@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import os from 'node:os';
 import { execSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
@@ -8,7 +9,8 @@ const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DIST_DIR = path.join(ROOT_DIR, 'dist');
 const APP_DIR = path.join(DIST_DIR, 'Casio-fx991EX-ClassWiz');
-const CACHE_ZIP = 'C:\\Users\\sami6\\AppData\\Local\\electron\\Cache\\electron-v34.5.8-win32-x64.zip';
+const localAppData = process.env.LOCALAPPDATA || path.join(os.homedir(), 'AppData', 'Local');
+const CACHE_ZIP = path.join(localAppData, 'electron', 'Cache', 'electron-v34.5.8-win32-x64.zip');
 const TARGET_EXE = path.join(APP_DIR, 'Casio-fx991EX-ClassWiz.exe');
 
 console.log('--- Building Casio fx-991EX ClassWiz Desktop (.exe) ---');
@@ -22,7 +24,9 @@ if (!fs.existsSync(TARGET_EXE)) {
     throw new Error(`Electron zip cache not found at ${CACHE_ZIP}`);
   }
   fs.mkdirSync(APP_DIR, { recursive: true });
-  execSync(`powershell.exe -NoProfile -Command "Expand-Archive -Path '${CACHE_ZIP}' -DestinationPath '${APP_DIR}' -Force"`, {
+  const escapedZip = CACHE_ZIP.replace(/'/g, "''");
+  const escapedDest = APP_DIR.replace(/'/g, "''");
+  execSync(`powershell.exe -NoProfile -Command "Expand-Archive -LiteralPath '${escapedZip}' -DestinationPath '${escapedDest}' -Force"`, {
     stdio: 'inherit'
   });
 
@@ -62,6 +66,12 @@ copyDirSync(path.join(ROOT_DIR, 'css'), path.join(destAppDir, 'css'));
 copyDirSync(path.join(ROOT_DIR, 'js'), path.join(destAppDir, 'js'));
 copyDirSync(path.join(ROOT_DIR, 'assets'), path.join(destAppDir, 'assets'));
 fs.copyFileSync(path.join(ROOT_DIR, 'index.html'), path.join(destAppDir, 'index.html'));
+if (fs.existsSync(path.join(ROOT_DIR, 'popout.html'))) {
+  fs.copyFileSync(path.join(ROOT_DIR, 'popout.html'), path.join(destAppDir, 'popout.html'));
+}
+if (fs.existsSync(path.join(ROOT_DIR, 'sw.js'))) {
+  fs.copyFileSync(path.join(ROOT_DIR, 'sw.js'), path.join(destAppDir, 'sw.js'));
+}
 fs.copyFileSync(path.join(ROOT_DIR, 'electron-main.cjs'), path.join(destAppDir, 'electron-main.cjs'));
 fs.copyFileSync(path.join(ROOT_DIR, 'manifest.webmanifest'), path.join(destAppDir, 'manifest.webmanifest'));
 

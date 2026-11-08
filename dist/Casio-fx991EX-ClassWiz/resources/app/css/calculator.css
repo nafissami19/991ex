@@ -60,6 +60,13 @@ body {
 }
 .chassis.no-faceplate .lcd-canvas { outline: calc(10px * var(--s)) solid #202225; }
 
+/* LCD glass behind the canvases, in the LCD background colour (set from lcd_config.json) */
+.lcd-glass {
+  position: absolute;
+  background: #C9D5CA;
+}
+.chassis.no-faceplate .lcd-glass { display: none; }
+
 .lcd-canvas {
   position: absolute;
   display: block;

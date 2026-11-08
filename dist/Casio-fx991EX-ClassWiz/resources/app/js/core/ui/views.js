@@ -79,11 +79,8 @@ export class MenuView {
     return true; // other keys are ignored while a menu is open
   }
 
-  indicators(set) {
-    if (this.pages > 1) {
-      if (this.page > 0) set.add('Up');
-      if (this.page < this.pages - 1) set.add('Down');
-    }
+  indicators() {
+    // Multi-page lists show a scroll bar instead of the ▲/▼ status icons (official SETUP screen).
   }
 
   render(scr) {
@@ -100,8 +97,8 @@ export class MenuView {
       const r = row + (this.columns === 1 ? i : Math.floor(i / this.columns));
       const c = this.columns === 1 ? 0 : i % this.columns;
       const label = `${i + 1}:${it.label}`;
-      scr.text(4 + c * colW, 1 + r * ROW_PITCH, `${i + 1} : ${it.label}`, { record: false });
-      scr.record(1 + r * ROW_PITCH, 4 + c * colW, label);
+      scr.text(1 + c * colW, 1 + r * ROW_PITCH, label, { record: false });
+      scr.record(1 + r * ROW_PITCH, 1 + c * colW, label);
       if (it.current) scr.text(182 - (this.pages > 1 ? 6 : 0), 1 + r * ROW_PITCH, '◀', { record: false });
     }
     if (this.pages > 1) drawScrollBar(scr, this.page, this.pages, row);
@@ -109,15 +106,16 @@ export class MenuView {
 }
 
 export function drawScrollBar(scr, page, pages, firstRow = 0) {
+  // Official SETUP screen: a 4-dot-wide pill in columns 188-191; the track is rows 2-62 and the
+  // thumb is (track / pages) tall, rounded up (16 rows for 4 pages), first and last rows 2 dots wide.
   const top = firstRow * ROW_PITCH + 2;
-  const h = 60 - top;
-  const x = 189;
-  const thumbH = Math.max(8, Math.floor(h / pages));
-  const y = top + Math.floor((h - thumbH) * (pages === 1 ? 0 : page / (pages - 1)));
-  // Authentic rounded pill scrollbar thumb without full-height vertical line
-  scr.fb.fillRect(x, y + 1, 3, thumbH - 2, 1);
-  scr.fb.hline(x + 1, x + 1, y);
-  scr.fb.hline(x + 1, x + 1, y + thumbH - 1);
+  const h = 63 - top;
+  const x = 188;
+  const thumbH = Math.max(6, Math.ceil(h / pages));
+  const y = top + Math.round((h - thumbH) * (pages === 1 ? 0 : page / (pages - 1)));
+  scr.fb.fillRect(x, y + 1, 4, thumbH - 2, 1);
+  scr.fb.hline(x + 1, x + 2, y);
+  scr.fb.hline(x + 1, x + 2, y + thumbH - 1);
 }
 
 /** "Reset Setup Data?" style confirmation: [=]:Yes [AC]:Cancel */

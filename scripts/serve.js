@@ -30,8 +30,15 @@ const MIME_TYPES = {
 
 const server = http.createServer((req, res) => {
   // Normalize URL and strip query string
-  const parsedUrl = new URL(req.url, `http://localhost:${PORT}`);
-  let reqPath = decodeURIComponent(parsedUrl.pathname);
+  let reqPath;
+  try {
+    const parsedUrl = new URL(req.url, `http://localhost:${PORT}`);
+    reqPath = decodeURIComponent(parsedUrl.pathname);
+  } catch {
+    res.writeHead(400, { 'Content-Type': 'text/plain' });
+    res.end('400 Bad Request');
+    return;
+  }
 
   if (reqPath === '/' || reqPath === '') {
     reqPath = '/index.html';
@@ -40,7 +47,8 @@ const server = http.createServer((req, res) => {
   const safePath = path.normalize(path.join(ROOT_DIR, reqPath));
 
   // Security check: prevent directory traversal
-  if (!safePath.startsWith(ROOT_DIR)) {
+  const rel = path.relative(ROOT_DIR, safePath);
+  if (rel.startsWith('..') || path.isAbsolute(rel)) {
     res.writeHead(403, { 'Content-Type': 'text/plain' });
     res.end('403 Forbidden');
     return;

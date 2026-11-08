@@ -26,6 +26,14 @@ function buildMenu() {
     {
       label: 'View',
       submenu: [
+        {
+          label: 'Pop-out LCD Window',
+          accelerator: 'CmdOrCtrl+P',
+          click: () => {
+            win?.webContents.executeJavaScript('window.openPopout?.()');
+          }
+        },
+        { type: 'separator' },
         { role: 'reload' },
         { role: 'forceReload' },
         { type: 'separator' },
@@ -67,17 +75,36 @@ function createWindow() {
     icon: path.join(__dirname, 'assets', 'icons', 'icon.ico'),
     autoHideMenuBar: true,
     webPreferences: {
-      webSecurity: false,
-      contextIsolation: false,
+      webSecurity: true,
+      contextIsolation: true,
       nodeIntegration: false,
-      sandbox: false
+      sandbox: true
     }
   });
 
   win.loadFile(path.join(__dirname, 'index.html'));
 
   win.webContents.setWindowOpenHandler(({ url }) => {
-    shell.openExternal(url);
+    if (url.includes('popout.html')) {
+      return {
+        action: 'allow',
+        overrideBrowserWindowOptions: {
+          width: 620,
+          height: 300,
+          minWidth: 250,
+          minHeight: 120,
+          autoHideMenuBar: true,
+          webPreferences: {
+            webSecurity: true,
+            contextIsolation: true,
+            sandbox: true
+          }
+        }
+      };
+    }
+    if (url.startsWith('https:') || url.startsWith('http:')) {
+      shell.openExternal(url);
+    }
     return { action: 'deny' };
   });
 

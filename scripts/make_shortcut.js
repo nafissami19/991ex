@@ -3,7 +3,9 @@ import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import os from 'node:os';
 
-const desktopDir = path.join(os.homedir(), 'OneDrive', 'Desktop');
+const oneDriveDesktop = path.join(os.homedir(), 'OneDrive', 'Desktop');
+const standardDesktop = path.join(os.homedir(), 'Desktop');
+const desktopDir = fs.existsSync(oneDriveDesktop) ? oneDriveDesktop : standardDesktop;
 const shortcutPath = path.join(desktopDir, 'Casio fx-991EX ClassWiz.lnk');
 const exePath = path.resolve('dist', 'Casio-fx991EX-ClassWiz', 'Casio-fx991EX-ClassWiz.exe');
 const workDir = path.resolve('dist', 'Casio-fx991EX-ClassWiz');

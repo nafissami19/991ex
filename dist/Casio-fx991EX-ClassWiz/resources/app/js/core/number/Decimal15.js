@@ -170,7 +170,12 @@ export class Decimal15 {
       return Decimal15.ZERO;
     }
 
-    const M = BigInt(combined);
+    let M;
+    try {
+      M = BigInt(combined);
+    } catch {
+      throw new CalcError('Syntax ERROR');
+    }
     const decimalPlaces = fracStr.length;
     const E = expPart - decimalPlaces;
 

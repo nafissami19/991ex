@@ -107,6 +107,9 @@ function fromScaled(X) {
   } else {
     m15 = A * (10n ** BigInt(15 - L));
   }
+  const sciExp = exp + 14;
+  if (sciExp >= 100) throw new CalcError('Math ERROR');
+  if (sciExp < -99) return Decimal15.ZERO;
   return new Decimal15(s, m15, exp);
 }
 
@@ -286,42 +289,67 @@ export function sin(val, angleUnit = 'DEG') {
   if (d.isZero()) return Decimal15.ZERO;
 
   if (angleUnit === 'DEG') {
-    // Exact reduction modulo 360
-    let deg = Number(d.toRational().n % (360n * d.toRational().d)) / Number(d.toRational().d);
-    if (deg < 0) deg += 360;
+    const rat = d.toRational();
+    const fullCircle = 360n * rat.d;
+    let modN = ((rat.n % fullCircle) + fullCircle) % fullCircle;
 
     // Special exact values
-    if (deg === 0 || deg === 180 || deg === 360) return Decimal15.ZERO;
-    if (deg === 30 || deg === 150) return Decimal15.fromString('0.5');
-    if (deg === 90) return Decimal15.ONE;
-    if (deg === 210 || deg === 330) return Decimal15.fromString('-0.5');
-    if (deg === 270) return Decimal15.fromString('-1');
+    if (modN % rat.d === 0n) {
+      const degInt = modN / rat.d;
+      if (degInt === 0n || degInt === 180n || degInt === 360n) return Decimal15.ZERO;
+      if (degInt === 30n || degInt === 150n) return Decimal15.fromString('0.5');
+      if (degInt === 90n) return Decimal15.ONE;
+      if (degInt === 210n || degInt === 330n) return Decimal15.fromString('-0.5');
+      if (degInt === 270n) return Decimal15.fromString('-1');
+    }
 
     // Reduce to [0, 90]
     let sign = 1;
-    let normDeg = deg;
-    if (deg > 180) {
+    const n180 = 180n * rat.d;
+    const n90 = 90n * rat.d;
+    let curN = modN;
+    if (curN > n180) {
       sign = -1;
-      normDeg = deg - 180;
+      curN -= n180;
     }
-    if (normDeg > 90) {
-      normDeg = 180 - normDeg;
+    if (curN > n90) {
+      curN = n180 - curN;
     }
 
-    const radScaled = (BigInt(Math.round(normDeg * 1e12)) * PI_SCALED) / 180000000000000n;
+    const radScaled = (curN * PI_SCALED) / (180n * rat.d);
     const { sin: sVal } = sinCosSeries(radScaled);
     const res = fromScaled(sVal);
     return sign < 0 ? res.neg() : res;
   }
 
   if (angleUnit === 'GRA') {
-    let gra = Number(d.toRational().n % (400n * d.toRational().d)) / Number(d.toRational().d);
-    if (gra < 0) gra += 400;
+    const rat = d.toRational();
+    const fullCircle = 400n * rat.d;
+    let modN = ((rat.n % fullCircle) + fullCircle) % fullCircle;
 
-    if (gra === 0 || gra === 200 || gra === 400) return Decimal15.ZERO;
-    if (gra === 100) return Decimal15.ONE;
-    if (gra === 300) return Decimal15.fromString('-1');
-    return sin(Decimal15.from(gra * 0.9), 'DEG');
+    if (modN % rat.d === 0n) {
+      const graInt = modN / rat.d;
+      if (graInt === 0n || graInt === 200n || graInt === 400n) return Decimal15.ZERO;
+      if (graInt === 100n) return Decimal15.ONE;
+      if (graInt === 300n) return Decimal15.fromString('-1');
+    }
+
+    let sign = 1;
+    const n200 = 200n * rat.d;
+    const n100 = 100n * rat.d;
+    let curN = modN;
+    if (curN > n200) {
+      sign = -1;
+      curN -= n200;
+    }
+    if (curN > n100) {
+      curN = n200 - curN;
+    }
+
+    const radScaled = (curN * PI_SCALED) / (200n * rat.d);
+    const { sin: sVal } = sinCosSeries(radScaled);
+    const res = fromScaled(sVal);
+    return sign < 0 ? res.neg() : res;
   }
 
   // RAD mode
@@ -355,26 +383,37 @@ export function cos(val, angleUnit = 'DEG') {
   if (d.isZero()) return Decimal15.ONE;
 
   if (angleUnit === 'DEG') {
-    let deg = Number(d.toRational().n % (360n * d.toRational().d)) / Number(d.toRational().d);
-    if (deg < 0) deg += 360;
+    const rat = d.toRational();
+    const fullCircle = 360n * rat.d;
+    let modN = ((rat.n % fullCircle) + fullCircle) % fullCircle;
 
-    if (deg === 0 || deg === 360) return Decimal15.ONE;
-    if (deg === 60 || deg === 300) return Decimal15.fromString('0.5');
-    if (deg === 90 || deg === 270) return Decimal15.ZERO;
-    if (deg === 120 || deg === 240) return Decimal15.fromString('-0.5');
-    if (deg === 180) return Decimal15.fromString('-1');
+    if (modN % rat.d === 0n) {
+      const degInt = modN / rat.d;
+      if (degInt === 0n || degInt === 360n) return Decimal15.ONE;
+      if (degInt === 60n || degInt === 300n) return Decimal15.fromString('0.5');
+      if (degInt === 90n || degInt === 270n) return Decimal15.ZERO;
+      if (degInt === 120n || degInt === 240n) return Decimal15.fromString('-0.5');
+      if (degInt === 180n) return Decimal15.fromString('-1');
+    }
 
-    return sin(Decimal15.from(90 - deg), 'DEG');
+    const remRat = new Rational(90n * rat.d - rat.n, rat.d);
+    return sin(Decimal15.fromRational(remRat), 'DEG');
   }
 
   if (angleUnit === 'GRA') {
-    let gra = Number(d.toRational().n % (400n * d.toRational().d)) / Number(d.toRational().d);
-    if (gra < 0) gra += 400;
+    const rat = d.toRational();
+    const fullCircle = 400n * rat.d;
+    let modN = ((rat.n % fullCircle) + fullCircle) % fullCircle;
 
-    if (gra === 0 || gra === 400) return Decimal15.ONE;
-    if (gra === 100 || gra === 300) return Decimal15.ZERO;
-    if (gra === 200) return Decimal15.fromString('-1');
-    return cos(Decimal15.from(gra * 0.9), 'DEG');
+    if (modN % rat.d === 0n) {
+      const graInt = modN / rat.d;
+      if (graInt === 0n || graInt === 400n) return Decimal15.ONE;
+      if (graInt === 100n || graInt === 300n) return Decimal15.ZERO;
+      if (graInt === 200n) return Decimal15.fromString('-1');
+    }
+
+    const remRat = new Rational(100n * rat.d - rat.n, rat.d);
+    return sin(Decimal15.fromRational(remRat), 'GRA');
   }
 
   // RAD mode
@@ -408,12 +447,14 @@ export function tan(val, angleUnit = 'DEG') {
   if (d.isZero()) return Decimal15.ZERO;
 
   if (angleUnit === 'DEG') {
-    let deg = Number(d.toRational().n % (180n * d.toRational().d)) / Number(d.toRational().d);
-    if (deg < 0) deg += 180;
-    if (Math.abs(deg - 90) < 1e-12) throw new CalcError('Math ERROR');
-    if (deg === 0 || deg === 180) return Decimal15.ZERO;
-    if (deg === 45) return Decimal15.ONE;
-    if (deg === 135) return Decimal15.fromString('-1');
+    const rat = d.toRational();
+    const halfTurn = 180n * rat.d;
+    let modN = ((rat.n % halfTurn) + halfTurn) % halfTurn;
+
+    if (modN === 90n * rat.d) throw new CalcError('Math ERROR');
+    if (modN === 0n) return Decimal15.ZERO;
+    if (modN === 45n * rat.d) return Decimal15.ONE;
+    if (modN === 135n * rat.d) return Decimal15.fromString('-1');
 
     const s = sin(d, 'DEG');
     const c = cos(d, 'DEG');
@@ -421,13 +462,18 @@ export function tan(val, angleUnit = 'DEG') {
   }
 
   if (angleUnit === 'GRA') {
-    let gra = Number(d.toRational().n % (200n * d.toRational().d)) / Number(d.toRational().d);
-    if (gra < 0) gra += 200;
-    if (Math.abs(gra - 100) < 1e-12) throw new CalcError('Math ERROR');
-    if (gra === 0 || gra === 200) return Decimal15.ZERO;
-    if (gra === 50) return Decimal15.ONE;
-    if (gra === 150) return Decimal15.fromString('-1');
-    return tan(Decimal15.from(gra * 0.9), 'DEG');
+    const rat = d.toRational();
+    const halfTurn = 200n * rat.d;
+    let modN = ((rat.n % halfTurn) + halfTurn) % halfTurn;
+
+    if (modN === 100n * rat.d) throw new CalcError('Math ERROR');
+    if (modN === 0n) return Decimal15.ZERO;
+    if (modN === 50n * rat.d) return Decimal15.ONE;
+    if (modN === 150n * rat.d) return Decimal15.fromString('-1');
+
+    const s = sin(d, 'GRA');
+    const c = cos(d, 'GRA');
+    return s.div(c);
   }
 
   // RAD mode
@@ -974,12 +1020,14 @@ export function nCr(nVal, rVal) {
 
   // Symmetry optimization
   if (r > n - r) r = n - r;
+  if (r >= 170n) throw new CalcError('Math ERROR');
 
   let num = 1n;
   let den = 1n;
   for (let i = 1n; i <= r; i++) {
     num *= (n - (i - 1n));
     den *= i;
+    if (num / den >= 10n ** 100n) throw new CalcError('Math ERROR');
   }
   const res = num / den;
   if (res >= 10n ** 100n) throw new CalcError('Math ERROR');

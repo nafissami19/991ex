@@ -1,5 +1,6 @@
 import path from 'node:path';
 import fs from 'node:fs';
+import os from 'node:os';
 import { execFileSync, execSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
@@ -7,8 +8,14 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 
+const localApp = process.env.LOCALAPPDATA || path.join(os.homedir(), 'AppData', 'Local');
+const progFilesX86 = process.env['ProgramFiles(x86)'] || 'C:\\Program Files (x86)';
+const progFiles = process.env.ProgramFiles || 'C:\\Program Files';
+
 const isccCandidates = [
-  'C:\\Users\\sami6\\AppData\\Local\\Programs\\Antigravity IDE\\resources\\app\\node_modules\\innosetup\\bin\\ISCC.exe',
+  path.join(localApp, 'Programs', 'Antigravity IDE', 'resources', 'app', 'node_modules', 'innosetup', 'bin', 'ISCC.exe'),
+  path.join(progFilesX86, 'Inno Setup 6', 'ISCC.exe'),
+  path.join(progFiles, 'Inno Setup 6', 'ISCC.exe'),
   'C:\\Program Files (x86)\\Inno Setup 6\\ISCC.exe',
   'C:\\Program Files\\Inno Setup 6\\ISCC.exe'
 ];

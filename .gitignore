@@ -28,5 +28,10 @@ Thumbs.db
 docs/reference/screenshots/
 js/lcd/fonts/lcd_large.js
 js/lcd/fonts/lcd_icons.js
+**/fonts/lcd_large.js
+**/fonts/lcd_icons.js
 tests/pixel/reference/
 tests/pixel/out/
+
+# Standalone unpacked executable (>100MB exceeds GitHub push limit)
+dist/Casio-fx991EX-ClassWiz/*.exe

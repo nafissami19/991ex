@@ -12,7 +12,8 @@
 import { TOKENS, TEMPLATES } from '../core/input/tokens.js';
 import { getFont, measureText, textExtents } from './raster.js';
 
-export const AXIS = { large: 5, small: 3 };
+// Fraction bar height above the baseline. Official: 6 for the traced 12-dot-high font.
+export const AXIS = { large: getFont('large').ascent >= 13 ? 6 : 5, small: 3 };
 export const RAISE = { large: 6, small: 4 };
 export const smaller = () => 'small';
 export const pathKey = (path) => JSON.stringify(path || []);
@@ -32,8 +33,9 @@ export function textBox(str, font = 'large') {
 
 export function emptyBox(font = 'large') {
   const f = getFont(font);
-  const w = font === 'large' ? 7 : 5;
-  const h = font === 'large' ? 9 : 7;
+  const tall = font === 'large' && f.ascent >= 13; // traced font: digit-sized slot (not yet checked on the emulator)
+  const w = font === 'large' ? (tall ? 9 : 7) : 5;
+  const h = font === 'large' ? (tall ? 12 : 9) : 7;
   return {
     w: w + 1,
     asc: h,
@@ -199,18 +201,20 @@ export function layoutTemplate(it, font, slotPath, o) {
 }
 
 export function fracBox(N, Dn, font) {
+  // Measured on the official screen: the bar is 3 dots longer than the wider part, parts are
+  // centred (rounding right), 2 blank rows above and below the bar.
   const axis = AXIS[font] || 5;
-  const w = Math.max(N.w, Dn.w) + 2;
+  const w = Math.max(N.w, Dn.w) + 3;
   const numB = -axis - 2 - N.desc; // baseline offset of numerator
   const denB = -axis + 2 + Dn.asc;
-  const nx = Math.floor((w - N.w) / 2);
-  const dx = Math.floor((w - Dn.w) / 2);
+  const nx = Math.ceil((w - N.w) / 2);
+  const dx = Math.ceil((w - Dn.w) / 2);
   const marks = [
     ...N.marks.map((m) => ({ ...m, dx: m.dx + nx, dy: m.dy + numB })),
     ...Dn.marks.map((m) => ({ ...m, dx: m.dx + dx, dy: m.dy + denB }))
   ];
   return {
-    w: w + 1,
+    w,
     asc: -numB + N.asc,
     desc: denB + Dn.desc,
     marks,

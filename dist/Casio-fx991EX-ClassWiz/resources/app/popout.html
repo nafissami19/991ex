@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fx-991EX LCD (pop-out)</title>
+  <meta name="theme-color" content="#1c2a33">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self';">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="assets/icons/icon-192.png">
+  <style>
+    html, body { margin: 0; height: 100%; outline: none; }
+    body {
+      background: #16181b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      user-select: none;
+    }
+    #lcdFrame { line-height: 0; outline: none; cursor: default; }
+    #lcdFrame canvas {
+      display: block;
+      width: 100%;
+      image-rendering: crisp-edges;
+      image-rendering: pixelated;
+    }
+  </style>
+</head>
+<body tabindex="0">
+  <div id="lcdFrame" title="Type on your keyboard here to press keys" tabindex="0">
+    <canvas id="statusCanvas"></canvas>
+    <canvas id="mainCanvas"></canvas>
+  </div>
+  <script type="module">
+    import { startPopoutPage } from './js/popout.js';
+    startPopoutPage();
+  </script>
+</body>
+</html>

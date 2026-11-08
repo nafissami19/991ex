@@ -2,15 +2,36 @@
  * System screens: MENU (mode icons), SETUP, RESET, Contrast.
  */
 
-import ICONS from '../../lcd/fonts/icons.js';
+import ORIGINAL_ICONS from '../../lcd/fonts/icons.js';
 import { MenuView, ConfirmView, MessageView, DigitPromptView } from '../ui/views.js';
 import { MODES } from '../modes/registry.js';
 import { defaultSetup } from '../setup.js';
 import { ROW_PITCH } from '../ui/Screen.js';
 
+// MENU icons traced from the official emulator (local-only, scripts/lcd_from_screenshots.py).
+// Traced cells include their frame and number badge; the original icons are plain 48x24 pictures.
+let TRACED_ICONS = null;
+try {
+  TRACED_ICONS = (await import('../../lcd/fonts/lcd_icons.js')).default;
+} catch {
+  TRACED_ICONS = null;
+}
+const ICONS = TRACED_ICONS || ORIGINAL_ICONS;
+
 // Pre-parse icon bitmaps
 for (const icon of Object.values(ICONS.icons)) {
   if (!icon.bits) icon.bits = icon.rows.map((r) => [...r].map((c) => (c === '#' ? 1 : 0)));
+}
+
+/**
+ * Selected cell, as on the official screen: everything above the bottom line is inverted inside a
+ * rounded box (so the dark number badge becomes a light notch with a dark digit) and the bottom
+ * line disappears.
+ */
+function drawSelectedCell(fb, x, y) {
+  fb.hline(x + 2, x + 46, y + 22, 0);
+  fb.invertRect(x + 1, y, 47, 22);
+  for (const [dx, dy] of [[1, 0], [46, 0], [47, 0], [1, 21]]) fb.set(x + dx, y + dy, 0);
 }
 
 const LETTER_KEYS = {
@@ -72,10 +93,13 @@ export class MainMenuView {
         const m = MODES[i];
         if (!m) continue;
         const x = c * 48;
-        const y = r * 24;
+        const y = TRACED_ICONS ? 2 + r * 24 : r * 24;
         const icon = ICONS.icons[m.icon];
         if (icon) scr.fb.blitBits(icon.bits, x, y);
-        if (i === this.sel) scr.fb.invertRect(x, y, 48, 24);
+        if (i === this.sel) {
+          if (TRACED_ICONS) drawSelectedCell(scr.fb, x, y);
+          else scr.fb.invertRect(x, y, 48, 24);
+        }
         names.push(i === this.sel ? `[${m.name}]` : m.name);
       }
       lines.push(names.join(' '));
@@ -83,7 +107,7 @@ export class MainMenuView {
 
     // Bottom line: normal dark text on light LCD background
     const selected = MODES[this.sel];
-    scr.fb.drawTextTop(4, 50, `${selected.key} : ${selected.name}`, 'large');
+    scr.fb.drawTextTop(1, 50, `${selected.key}:${selected.name}`, 'large');
     lines.push(`${selected.key}:${selected.name}`);
     scr.lines = lines;
   }

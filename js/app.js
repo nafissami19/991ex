@@ -107,6 +107,7 @@ class App {
     this.keypad = new Keypad(document.getElementById('keypad'), layout, (name) => this.press(name));
 
     this.channel = 'BroadcastChannel' in window ? new BroadcastChannel(CHANNEL_NAME) : null;
+    this.hasPopoutClient = false;
     if (this.channel) this.channel.onmessage = (e) => this.onChannel(e.data);
 
     this.bindToolbar();
@@ -140,8 +141,12 @@ class App {
   }
 
   onChannel(msg) {
-    if (msg?.type === 'hello') this.render();
-    else if (msg?.type === 'key' && this.keyNames.has(msg.name)) this.press(msg.name);
+    if (msg?.type === 'hello') {
+      this.hasPopoutClient = true;
+      this.render();
+    } else if (msg?.type === 'key' && this.keyNames.has(msg.name)) {
+      this.press(msg.name);
+    }
   }
 
   // ---- drawing ----
@@ -163,7 +168,7 @@ class App {
   render() {
     const scr = this.screen();
     this.lcd.draw(scr);
-    if (!this.channel) return;
+    if (!this.channel || !this.hasPopoutClient) return;
     try {
       this.channel.postMessage({
         type: 'frame',
@@ -338,6 +343,7 @@ async function main() {
     createCalculator(),
   ]);
   window.app = new App({ calc, config, layout });
+  window.openPopout = openPopout;
   if (document.readyState === 'complete') registerServiceWorker();
   else window.addEventListener('load', registerServiceWorker);
 }

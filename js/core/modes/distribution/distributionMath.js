@@ -200,6 +200,29 @@ export function inverseNormal(areaVal, sigmaVal, muVal) {
   return Decimal15.fromString(xInv.toPrecision(15));
 }
 
+function logGamma(z) {
+  const p = [
+    0.99999999999980993, 676.5203681218851, -1259.1392167224028,
+    771.32342877765313, -176.61502916214059, 12.507343278686905,
+    -0.13857109583111912, 9.9843695780195716e-6, 1.5056327351493116e-7
+  ];
+  if (z < 0.5) return Math.log(Math.PI / Math.sin(Math.PI * z)) - logGamma(1 - z);
+  z -= 1;
+  let x = p[0];
+  for (let i = 1; i < p.length; i++) x += p[i] / (z + i);
+  const t = z + 7.5;
+  return 0.5 * Math.log(2 * Math.PI) + (z + 0.5) * Math.log(t) - t + Math.log(x);
+}
+
+function logFactorial(n) {
+  return n <= 1 ? 0 : logGamma(n + 1);
+}
+
+function logCombination(n, k) {
+  if (k <= 0 || k >= n) return 0;
+  return logFactorial(n) - logFactorial(k) - logFactorial(n - k);
+}
+
 /**
  * Binomial Probability Density: P(X = x; N, p)
  */
@@ -227,20 +250,14 @@ export function binomialPD(xVal, nVal, pVal) {
     return x === N ? Decimal15.ONE : Decimal15.ZERO;
   }
 
-  // Compute using recurrence: P(0) = (1-p)^N; P(k) = P(k-1) * ((N-k+1)/k) * (p/(1-p))
   const q = 1.0 - p;
-  const ratio = p / q;
-  let cur = Math.pow(q, N);
-
-  if (x === 0) {
-    return Decimal15.fromString(cur.toPrecision(15));
+  const logP = logCombination(N, x) + x * Math.log(p) + (N - x) * Math.log(q);
+  if (logP < -700) {
+    return Decimal15.ZERO;
   }
 
-  for (let k = 1; k <= x; k++) {
-    cur = cur * ((N - k + 1) / k) * ratio;
-  }
-
-  return Decimal15.fromString(cur.toPrecision(15));
+  const res = Math.exp(logP);
+  return Decimal15.fromString(res.toPrecision(15));
 }
 
 /**
@@ -274,17 +291,33 @@ export function binomialCD(xVal, nVal, pVal) {
   }
 
   const q = 1.0 - p;
-  const ratio = p / q;
-  let cur = Math.pow(q, N);
-  let sum = cur;
+  const mean = N * p;
 
-  for (let k = 1; k <= x; k++) {
-    cur = cur * ((N - k + 1) / k) * ratio;
-    sum += cur;
+  if (x <= mean) {
+    const logP = logCombination(N, x) + x * Math.log(p) + (N - x) * Math.log(q);
+    let cur = logP < -700 ? 0 : Math.exp(logP);
+    let sum = cur;
+    for (let k = x; k >= 1; k--) {
+      cur = cur * (k / (N - k + 1)) * (q / p);
+      sum += cur;
+      if (cur < 1e-19 * sum) break;
+    }
+    if (sum > 1.0) sum = 1.0;
+    return Decimal15.fromString(sum.toPrecision(15));
+  } else {
+    const logP = logCombination(N, x + 1) + (x + 1) * Math.log(p) + (N - x - 1) * Math.log(q);
+    let cur = logP < -700 ? 0 : Math.exp(logP);
+    let sum = cur;
+    for (let k = x + 1; k < N; k++) {
+      cur = cur * ((N - k) / (k + 1)) * (p / q);
+      sum += cur;
+      if (cur < 1e-19 * sum) break;
+    }
+    let res = 1.0 - sum;
+    if (res < 0) res = 0;
+    if (res > 1.0) res = 1.0;
+    return Decimal15.fromString(res.toPrecision(15));
   }
-
-  if (sum > 1.0) sum = 1.0;
-  return Decimal15.fromString(sum.toPrecision(15));
 }
 
 /**
@@ -301,18 +334,13 @@ export function poissonPD(xVal, lambdaVal) {
     throw new CalcError(ERRORS.MATH);
   }
 
-  // P(X = x) = (λ^x * e^-λ) / x!
-  // Recurrence: P(0) = e^-λ; P(k) = P(k-1) * (λ / k)
-  let cur = Math.exp(-lam);
-  if (x === 0) {
-    return Decimal15.fromString(cur.toPrecision(15));
+  const logP = x * Math.log(lam) - lam - logFactorial(x);
+  if (logP < -700) {
+    return Decimal15.ZERO;
   }
 
-  for (let k = 1; k <= x; k++) {
-    cur = cur * (lam / k);
-  }
-
-  return Decimal15.fromString(cur.toPrecision(15));
+  const res = Math.exp(logP);
+  return Decimal15.fromString(res.toPrecision(15));
 }
 
 /**
@@ -329,14 +357,29 @@ export function poissonCD(xVal, lambdaVal) {
     throw new CalcError(ERRORS.MATH);
   }
 
-  let cur = Math.exp(-lam);
-  let sum = cur;
-
-  for (let k = 1; k <= x; k++) {
-    cur = cur * (lam / k);
-    sum += cur;
+  if (x <= Math.floor(lam)) {
+    const logP = x * Math.log(lam) - lam - logFactorial(x);
+    let cur = logP < -700 ? 0 : Math.exp(logP);
+    let sum = cur;
+    for (let k = x; k >= 1; k--) {
+      cur = cur * (k / lam);
+      sum += cur;
+      if (cur < 1e-19 * sum) break;
+    }
+    if (sum > 1.0) sum = 1.0;
+    return Decimal15.fromString(sum.toPrecision(15));
+  } else {
+    const logP = (x + 1) * Math.log(lam) - lam - logFactorial(x + 1);
+    let cur = logP < -700 ? 0 : Math.exp(logP);
+    let sum = cur;
+    for (let k = x + 1; ; k++) {
+      cur = cur * (lam / (k + 1));
+      sum += cur;
+      if (cur < 1e-19 * sum || k > x + 1000) break;
+    }
+    let res = 1.0 - sum;
+    if (res < 0) res = 0;
+    if (res > 1.0) res = 1.0;
+    return Decimal15.fromString(res.toPrecision(15));
   }
-
-  if (sum > 1.0) sum = 1.0;
-  return Decimal15.fromString(sum.toPrecision(15));
 }
